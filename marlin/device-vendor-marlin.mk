@@ -15,7 +15,7 @@
 
 # [2016-12-12] Auto-generated file, do not edit
 
-$(call inherit-product, vendor/google/marlin/vendor-blobs-sailfish.mk)
+$(call inherit-product, vendor/google/marlin/vendor-blobs-marlin.mk)
 
 # Prebuilt APKs/JARs from 'vendor/app'
 PRODUCT_PACKAGES += \

@@ -106,7 +106,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/marlin/qcom/VZW_profiles.xml:system/etc/cne/Nexus/VZW/VZW_profiles.xml:qcom \
     vendor/google/marlin/qcom/CHRE.cfg:system/etc/diag/CHRE.cfg:qcom \
     vendor/google/marlin/qcom/IMS.cfg:system/etc/diag/IMS.cfg:qcom \
-    vendor/google/marlin/qcom/Marlinmarlin_Radio-generic.cfg:system/etc/diag/Marlinmarlin_Radio-generic.cfg:qcom \
+    vendor/google/marlin/qcom/MarlinSailfish_Radio-generic.cfg:system/etc/diag/MarlinSailfish_Radio-generic.cfg:qcom \
     vendor/google/marlin/qcom/wlan.cfg:system/etc/diag/wlan.cfg:qcom \
     vendor/google/marlin/qcom/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw:qcom \
     vendor/google/marlin/qcom/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw:qcom \
