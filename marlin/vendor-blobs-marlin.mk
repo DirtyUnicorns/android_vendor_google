@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/marlin/proprietary/lib/libmotricity.so:system/lib/libmotricity.so \
     vendor/google/marlin/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/google/marlin/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/google/marlin/proprietary/etc/sysconfig/photo_backup.xml:system/etc/sysconfig/photo_backup.xml \
     vendor/google/marlin/proprietary/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
     vendor/google/marlin/proprietary/etc/sysconfig/google_vr_build.xml:system/etc/sysconfig/google_vr_build.xml \
     vendor/google/marlin/proprietary/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
