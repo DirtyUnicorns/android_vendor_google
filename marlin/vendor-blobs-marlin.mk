@@ -13,17 +13,12 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/google/marlin/proprietary/lib64/hw/power.marlin.so:system/lib64/hw/power.marlin.so \
-    vendor/google/marlin/proprietary/lib64/hw/audio.primary.msm8996.so:system/lib64/hw/audio.primary.msm8996.so \
-    vendor/google/marlin/proprietary/lib64/libprotobuf-cpp-full.so:system/lib64/libprotobuf-cpp-full.so \
     vendor/google/marlin/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/google/marlin/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/google/marlin/proprietary/lib/hw/power.marlin.so:system/lib/hw/power.marlin.so \
-    vendor/google/marlin/proprietary/lib/hw/audio.primary.msm8996.so:system/lib/hw/audio.primary.msm8996.so \
     vendor/google/marlin/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
     vendor/google/marlin/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/google/marlin/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-    vendor/google/marlin/proprietary/lib/libmotricity.so:system/lib/libmotricity.so \
+    vendor/google/marlin/proprietary/lib/libmotricity.so:system/priv-app/VzwLcSilent/lib/arm/libmotricity.so \
     vendor/google/marlin/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/google/marlin/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/google/marlin/proprietary/etc/sysconfig/photo_backup.xml:system/etc/sysconfig/photo_backup.xml \

@@ -13,17 +13,12 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/google/sailfish/proprietary/lib64/hw/power.sailfish.so:system/lib64/hw/power.sailfish.so \
-    vendor/google/sailfish/proprietary/lib64/hw/audio.primary.msm8996.so:system/lib64/hw/audio.primary.msm8996.so \
-    vendor/google/sailfish/proprietary/lib64/libprotobuf-cpp-full.so:system/lib64/libprotobuf-cpp-full.so \
     vendor/google/sailfish/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/google/sailfish/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/google/sailfish/proprietary/lib/hw/power.sailfish.so:system/lib/hw/power.sailfish.so \
-    vendor/google/sailfish/proprietary/lib/hw/audio.primary.msm8996.so:system/lib/hw/audio.primary.msm8996.so \
     vendor/google/sailfish/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
     vendor/google/sailfish/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/google/sailfish/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-    vendor/google/sailfish/proprietary/lib/libmotricity.so:system/lib/libmotricity.so \
+    vendor/google/sailfish/proprietary/lib/libmotricity.so:system/priv-app/VzwLcSilent/lib/arm/libmotricity.so \
     vendor/google/sailfish/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/google/sailfish/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/google/sailfish/proprietary/etc/sysconfig/photo_backup.xml:system/etc/sysconfig/photo_backup.xml \
