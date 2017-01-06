@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES := \
     vendor/google/sailfish/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/google/sailfish/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/google/sailfish/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sailfish/qcom/mdm_helper_proxy:system/bin/mdm_helper_proxy:qcom \
     vendor/google/sailfish/qcom/mm-qcamera-daemon:system/bin/mm-qcamera-daemon:qcom \
     vendor/google/sailfish/qcom/myftm:system/bin/myftm:qcom \
-    vendor/google/sailfish/qcom/nanotool:system/bin/nanotool:qcom \
+	vendor/google/sailfish/qcom/nanotool:system/bin/nanotool:qcom \
     vendor/google/sailfish/qcom/netmgrd:system/bin/netmgrd:qcom \
     vendor/google/sailfish/qcom/nl_listener:system/bin/nl_listener:qcom \
     vendor/google/sailfish/qcom/pktlogconf:system/bin/pktlogconf:qcom \
