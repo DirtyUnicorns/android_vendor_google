@@ -55,6 +55,7 @@ PRODUCT_PACKAGES += \
     DCMO \
     DiagMon \
     DMService \
+    HotwordEnrollment \
     OBDM_Permissions \
     obdm_stub \
     OemDmTrigger \
