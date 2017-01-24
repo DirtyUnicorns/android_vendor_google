@@ -1,5 +1,4 @@
-
-# Copyright (C) 2016 Dirty Unicorns
+# Copyright (C) 2016 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,61 +12,73 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [2016-12-12] Auto-generated file, do not edit
+$(call inherit-product, vendor/google/sailfish/sailfish-vendor-blobs.mk)
 
-$(call inherit-product, vendor/google/sailfish/vendor-blobs-sailfish.mk)
-
-# Prebuilt APKs/JARs from 'vendor/app'
+# Source built
 PRODUCT_PACKAGES += \
-    colorservice \
-    ims \
-    imssettings \
-    SSRestartDetector
+    PresencePolling \
+    RcsService
 
-# Prebuilt APKs/JARs from 'proprietary/app'
+# Prebuilt /apps
 PRODUCT_PACKAGES += \
     atfwd \
+    colorservice \
     datastatusnotification \
     embms \
     fastdormancy \
+    ims \
+    imssettings \
     NetworkSetting \
-    PresencePolling \
     QAS_DVC_MSP \
     QtiTelephonyService \
     radioconfig \
     RCSBootstraputil \
-    RcsService \
+    SecureExtAuthService \
     shutdownlistener \
+    SSRestartDetector \
     TimeService \
+    Tycho \
+    VZWAPNLib \
     vzw_msdc_api \
     xdivert
 
-# Prebuilt APKs/JARs from 'proprietary/framework'
+# Prebuilt /framework
 PRODUCT_PACKAGES += \
+    embmslibrary \
+    qcrilhook \
+    QtiTelephonyServicelibrary \
+    rcsservice \
     VerizonUnifiedSettings
 
-# Prebuilt APKs/JARs from 'proprietary/priv-app'
+# Prebuilt /priv-app
 PRODUCT_PACKAGES += \
-	AppDirectedSMSService \
+    AppDirectedSMSService \
     CarrierEntitlement \
+    CarrierServices \
     CNEService \
     ConnMO \
     DCMO \
     DiagMon \
     DMService \
+    GCS \
+    GoogleCarrierConfig \
     HotwordEnrollment \
     OBDM_Permissions \
     obdm_stub \
     OemDmTrigger \
+    OobConfig \
     qcrilmsgtunnel \
     SprintDM \
     SprintHM \
     VZWAPNService \
     VZWAVS \
+    VzwLcSilent \
     VzwOmaTrigger
 
+# Symlinks
 PRODUCT_PACKAGES += \
-	libdmengine.so \
-	libdmjavaplugin.so \
-	libimscamera_jni_64.so \
-	libimsmedia_jni_64.so
+    libimsmedia_jni.so \
+    libimscamera_jni.so \
+    libdmengine.so \
+    libdmjavaplugin.so
+
