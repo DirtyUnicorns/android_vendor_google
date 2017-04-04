@@ -17,6 +17,15 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),sailfish)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.android.ims.rcsmanager
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := com.android.ims.rcsmanager.jar
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := embmslibrary
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := embmslibrary.jar

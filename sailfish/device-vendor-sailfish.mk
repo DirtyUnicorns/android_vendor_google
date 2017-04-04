@@ -14,11 +14,6 @@
 
 $(call inherit-product, vendor/google/sailfish/sailfish-vendor-blobs.mk)
 
-# Source built
-PRODUCT_PACKAGES += \
-    PresencePolling \
-    RcsService
-
 # Prebuilt /apps
 PRODUCT_PACKAGES += \
     atfwd \
@@ -31,8 +26,10 @@ PRODUCT_PACKAGES += \
     NetworkSetting \
     QAS_DVC_MSP \
     QtiTelephonyService \
+    PresencePolling \
     radioconfig \
     RCSBootstraputil \
+    RcsService \
     SecureExtAuthService \
     shutdownlistener \
     SSRestartDetector \
@@ -44,6 +41,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt /framework
 PRODUCT_PACKAGES += \
+	com.android.ims.rcsmanager \
     embmslibrary \
     qcrilhook \
     QtiTelephonyServicelibrary \
@@ -73,7 +71,8 @@ PRODUCT_PACKAGES += \
     VZWAPNService \
     VZWAVS \
     VzwLcSilent \
-    VzwOmaTrigger
+    VzwOmaTrigger \
+    WfcActivation
 
 # Symlinks
 PRODUCT_PACKAGES += \
