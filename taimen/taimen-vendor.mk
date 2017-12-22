@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     VZWAPNLib \
+    embms \
     CNEService \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
@@ -58,6 +59,7 @@ PRODUCT_PACKAGES += \
     SSRestartDetector \
     SprintDM \
     SprintHM \
+    TimeService \
     VzwOmaTrigger \
     datastatusnotification \
     wahoo_gfxdrv \
