@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
-    ModemService \
     QtiTelephonyService \
     SSRestartDetector \
     SprintDM \
