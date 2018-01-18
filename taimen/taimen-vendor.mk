@@ -51,10 +51,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     VZWAPNLib \
     embms \
+    ims \
     CNEService \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    ModemService \
     QtiTelephonyService \
     SSRestartDetector \
     SprintDM \
