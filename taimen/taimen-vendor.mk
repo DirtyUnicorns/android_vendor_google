@@ -63,21 +63,30 @@ PRODUCT_PACKAGES += \
     VZWAPNLib \
     embms \
     ims \
+    vzw_msdc_api \
     CNEService \
+    CarrierServices \
+    CarrierSetup \
+    ConnMO \
+    DCMO \
+    DMService \
+    DiagMon \
+    GCS \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     ModemService \
-    MyVerizonServices \
+    OBDM_Permissions \
+    OemDmTrigger \
     QtiTelephonyService \
     SSRestartDetector \
     SprintDM \
     SprintHM \
     TimeService \
     VzwOmaTrigger \
-    WfcActivation \
     datastatusnotification \
-    wahoo_gfxdrv \
+    obdm_stub \
+    qcrilmsgtunnel \
     VerizonUnifiedSettings \
     cneapiclient \
     com.google.android.camera.experimental2017 \
