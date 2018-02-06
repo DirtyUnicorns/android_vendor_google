@@ -60,6 +60,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     Tycho \
+    EaselServicePrebuilt \
     VZWAPNLib \
     embms \
     ims \
