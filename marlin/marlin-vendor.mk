@@ -61,6 +61,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     VZWAPNLib \
+    AppDirectedSMSService \
     CNEService \
     CarrierServices \
     CarrierSetup \
