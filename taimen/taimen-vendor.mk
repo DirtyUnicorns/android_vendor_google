@@ -102,5 +102,6 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.api-V1.0-java \
     com.quicinc.cne \
     embmslibrary \
+    qcrilhook \
     rcsimssettings \
     vendor.qti.qcril.am-V1.0-java
