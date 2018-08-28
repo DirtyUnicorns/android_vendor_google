@@ -1,0 +1,14 @@
+user=_app seinfo=vrcore name=com.google.vr.vrcore* domain=vrcore_app type=app_data_file levelFrom=user
+user=_app seinfo=vrcore name=com.google.vr.vrcore:app domain=untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=google name=com.google.android.GoogleCamera domain=google_camera_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.google.android.hardwareinfo domain=hardware_info_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.quicinc.cne.CNEService domain=qcneservice type=system_app_data_file
+user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector type=system_app_data_file
+user=_app seinfo=platform name=com.android.pixellogger domain=logger_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qualcomm.telephony domain=qtelephony type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.timeservice domain=qtimeservice type=system_app_data_file
+user=radio seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
+user=_app seinfo=wfcactivation name=com.google.android.wfcactivation domain=wfc_activation_app levelFrom=all
+user=_app seinfo=verizon name=com.verizon.obdm domain=obdm_app type=app_data_file levelFrom=all
+user=_app seinfo=verizon name=com.verizon.obdm:background domain=obdm_app type=app_data_file levelFrom=all
