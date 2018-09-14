@@ -46,6 +46,9 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/framework'
 PRODUCT_PACKAGES += \
+    com.google.android.camera.experimental2016 \
+    PowerAnomalyDataModemInterface \
+    PowerAnomalyStub \
     qcrilhook \
     VerizonUnifiedSettings
 
