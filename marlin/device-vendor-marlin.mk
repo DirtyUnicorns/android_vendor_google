@@ -46,6 +46,9 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/framework'
 PRODUCT_PACKAGES += \
+    libhwinfo \
+    LowPowerMonitorDeviceInterface \
+    LowPowerMonitorDeviceStub \
     com.google.android.camera.experimental2016 \
     PowerAnomalyDataModemInterface \
     PowerAnomalyStub \
