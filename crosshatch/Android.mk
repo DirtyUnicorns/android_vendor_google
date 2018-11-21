@@ -17,6 +17,16 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),crosshatch)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := arcore
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/app/arcore/arcore.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := datastatusnotification
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/datastatusnotification/datastatusnotification.apk
@@ -32,7 +42,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/EaselServicePrebuilt/EaselServicePrebuilt.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -62,7 +72,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/MobileFeliCaClient/MobileFeliCaClient.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -73,7 +83,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/MobileFeliCaMenuApp/MobileFeliCaMenuApp.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -84,7 +94,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -95,7 +105,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -106,7 +116,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/MobileFeliCaWebPlugin/MobileFeliCaWebPlugin.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -117,8 +127,18 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Ornament
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/app/Ornament/Ornament.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -179,7 +199,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -200,7 +220,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/VZWAPNLib/VZWAPNLib.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -211,7 +231,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -222,7 +242,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
@@ -234,7 +254,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/CarrierServices/CarrierServices.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -245,7 +265,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/CarrierSetup/CarrierSetup.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -310,6 +330,17 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := GCS
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/priv-app/GCS/GCS.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := grilservice
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/grilservice/grilservice.apk
@@ -324,7 +355,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := HotwordEnrollmentOKGoogleWCD9340
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
@@ -335,7 +366,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := HotwordEnrollmentTGoogleWCD9340
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
@@ -346,7 +377,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := HotwordEnrollmentXGoogleWCD9340
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
@@ -359,7 +390,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/LLKAgent/LLKAgent.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
@@ -382,7 +413,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/MyVerizonServices/MyVerizonServices.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
@@ -394,7 +425,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/OBDM_Permissions/OBDM_Permissions.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
@@ -406,7 +437,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/obdm_stub/obdm_stub.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
@@ -438,7 +469,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := SCONE
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/SCONE/SCONE.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
@@ -451,7 +482,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/Showcase/Showcase.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
@@ -485,7 +516,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := VerizonAuthDialog
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/VerizonAuthDialog/VerizonAuthDialog.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
@@ -499,7 +530,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk

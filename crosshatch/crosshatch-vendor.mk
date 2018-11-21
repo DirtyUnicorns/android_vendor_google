@@ -14,6 +14,7 @@
 
 # Prebuilt apps
 PRODUCT_PACKAGES += \
+    arcore \
     datastatusnotification \
     EaselServicePrebuilt \
     embms \
@@ -24,6 +25,7 @@ PRODUCT_PACKAGES += \
     MobileFeliCaSettingApp \
     MobileFeliCaWebPlugin \
     MobileFeliCaWebPluginBoot \
+    Ornament \
     PresencePolling \
     QtiTelephonyService \
     RcsService \
@@ -46,6 +48,7 @@ PRODUCT_PACKAGES += \
     DMService \
     DCMO \
     DiagMon \
+    GCS \
     grilservice \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
