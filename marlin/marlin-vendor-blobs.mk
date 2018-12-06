@@ -234,6 +234,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/marlin/vendor/etc/mixer_paths_tasha_t50.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha_t50.xml:google \
     vendor/google/marlin/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml:google \
     vendor/google/marlin/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc:google \
+    vendor/google/marlin/vendor/etc/modem_stat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/modem_stat.conf:google \
     vendor/google/marlin/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf:google \
     vendor/google/marlin/vendor/etc/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile0.conf:google \
     vendor/google/marlin/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml:google \
