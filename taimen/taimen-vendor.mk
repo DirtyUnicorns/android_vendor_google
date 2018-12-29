@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/etc/firmware/music_detector.sound_model:system/etc/firmware/music_detector.sound_model \
     vendor/google/taimen/proprietary/etc/ambient/matcher_tah.leveldb:system/etc/ambient/matcher_tah.leveldb \
     vendor/google/taimen/proprietary/etc/permissions/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml \
+    vendor/google/taimen/proprietary/etc/permissions/com.customermobile.preload.vzw.xml:system/etc/permissions/com.customermobile.preload.vzw.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:system/etc/permissions/com.android.sdm.plugins.connmo.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.android.sdm.plugins.sprintdm.xml:system/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.android.vzwomatrigger.xml:system/etc/permissions/com.android.vzwomatrigger.xml \
@@ -64,12 +65,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/google/taimen/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/google/taimen/proprietary/priv-app/EuiccGoogle/esim0.img:system/priv-app/EuiccGoogle/esim0.img \
-    vendor/google/taimen/proprietary/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:system/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
+    vendor/google/taimen/proprietary/lib64/libmotricity.so:system/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 
 PRODUCT_PACKAGES += \
     Tycho \
     AmbientSensePrebuilt \
+    AppDirectedSMSService \
     EaselServicePrebuilt \
+    EuiccGoogle \
     VZWAPNLib \
     embms \
     ims \
@@ -80,16 +83,17 @@ PRODUCT_PACKAGES += \
     DCMO \
     DMService \
     DiagMon \
-    EuiccGoogle \
     GCS \
     HardwareInfo \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    LLKAgent \
     ModemService \
     OBDM_Permissions \
     OemDmTrigger \
     QtiTelephonyService \
+    Showcase \
     SSRestartDetector \
     SprintDM \
     SprintHM \
