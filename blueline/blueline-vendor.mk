@@ -33,7 +33,6 @@ PRODUCT_PACKAGES += \
     remotesimlockservice \
     SeempService \
     smcinvokepkgmgr \
-    SSRestartDetector \
     Tycho \
     uimlpaservice \
     VZWAPNLib
