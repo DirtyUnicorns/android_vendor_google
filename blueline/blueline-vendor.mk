@@ -110,6 +110,7 @@ PRODUCT_COPY_FILES := \
     vendor/google/blueline/proprietary/etc/init/performanced.rc:system/etc/init/performanced.rc \
     vendor/google/blueline/proprietary/etc/init/virtual_touchpad.rc:system/etc/init/virtual_touchpad.rc \
     vendor/google/blueline/proprietary/etc/init/vr_hwc.rc:system/etc/init/vr_hwc.rc \
+    vendor/google/blueline/proprietary/etc/permissions/android.hardware.sensor.assist.xml:system/etc/permissions/android.hardware.sensor.assist.xml \
     vendor/google/blueline/proprietary/etc/permissions/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml \
     vendor/google/blueline/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/google/blueline/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
@@ -147,6 +148,7 @@ PRODUCT_COPY_FILES := \
     vendor/google/blueline/proprietary/framework/LowPowerMonitorDeviceRpm.jar:system/framework/LowPowerMonitorDeviceRpm.jar \
     vendor/google/blueline/proprietary/framework/PowerAnomalyDataModemInterface.jar:system/framework/PowerAnomalyDataModemInterface.jar \
     vendor/google/blueline/proprietary/framework/PowerAnomalyQcril.jar:system/framework/PowerAnomalyQcril.jar \
+    vendor/google/blueline/proprietary/lib/dsp/elmyra.so:system/lib/dsp/elmyra.so \
     vendor/google/blueline/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/google/blueline/proprietary/lib/vndk-28/libprotobuf-cpp-full.so:system/lib/vndk-28/libprotobuf-cpp-full.so \
     vendor/google/blueline/proprietary/lib/android.hardware.radio.config@1.0.so:system/lib/android.hardware.radio.config@1.0.so \
