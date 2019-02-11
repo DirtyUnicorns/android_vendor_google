@@ -34,13 +34,19 @@ PRODUCT_COPY_FILES += \
     vendor/google/marlin/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml:google \
     vendor/google/marlin/proprietary/etc/permissions/privapp-permissions-marlin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-marlin.xml:google \
     vendor/google/marlin/proprietary/etc/permissions/privapp-permissions-platform.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-platform.xml:google \
-    vendor/google/marlin/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
+    vendor/google/marlin/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml:google \
     vendor/google/marlin/proprietary/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vzw_mvs_permissions.xml:google \
+    vendor/google/marlin/proprietary/etc/permissions/LowPowerMonitorDeviceInterface.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/LowPowerMonitorDeviceInterface.xml \
+    vendor/google/marlin/proprietary/etc/permissions/LowPowerMonitorDeviceStub.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/LowPowerMonitorDeviceStub.xml:google \
+    vendor/google/marlin/proprietary/etc/permissions/PowerAnomalyDataModemInterface.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/PowerAnomalyDataModemInterface.xml \
+    vendor/google/marlin/proprietary/etc/permissions/PowerAnomalyStub.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/PowerAnomalyStub.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/google_build.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_build.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google.xml:google \
+    vendor/google/marlin/proprietary/etc/sysconfig/google_vr_build.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_vr_build.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/marlin_common.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/marlin_common.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nexus.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml:google \
+    vendor/google/marlin/proprietary/etc/sysconfig/framework-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/framework-sysconfig.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist_com.android.omadm.service.xml:google \
     vendor/google/marlin/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so:google \
     vendor/google/marlin/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so:google \
@@ -49,24 +55,22 @@ PRODUCT_COPY_FILES += \
     vendor/google/marlin/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so:google \
     vendor/google/marlin/proprietary/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtutils.so:google \
     vendor/google/marlin/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so:google \
+    vendor/google/marlin/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so:google \
+    vendor/google/marlin/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so:google \
+    vendor/google/marlin/proprietary/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.nxp.nxpese@1.0.so:google \
+    vendor/google/marlin/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.nxp.nxpnfc@1.0.so:google \
     vendor/google/marlin/proprietary/lib64/vendor.qti.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.atcmdfwd@1.0.so:google \
     vendor/google/marlin/proprietary/lib64/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.qcril.am@1.0.so:google \
     vendor/google/marlin/proprietary/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaptX_encoder.so:google \
     vendor/google/marlin/proprietary/lib/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaptXHD_encoder.so:google \
+    vendor/google/marlin/proprietary/lib/libdmengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdmengine.so:google \
+    vendor/google/marlin/proprietary/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdmjavaplugin.so:google \
     vendor/google/marlin/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so:google \
     vendor/google/marlin/proprietary/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtextutils.so:google \
     vendor/google/marlin/proprietary/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvt.so:google \
     vendor/google/marlin/proprietary/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtutils.so:google \
     vendor/google/marlin/proprietary/lib/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/librcc.so:google \
-
-PRODUCT_COPY_FILES += \
     vendor/google/marlin/proprietary/app/embms/oem/config_params.xml:$(TARGET_COPY_OUT_SYSTEM)/app/embms/oem/config_params.xml:google \
     vendor/google/marlin/proprietary/app/embms/oem/provisioning_params.xml:$(TARGET_COPY_OUT_SYSTEM)/app/embms/oem/provisioning_params.xml:google \
     vendor/google/marlin/proprietary/app/embms/oem/verizon_config_params.txt:$(TARGET_COPY_OUT_SYSTEM)/app/embms/oem/verizon_config_params.txt:google \
     vendor/google/marlin/proprietary/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:google
-
-PRODUCT_COPY_FILES += \
-    vendor/google/marlin/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so:google \
-    vendor/google/marlin/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so:google \
-    vendor/google/marlin/proprietary/lib/libdmengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdmengine.so:google \
-    vendor/google/marlin/proprietary/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdmjavaplugin.so:google
