@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     SeempService \
     smcinvokepkgmgr \
     Tycho \
+    uceShimService \
     uimlpaservice \
     VZWAPNLib
 
