@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
     CNEService \
     ConnMO \
     DMService \
+    DreamlinerPrebuilt \
     DCMO \
     DiagMon \
     EuiccGoogle \

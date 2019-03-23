@@ -339,6 +339,18 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := DreamlinerPrebuilt
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/priv-app/DreamlinerPrebuilt/DreamlinerPrebuilt.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := EuiccGoogle
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/EuiccGoogle/EuiccGoogle.apk
