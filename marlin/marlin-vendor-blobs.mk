@@ -48,6 +48,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/marlin/proprietary/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/framework-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/framework-sysconfig.xml:google \
     vendor/google/marlin/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist_com.android.omadm.service.xml:google \
+    vendor/google/marlin/proprietary/etc/textclassifier/textclassifier.en.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/textclassifier.en.model:google \
+    vendor/google/marlin/proprietary/etc/textclassifier/textclassifier.universal.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/textclassifier.universal.model:google \
     vendor/google/marlin/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so:google \
     vendor/google/marlin/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so:google \
     vendor/google/marlin/proprietary/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so:google \
