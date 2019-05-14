@@ -1,0 +1,52 @@
+// @file sns_oem_register_rw.proto
+//
+// API for reading, writing custom registers from physical sensors
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+
+enum sns_oem_register_rw_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_OEM_REGISTER_RW_REQUEST = 600;
+  SNS_OEM_REGISTER_RW_EVENT   = 1100;
+}
+
+enum sns_oem_register_rw_error {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_OEM_REGISTER_RW_SUCCESS                = 0;
+  SNS_OEM_REGISTER_RW_REQUEST_DECODE_FAILURE = 1;
+  SNS_OEM_REGISTER_RW_WRITE_BUFFER_TOO_LARGE = 2;
+  SNS_OEM_REGISTER_RW_BUS_TRANSFER_ERROR     = 3;
+}
+
+// request message:
+// register_address : register to read/write
+// transfer_length  : byte length to read/write
+// is_write         : if request is to write or read
+// write_buffer     : buffer for write request
+// write_read_back  : whether write request should read back the register
+message sns_oem_register_rw_request
+{
+  required fixed32 register_address = 1;
+  required fixed32 transfer_length  = 2;
+  required bool    is_write         = 3;
+  optional bytes   write_buffer     = 4;
+  optional bool    write_read_back  = 5;
+}
+
+// response message:
+// error            : if error occurs during servicing the request
+// register_address : register address that's read from/written to
+// read_buffer      : buffer for read request or write request with read back
+message sns_oem_register_rw_event
+{
+  required sns_oem_register_rw_error error            = 1;
+  required fixed32                   register_address = 2;
+  required bytes                     read_buffer      = 3;
+}

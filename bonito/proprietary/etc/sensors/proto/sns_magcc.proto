@@ -1,0 +1,37 @@
+/*
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ *
+ * Mag current compensation sensor protobuf defs.
+ */
+
+syntax = "proto2";
+import "nanopb.proto";
+
+/*------------------------------------------------------------------------------
+ *
+ * MagCC sensor message defs.
+ */
+
+/*
+ * This enumeration specifies the set of Mag current compensation sensor message
+ * IDs.  The starting ID was chosen to ensure its uniqueness.
+ *
+ * SNS_MAGCC_MSGID_SEND_CURRENT
+ *
+ * Send message with charger input current
+ */
+enum sns_magcc_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_MAGCC_MSGID_SEND_CURRENT = 1031;
+}
+
+/*
+ * This message contains fields used to specify charger input current
+ *
+ * charge_current           charger input current
+ */
+message sns_magcc_cfg {
+  required uint64 charge_current = 1;
+}
+

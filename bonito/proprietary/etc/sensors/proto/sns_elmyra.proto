@@ -1,0 +1,83 @@
+/*
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ *
+ * Elmyra sensor protobuf defs.
+ */
+
+syntax = "proto2";
+import "nanopb.proto";
+
+/*------------------------------------------------------------------------------
+ *
+ * Elmyra sensor message defs.
+ */
+
+/*
+ * This enumeration specifies the set of Elmyra sensor message IDs.  The
+ * starting ID was chosen randomly to ensure its uniqueness.
+ *
+ * SNS_ELMYRA_MSGID_FILTER_CFG
+ *
+ * Configure Elmyra filter message.  Uses sns_elmyra_filter_cfg.
+ *
+ * SNS_ELMYRA_MSGID_START_FILTER_REQ
+ *
+ * Start sample filter request message.  When this request is issued, the Elmyra
+ * sensor will stop sending samples until a sample value is read that is outside
+ * the filter limits.  The Elmyra sensor will then stop filtering and will
+ * resume sending samples.
+ *
+ * SNS_ELMYRA_MSGID_STOP_FILTER_REQ
+ *
+ * Stop sample filter request message.  Stop filtering and resume sending
+ * samples.
+ */
+enum sns_elmyra_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_ELMYRA_MSGID_FILTER_CFG = 1701896865;
+  SNS_ELMYRA_MSGID_START_FILTER_REQ = 1701896866;
+  SNS_ELMYRA_MSGID_STOP_FILTER_REQ = 1701896867;
+}
+
+/*
+ * This message contains fields used to specify limits for a sample filter.
+ *
+ * low, high                Low and high sample value limits for filter.
+ */
+message sns_elmyra_filter_limit {
+  required float low = 1;
+  required float high = 2;
+}
+
+/*
+ * This message contains fields used to configure the Elmyra filter.
+ *
+ * hpf_freq                 High-pass filter frequency setting.
+ *   0                      Scan rate/39.0625
+ *   1                      Scan rate/78.125
+ *   2                      Scan rate/156.25
+ *   3                      Scan rate/312.5
+ *   4                      Scan rate/625
+ *   5                      Scan rate/1250
+ *   6                      Scan rate/2500
+ *   7                      Scan rate/5000
+ * limit0                   Sample value filter limits for each Elmyra channel.
+ * limit1
+ * limit2
+ * limit3
+ * limit4
+ * limit5
+ *
+ * TODO: Make filters a repeated field.
+ */
+message sns_elmyra_filter_cfg {
+  required uint32 hpf_freq = 1;
+  required sns_elmyra_filter_limit limit0 = 2;
+  required sns_elmyra_filter_limit limit1 = 3;
+  required sns_elmyra_filter_limit limit2 = 4;
+  required sns_elmyra_filter_limit limit3 = 5;
+  required sns_elmyra_filter_limit limit4 = 6;
+  required sns_elmyra_filter_limit limit5 = 7;
+}
+
