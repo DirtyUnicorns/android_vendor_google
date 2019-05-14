@@ -1,0 +1,59 @@
+// @file sns_gba.proto
+//
+// API for Generic Bus Access driver.
+//
+// Copyright (c) 2018 Google, Inc. All Rights Reserved.
+
+syntax = "proto2";
+import "nanopb.proto";
+
+enum sns_gba_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_GBA_MSGID_REQUEST                         = 601;
+  SNS_GBA_MSGID_RESPONSE                        = 1101;
+}
+
+enum sns_gba_bus_type {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_GBA_BUS_TYPE_I2C                          = 0;
+  SNS_GBA_BUS_TYPE_SPI                          = 1;
+  SNS_GBA_BUS_TYPE_UART                         = 2;
+  SNS_GBA_BUS_TYPE_I3C                          = 3;
+  SNS_GBA_BUS_TYPE_INVALID                      = 4;
+}
+
+enum sns_gba_response_error {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_GBA_RESPONSE_ERROR_NONE                   = 0;
+  SNS_GBA_RESPONSE_ERROR_REQUEST_DECODE_FAILURE = 1;
+  SNS_GBA_RESPONSE_ERROR_INVALID_PARAMETER      = 2;
+  SNS_GBA_RESPONSE_ERROR_BUS_TRANSFER_FAILURE   = 3;
+}
+
+message sns_gba_request {
+  message access {
+    required uint32 bytes_to_write              = 1;
+    required uint32 bytes_to_read               = 2;
+    required bytes  write_buffer                = 3;
+  }
+
+  required uint32           bus_instance        = 1;
+  required sns_gba_bus_type bus_type            = 2;
+  required uint32           bus_speed           = 3;
+  required uint32           slave_address       = 4;
+  repeated access           access_list         = 5;
+}
+
+message sns_gba_response {
+
+  message result {
+    required sns_gba_response_error error       = 1;
+    optional bytes                  read_buffer = 2;
+  }
+
+  required sns_gba_response_error error         = 1;
+  repeated result                 result_list   = 2;
+}

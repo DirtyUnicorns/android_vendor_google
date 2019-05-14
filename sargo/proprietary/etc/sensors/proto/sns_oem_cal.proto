@@ -1,0 +1,10 @@
+syntax = "proto2";
+import "nanopb.proto";
+
+enum sns_oem_cal_msgid {
+  option (nanopb_enumopt).long_names = false;
+  SNS_OEM_CAL_MSGID_REQ  =  610;
+  SNS_OEM_CAL_MSGID_RESP = 1110;
+}
+
+// Both messages have null payloads.
