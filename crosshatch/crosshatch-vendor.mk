@@ -131,7 +131,6 @@ PRODUCT_COPY_FILES := \
     vendor/google/crosshatch/proprietary/etc/permissions/lpa.xml:system/etc/permissions/lpa.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/privapp-permissions-bluecross.xml:system/etc/permissions/privapp-permissions-bluecross.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/google/crosshatch/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/UimService.xml:system/etc/permissions/UimService.xml \
@@ -302,4 +301,5 @@ PRODUCT_COPY_FILES := \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.verizon.llkagent.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.llkagent.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.verizon.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.services.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/obdm_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/obdm_permissions.xml \
+    vendor/google/crosshatch/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vzw_mvs_permissions.xml
