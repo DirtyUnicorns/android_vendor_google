@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
     VerizonUnifiedSettings
 
 # Blob(s) necessary for Crosshatch hardware
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/bin/bufferhubd:system/bin/bufferhubd \
     vendor/google/crosshatch/proprietary/bin/icm:system/bin/icm \
     vendor/google/crosshatch/proprietary/bin/performanced:system/bin/performanced \
@@ -292,7 +292,7 @@ PRODUCT_COPY_FILES := \
     vendor/google/crosshatch/proprietary/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so:system/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
 
 # Blob(s) necessary for Crosshatch product.img
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/product/etc/cne/andsfCne.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/cne/andsfCne.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.connmo.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/com.android.vzwomatrigger.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.vzwomatrigger.xml \
@@ -303,3 +303,17 @@ PRODUCT_COPY_FILES := \
     vendor/google/crosshatch/proprietary/product/etc/permissions/obdm_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/obdm_permissions.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vzw_mvs_permissions.xml
+
+
+proprietary_lib64_files := \
+    $(wildcard vendor/google/crosshatch/proprietary/lib64/*.so)
+
+proprietary_lib_files := \
+    $(wildcard vendor/google/crosshatch/proprietary/lib/*.so)
+
+copy_lib64_files := $(foreach f, $(proprietary_lib64_files), $(call copy-one-file, $(f), system/lib64))
+copy_lib_files := $(foreach f, $(proprietary_lib_files), $(call copy-one-file, $(f), system/lib))
+
+PRODUCT_COPY_FILES += \
+     $(copy_lib64_files) \
+     $(copy_lib_files)
