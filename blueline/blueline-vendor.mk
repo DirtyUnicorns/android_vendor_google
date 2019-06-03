@@ -145,6 +145,7 @@ PRODUCT_COPY_FILES := \
     vendor/google/blueline/proprietary/etc/permissions/UimService.xml:system/etc/permissions/UimService.xml \
     vendor/google/blueline/proprietary/etc/permissions/vzw_mvs_permissions.xml:system/etc/permissions/vzw_mvs_permissions.xml \
     vendor/google/blueline/proprietary/etc/scone/country_border.leveldb:system/etc/scone/country_border.leveldb \
+    vendor/google/blueline/proprietary/etc/sysconfig/pixel_2018_exclusive.xml:system/etc/sysconfig/pixel_2018_exclusive.xml \
     vendor/google/blueline/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/google/blueline/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/google/blueline/proprietary/framework/LowPowerMonitorDeviceInterface.jar:system/framework/LowPowerMonitorDeviceInterface.jar \
