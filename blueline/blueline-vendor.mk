@@ -252,7 +252,6 @@ PRODUCT_COPY_FILES := \
     vendor/google/blueline/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/google/blueline/proprietary/lib64/liblistenjni.so:system/lib64/liblistenjni.so \
     vendor/google/blueline/proprietary/lib64/liblistensoundmodel2.so:system/lib64/liblistensoundmodel2.so \
-    vendor/google/blueline/proprietary/lib64/liblpmdeviceutils.so:system/lib64/liblpmdeviceutils.so \
     vendor/google/blueline/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
     vendor/google/blueline/proprietary/lib64/libminui.so:system/lib64/libminui.so \
     vendor/google/blueline/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
@@ -266,7 +265,6 @@ PRODUCT_COPY_FILES := \
     vendor/google/blueline/proprietary/lib64/libsecureuisvc_jni.so:system/lib64/libsecureuisvc_jni.so \
     vendor/google/blueline/proprietary/lib64/libsecureui_svcsock_system.so:system/lib64/libsecureui_svcsock_system.so \
     vendor/google/blueline/proprietary/lib64/libsensorslog.so:system/lib64/libsensorslog.so \
-    vendor/google/blueline/proprietary/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so \
     vendor/google/blueline/proprietary/lib64/libsmcinvokecred.so:system/lib64/libsmcinvokecred.so \
     vendor/google/blueline/proprietary/lib64/libsns_low_lat_stream_stub.so:system/lib64/libsns_low_lat_stream_stub.so \
     vendor/google/blueline/proprietary/lib64/libtzcom.so:system/lib64/libtzcom.so \
