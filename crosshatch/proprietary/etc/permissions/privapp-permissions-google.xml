@@ -471,8 +471,4 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.SUSPEND_APPS"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
-
-    <privapp-permissions package="com.google.android.apps.dreamliner">
-        <permission name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
-    </privapp-permissions>
 </permissions>
