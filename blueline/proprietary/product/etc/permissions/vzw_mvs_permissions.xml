@@ -24,5 +24,4 @@
         <deny-permission name="android.permission.UPDATE_APP_OPS_STATS"/>
         <deny-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
-
 </permissions>
