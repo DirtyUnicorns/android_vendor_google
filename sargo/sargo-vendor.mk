@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-# http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,191 +12,97 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Prebuilt system apps
+PRODUCT_PACKAGES += \
+    atfwd \
+    datastatusnotification \
+    embms \
+    ims \
+    PresencePolling \
+    QAS_DVC_MSP \
+    QAS_DVC_MSP_VZW \
+    QtiTelephonyService \
+    RcsService \
+    uceShimService \
+    vzw_msdc_api
+
+# Prebuilt system privileged apps
+PRODUCT_PACKAGES += \
+    CNEService \
+    qcrilmsgtunnel
+
+# Prebuilt system jars
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    com.qualcomm.qti.uceservice-V2.0-java \
+    embmslibrary \
+    qcrilhook \
+    QtiTelephonyServicelibrary \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.hardware.data.latency-V1.0-java \
+    vendor.qti.hardware.soter-V1.0-java \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.voiceprint-V1.0-java
+
 PRODUCT_COPY_FILES += \
-    vendor/google/sargo/proprietary/bin/icm:system/bin/icm \
-    vendor/google/sargo/proprietary/bin/move_time_data.sh:system/bin/move_time_data.sh \
     vendor/google/sargo/proprietary/bin/smcinvoked:system/bin/smcinvoked \
-    vendor/google/sargo/proprietary/bin/vendor_cmd_tool:system/bin/vendor_cmd_tool \
-    vendor/google/sargo/proprietary/etc/ambient/matcher_tah.leveldb:system/etc/ambient/matcher_tah.leveldb \
     vendor/google/sargo/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
-    vendor/google/sargo/proprietary/etc/felica/common.cfg:system/etc/felica/common.cfg \
-    vendor/google/sargo/proprietary/etc/felica/mfm.cfg:system/etc/felica/mfm.cfg \
-    vendor/google/sargo/proprietary/etc/felica/mfs.cfg:system/etc/felica/mfs.cfg \
-    vendor/google/sargo/proprietary/etc/firmware/music_detector.descriptor:system/etc/firmware/music_detector.descriptor \
-    vendor/google/sargo/proprietary/etc/firmware/music_detector.sound_model:system/etc/firmware/music_detector.sound_model \
-    vendor/google/sargo/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
-    vendor/google/sargo/proprietary/etc/permissions/UimService.xml:system/etc/permissions/UimService.xml \
-    vendor/google/sargo/proprietary/etc/permissions/android.hardware.sensor.assist.xml:system/etc/permissions/android.hardware.sensor.assist.xml \
-    vendor/google/sargo/proprietary/etc/permissions/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml \
     vendor/google/sargo/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:system/etc/permissions/com.android.sdm.plugins.connmo.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.android.sdm.plugins.sprintdm.xml:system/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.android.vzwomatrigger.xml:system/etc/permissions/com.android.vzwomatrigger.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.customermobile.preload.vzw.xml:system/etc/permissions/com.customermobile.preload.vzw.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.google.android.camera.experimental2018.xml:system/etc/permissions/com.google.android.camera.experimental2018.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.google.android.factoryota.xml:system/etc/permissions/com.google.android.factoryota.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.google.android.hardwareinfo.xml:system/etc/permissions/com.google.android.hardwareinfo.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.google.modemservice.xml:system/etc/permissions/com.google.modemservice.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.google.omadm.trigger.xml:system/etc/permissions/com.google.omadm.trigger.xml \
+    vendor/google/sargo/proprietary/etc/permissions/com.qualcomm.ltebc.xml:system/etc/permissions/com.qualcomm.ltebc.xml \
+    vendor/google/sargo/proprietary/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml:system/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml \
     vendor/google/sargo/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/etc/permissions/com.qualcomm.qti.imscmservice.xml \
+    vendor/google/sargo/proprietary/etc/permissions/com.quicinc.cne.CNEService.xml:system/etc/permissions/com.quicinc.cne.CNEService.xml \
     vendor/google/sargo/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.verizon.apn.xml:system/etc/permissions/com.verizon.apn.xml \
     vendor/google/sargo/proprietary/etc/permissions/com.verizon.embms.xml:system/etc/permissions/com.verizon.embms.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.verizon.llkagent.xml:system/etc/permissions/com.verizon.llkagent.xml \
     vendor/google/sargo/proprietary/etc/permissions/com.verizon.provider.xml:system/etc/permissions/com.verizon.provider.xml \
-    vendor/google/sargo/proprietary/etc/permissions/com.verizon.services.xml:system/etc/permissions/com.verizon.services.xml \
     vendor/google/sargo/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
-    vendor/google/sargo/proprietary/etc/permissions/features-verizon.xml:system/etc/permissions/features-verizon.xml \
-    vendor/google/sargo/proprietary/etc/permissions/lpa.xml:system/etc/permissions/lpa.xml \
-    vendor/google/sargo/proprietary/etc/permissions/obdm_permissions.xml:system/etc/permissions/obdm_permissions.xml \
-    vendor/google/sargo/proprietary/etc/permissions/privapp-permissions-bonito.xml:system/etc/permissions/privapp-permissions-bonito.xml \
+    vendor/google/sargo/proprietary/etc/permissions/LteDirectDiscovery.xml:system/etc/permissions/LteDirectDiscovery.xml \
     vendor/google/sargo/proprietary/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
+    vendor/google/sargo/proprietary/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml \
     vendor/google/sargo/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/google/sargo/proprietary/etc/permissions/radioconfig.xml:system/etc/permissions/radioconfig.xml \
+    vendor/google/sargo/proprietary/etc/permissions/radioconfiginterface.xml:system/etc/permissions/radioconfiginterface.xml \
     vendor/google/sargo/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/google/sargo/proprietary/etc/permissions/vzw_mvs_permissions.xml:system/etc/permissions/vzw_mvs_permissions.xml \
-    vendor/google/sargo/proprietary/etc/scone/country_border.leveldb:system/etc/scone/country_border.leveldb \
-    vendor/google/sargo/proprietary/etc/sensors/proto/descriptor.proto:system/etc/sensors/proto/descriptor.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/nanopb.proto:system/etc/sensors/proto/nanopb.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/qti_gravity.proto:system/etc/sensors/proto/qti_gravity.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_accel.proto:system/etc/sensors/proto/sns_accel.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_accel_cal.proto:system/etc/sensors/proto/sns_accel_cal.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_ambient_light.proto:system/etc/sensors/proto/sns_ambient_light.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_ambient_temperature.proto:system/etc/sensors/proto/sns_ambient_temperature.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_amd.proto:system/etc/sensors/proto/sns_amd.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_aont.proto:system/etc/sensors/proto/sns_aont.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_async_com_port.proto:system/etc/sensors/proto/sns_async_com_port.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_basic_gestures.proto:system/etc/sensors/proto/sns_basic_gestures.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_bring_to_ear.proto:system/etc/sensors/proto/sns_bring_to_ear.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_cal.proto:system/etc/sensors/proto/sns_cal.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_ccd_ttw.proto:system/etc/sensors/proto/sns_ccd_ttw.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_ccd_walk.proto:system/etc/sensors/proto/sns_ccd_walk.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_client.proto:system/etc/sensors/proto/sns_client.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_cmc.proto:system/etc/sensors/proto/sns_cmc.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_cmd.proto:system/etc/sensors/proto/sns_cmd.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_da_test.proto:system/etc/sensors/proto/sns_da_test.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_dae.proto:system/etc/sensors/proto/sns_dae.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_data_acquisition_engine.proto:system/etc/sensors/proto/sns_data_acquisition_engine.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_device_mode.proto:system/etc/sensors/proto/sns_device_mode.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_device_orient.proto:system/etc/sensors/proto/sns_device_orient.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_diag.proto:system/etc/sensors/proto/sns_diag.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_diag_sensor.proto:system/etc/sensors/proto/sns_diag_sensor.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_distance_bound.proto:system/etc/sensors/proto/sns_distance_bound.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_dpc.proto:system/etc/sensors/proto/sns_dpc.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_elmyra.proto:system/etc/sensors/proto/sns_elmyra.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_ext_svc.proto:system/etc/sensors/proto/sns_ext_svc.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_facing.proto:system/etc/sensors/proto/sns_facing.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_fmv.proto:system/etc/sensors/proto/sns_fmv.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_fw.proto:system/etc/sensors/proto/sns_fw.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_game_rv.proto:system/etc/sensors/proto/sns_game_rv.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_gba.proto:system/etc/sensors/proto/sns_gba.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_geomag_rv.proto:system/etc/sensors/proto/sns_geomag_rv.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_gravity.proto:system/etc/sensors/proto/sns_gravity.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_gyro.proto:system/etc/sensors/proto/sns_gyro.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_gyro_cal.proto:system/etc/sensors/proto/sns_gyro_cal.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_gyro_rot_matrix.proto:system/etc/sensors/proto/sns_gyro_rot_matrix.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_hall.proto:system/etc/sensors/proto/sns_hall.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_heart_beat.proto:system/etc/sensors/proto/sns_heart_beat.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_heart_rate.proto:system/etc/sensors/proto/sns_heart_rate.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_humidity.proto:system/etc/sensors/proto/sns_humidity.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_interrupt.proto:system/etc/sensors/proto/sns_interrupt.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_mag.proto:system/etc/sensors/proto/sns_mag.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_mag_cal.proto:system/etc/sensors/proto/sns_mag_cal.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_magcc.proto:system/etc/sensors/proto/sns_magcc.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_mcmd.proto:system/etc/sensors/proto/sns_mcmd.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_motion_detect.proto:system/etc/sensors/proto/sns_motion_detect.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_multishake.proto:system/etc/sensors/proto/sns_multishake.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_oem1.proto:system/etc/sensors/proto/sns_oem1.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_oem_cal.proto:system/etc/sensors/proto/sns_oem_cal.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_oem_register_rw.proto:system/etc/sensors/proto/sns_oem_register_rw.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_offbody_detect.proto:system/etc/sensors/proto/sns_offbody_detect.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_pedometer.proto:system/etc/sensors/proto/sns_pedometer.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_pedometer_wrist.proto:system/etc/sensors/proto/sns_pedometer_wrist.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_physical_sensor_test.proto:system/etc/sensors/proto/sns_physical_sensor_test.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_pose_6dof.proto:system/etc/sensors/proto/sns_pose_6dof.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_ppg.proto:system/etc/sensors/proto/sns_ppg.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_pressure.proto:system/etc/sensors/proto/sns_pressure.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_proximity.proto:system/etc/sensors/proto/sns_proximity.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_psmd.proto:system/etc/sensors/proto/sns_psmd.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_registry.proto:system/etc/sensors/proto/sns_registry.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_remote_proc_state.proto:system/etc/sensors/proto/sns_remote_proc_state.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_resampler.proto:system/etc/sensors/proto/sns_resampler.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_rgb.proto:system/etc/sensors/proto/sns_rgb.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_rmd.proto:system/etc/sensors/proto/sns_rmd.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_rotv.proto:system/etc/sensors/proto/sns_rotv.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_sar.proto:system/etc/sensors/proto/sns_sar.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_sensor_temperature.proto:system/etc/sensors/proto/sns_sensor_temperature.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_sig_motion.proto:system/etc/sensors/proto/sns_sig_motion.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_signal_sensor.proto:system/etc/sensors/proto/sns_signal_sensor.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_sim.proto:system/etc/sensors/proto/sns_sim.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_sim_legacy.proto:system/etc/sensors/proto/sns_sim_legacy.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_std.proto:system/etc/sensors/proto/sns_std.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_std_event_gated_sensor.proto:system/etc/sensors/proto/sns_std_event_gated_sensor.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_std_sensor.proto:system/etc/sensors/proto/sns_std_sensor.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_std_type.proto:system/etc/sensors/proto/sns_std_type.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_suid.proto:system/etc/sensors/proto/sns_suid.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_thermopile.proto:system/etc/sensors/proto/sns_thermopile.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_threshold.proto:system/etc/sensors/proto/sns_threshold.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_tilt.proto:system/etc/sensors/proto/sns_tilt.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_tilt_to_wake.proto:system/etc/sensors/proto/sns_tilt_to_wake.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_timer.proto:system/etc/sensors/proto/sns_timer.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_ultra_violet.proto:system/etc/sensors/proto/sns_ultra_violet.proto \
-    vendor/google/sargo/proprietary/etc/sensors/proto/sns_wrist_tilt_gesture.proto:system/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
-    vendor/google/sargo/proprietary/etc/sysconfig/pixel_2019_midyear_exclusive.xml:system/etc/sysconfig/pixel_2019_midyear_exclusive.xml \
-    vendor/google/sargo/proprietary/etc/sysconfig/pixel_experience_2019_midyear.xml:system/etc/sysconfig/pixel_experience_2019_midyear.xml \
-    vendor/google/sargo/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
-    vendor/google/sargo/proprietary/framework/LowPowerMonitorDeviceInterface.jar:system/framework/LowPowerMonitorDeviceInterface.jar \
-    vendor/google/sargo/proprietary/framework/LowPowerMonitorDeviceRpm.jar:system/framework/LowPowerMonitorDeviceRpm.jar \
-    vendor/google/sargo/proprietary/framework/PowerAnomalyDataModemInterface.jar:system/framework/PowerAnomalyDataModemInterface.jar \
-    vendor/google/sargo/proprietary/framework/PowerAnomalyQcril.jar:system/framework/PowerAnomalyQcril.jar \
+    vendor/google/sargo/proprietary/etc/permissions/uimremoteclient.xml:system/etc/permissions/uimremoteclient.xml \
+    vendor/google/sargo/proprietary/etc/permissions/uimremoteserver.xml:system/etc/permissions/uimremoteserver.xml \
+    vendor/google/sargo/proprietary/etc/permissions/UimService.xml:system/etc/permissions/UimService.xml \
+    vendor/google/sargo/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
+    vendor/google/sargo/proprietary/lib/vndk-29/libprotobuf-cpp-full.so:system/lib/vndk-29/libprotobuf-cpp-full.so \
     vendor/google/sargo/proprietary/lib/android.hardware.radio.config@1.0.so:system/lib/android.hardware.radio.config@1.0.so \
     vendor/google/sargo/proprietary/lib/android.hardware.radio.deprecated@1.0.so:system/lib/android.hardware.radio.deprecated@1.0.so \
     vendor/google/sargo/proprietary/lib/android.hardware.radio@1.0.so:system/lib/android.hardware.radio@1.0.so \
     vendor/google/sargo/proprietary/lib/android.hardware.radio@1.1.so:system/lib/android.hardware.radio@1.1.so \
     vendor/google/sargo/proprietary/lib/android.hardware.radio@1.2.so:system/lib/android.hardware.radio@1.2.so \
     vendor/google/sargo/proprietary/lib/android.hardware.secure_element@1.0.so:system/lib/android.hardware.secure_element@1.0.so \
-    vendor/google/sargo/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/google/sargo/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/google/sargo/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/google/sargo/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
-    vendor/google/sargo/proprietary/lib/dsp/elmyra.so:system/lib/dsp/elmyra.so \
+    vendor/google/sargo/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
+    vendor/google/sargo/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
+    vendor/google/sargo/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
+    vendor/google/sargo/proprietary/lib/libGPQTEEC_system.so:system/lib/libGPQTEEC_system.so \
+    vendor/google/sargo/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
+    vendor/google/sargo/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
+    vendor/google/sargo/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/google/sargo/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/google/sargo/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
     vendor/google/sargo/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/google/sargo/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
-    vendor/google/sargo/proprietary/lib/libGPQTEEC_system.so:system/lib/libGPQTEEC_system.so \
-    vendor/google/sargo/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
-    vendor/google/sargo/proprietary/lib/libOpenCL_system.so:system/lib/libOpenCL_system.so \
-    vendor/google/sargo/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
-    vendor/google/sargo/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
-    vendor/google/sargo/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
-    vendor/google/sargo/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/google/sargo/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
-    vendor/google/sargo/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-    vendor/google/sargo/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
-    vendor/google/sargo/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/google/sargo/proprietary/lib/liblistenjni.so:system/lib/liblistenjni.so \
-    vendor/google/sargo/proprietary/lib/liblistensoundmodel2.so:system/lib/liblistensoundmodel2.so \
     vendor/google/sargo/proprietary/lib/liblogwrap.so:system/lib/liblogwrap.so \
     vendor/google/sargo/proprietary/lib/libmdsprpc_system.so:system/lib/libmdsprpc_system.so \
     vendor/google/sargo/proprietary/lib/libminui.so:system/lib/libminui.so \
-    vendor/google/sargo/proprietary/lib/libprotobuf-cpp-full-rtti.so:system/lib/libprotobuf-cpp-full-rtti.so \
+    vendor/google/sargo/proprietary/lib/libnl.so:system/lib/libnl.so\
+    vendor/google/sargo/proprietary/lib/libOpenCL_system.so:system/lib/libOpenCL_system.so \
     vendor/google/sargo/proprietary/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so \
     vendor/google/sargo/proprietary/lib/libqcbor_system.so:system/lib/libqcbor_system.so \
-    vendor/google/sargo/proprietary/lib/libqct_resampler.so:system/lib/libqct_resampler.so \
+    vendor/google/sargo/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/google/sargo/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/google/sargo/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/google/sargo/proprietary/lib/libsdsprpc_system.so:system/lib/libsdsprpc_system.so \
     vendor/google/sargo/proprietary/lib/libsecureui_svcsock_system.so:system/lib/libsecureui_svcsock_system.so \
-    vendor/google/sargo/proprietary/lib/libsecureuisvc_jni.so:system/lib/libsecureuisvc_jni.so \
-    vendor/google/sargo/proprietary/lib/libsensorslog.so:system/lib/libsensorslog.so \
+    vendor/google/sargo/proprietary/lib/libseccam.so:system/lib/libseccam.so \
     vendor/google/sargo/proprietary/lib/libsmcinvokecred.so:system/lib/libsmcinvokecred.so \
-    vendor/google/sargo/proprietary/lib/libsns_device_mode_stub.so:system/lib/libsns_device_mode_stub.so \
-    vendor/google/sargo/proprietary/lib/libsns_fastRPC_util.so:system/lib/libsns_fastRPC_util.so \
-    vendor/google/sargo/proprietary/lib/libsns_low_lat_stream_stub.so:system/lib/libsns_low_lat_stream_stub.so \
+    vendor/google/sargo/proprietary/lib/libsns_low_lat_stream_skel.so:system/lib/libsns_low_lat_stream_skel.so \
     vendor/google/sargo/proprietary/lib/libtzcom.so:system/lib/libtzcom.so \
-    vendor/google/sargo/proprietary/lib/rfsa/adsp/libsns_device_mode_skel.so:system/lib/rfsa/adsp/libsns_device_mode_skel.so \
-    vendor/google/sargo/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/google/sargo/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
     vendor/google/sargo/proprietary/lib/vendor.display.color@1.2.so:system/lib/vendor.display.color@1.2.so \
@@ -205,18 +111,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/sargo/proprietary/lib/vendor.display.config@1.2.so:system/lib/vendor.display.config@1.2.so \
     vendor/google/sargo/proprietary/lib/vendor.display.config@1.3.so:system/lib/vendor.display.config@1.3.so \
     vendor/google/sargo/proprietary/lib/vendor.display.config@1.4.so:system/lib/vendor.display.config@1.4.so \
-    vendor/google/sargo/proprietary/lib/vendor.display.config@1.5.so:system/lib/vendor.display.config@1.5.so \
     vendor/google/sargo/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.alarm@1.0.so:system/lib/vendor.qti.hardware.alarm@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.biometrics.face@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.biometrics.face@1.0-adapter-helper.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.biometrics.face@1.0.so:system/lib/vendor.qti.hardware.biometrics.face@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.fingerprint@1.0.so:system/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.am@1.0.so:system/lib/vendor.qti.hardware.radio.am@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.ims@1.0.so:system/lib/vendor.qti.hardware.radio.ims@1.0.so \
@@ -224,7 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.ims@1.2.so:system/lib/vendor.qti.hardware.radio.ims@1.2.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.ims@1.3.so:system/lib/vendor.qti.hardware.radio.ims@1.3.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.ims@1.4.so:system/lib/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.lpa@1.0.so:system/lib/vendor.qti.hardware.radio.lpa@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:system/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:system/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:system/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
@@ -232,63 +131,49 @@ PRODUCT_COPY_FILES += \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.uim@1.1.so:system/lib/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:system/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:system/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:system/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
+    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.scve.panorama@1.0.so:system/lib/vendor.qti.hardware.scve.panorama@1.0.so \
+    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.seccam@1.0.so:system/lib/vendor.qti.hardware.seccam@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.soter@1.0.so:system/lib/vendor.qti.hardware.soter@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.vpp@1.2.so:system/lib/vendor.qti.hardware.vpp@1.2.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:system/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so:system/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.ims.callinfo@1.0.so:system/lib/vendor.qti.ims.callinfo@1.0.so \
     vendor/google/sargo/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
-    vendor/google/sargo/proprietary/lib/vendor.qti.voiceprint@1.0.so:system/lib/vendor.qti.voiceprint@1.0.so \
-    vendor/google/sargo/proprietary/lib/vndk-28/libprotobuf-cpp-full.so:system/lib/vndk-28/libprotobuf-cpp-full.so \
+    vendor/google/sargo/proprietary/lib64/vndk-29/libprotobuf-cpp-full.so:system/lib64/vndk-29/libprotobuf-cpp-full.so \
     vendor/google/sargo/proprietary/lib64/android.hardware.radio.config@1.0.so:system/lib64/android.hardware.radio.config@1.0.so \
     vendor/google/sargo/proprietary/lib64/android.hardware.radio.deprecated@1.0.so:system/lib64/android.hardware.radio.deprecated@1.0.so \
     vendor/google/sargo/proprietary/lib64/android.hardware.radio@1.0.so:system/lib64/android.hardware.radio@1.0.so \
     vendor/google/sargo/proprietary/lib64/android.hardware.radio@1.1.so:system/lib64/android.hardware.radio@1.1.so \
     vendor/google/sargo/proprietary/lib64/android.hardware.radio@1.2.so:system/lib64/android.hardware.radio@1.2.so \
     vendor/google/sargo/proprietary/lib64/android.hardware.secure_element@1.0.so:system/lib64/android.hardware.secure_element@1.0.so \
-    vendor/google/sargo/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/google/sargo/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/google/sargo/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib64/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/google/sargo/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
+    vendor/google/sargo/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
+    vendor/google/sargo/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
+    vendor/google/sargo/proprietary/lib64/libDiagService.so:system/lib64/libDiagService.so \
+    vendor/google/sargo/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
+    vendor/google/sargo/proprietary/lib64/libGPQTEEC_system.so:system/lib64/libGPQTEEC_system.so \
+    vendor/google/sargo/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
+    vendor/google/sargo/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
+    vendor/google/sargo/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/google/sargo/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/google/sargo/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/google/sargo/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/google/sargo/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
-    vendor/google/sargo/proprietary/lib64/libGPQTEEC_system.so:system/lib64/libGPQTEEC_system.so \
-    vendor/google/sargo/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
-    vendor/google/sargo/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
-    vendor/google/sargo/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
-    vendor/google/sargo/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
-    vendor/google/sargo/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
-    vendor/google/sargo/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
-    vendor/google/sargo/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
-    vendor/google/sargo/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
-    vendor/google/sargo/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/google/sargo/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/google/sargo/proprietary/lib64/liblistenjni.so:system/lib64/liblistenjni.so \
-    vendor/google/sargo/proprietary/lib64/liblistensoundmodel2.so:system/lib64/liblistensoundmodel2.so \
     vendor/google/sargo/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
     vendor/google/sargo/proprietary/lib64/libminui.so:system/lib64/libminui.so \
-    vendor/google/sargo/proprietary/lib64/libprotobuf-cpp-full-rtti.so:system/lib64/libprotobuf-cpp-full-rtti.so \
+    vendor/google/sargo/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
     vendor/google/sargo/proprietary/lib64/libprotobuf-cpp-full.so:system/lib64/libprotobuf-cpp-full.so \
     vendor/google/sargo/proprietary/lib64/libqcbor_system.so:system/lib64/libqcbor_system.so \
+    vendor/google/sargo/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/google/sargo/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/google/sargo/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/google/sargo/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
     vendor/google/sargo/proprietary/lib64/libsecureui_svcsock_system.so:system/lib64/libsecureui_svcsock_system.so \
-    vendor/google/sargo/proprietary/lib64/libsecureuisvc_jni.so:system/lib64/libsecureuisvc_jni.so \
-    vendor/google/sargo/proprietary/lib64/libsensorslog.so:system/lib64/libsensorslog.so \
+    vendor/google/sargo/proprietary/lib64/libseccam.so:system/lib64/libseccam.so \
     vendor/google/sargo/proprietary/lib64/libsmcinvokecred.so:system/lib64/libsmcinvokecred.so \
-    vendor/google/sargo/proprietary/lib64/libsns_device_mode_stub.so:system/lib64/libsns_device_mode_stub.so \
-    vendor/google/sargo/proprietary/lib64/libsns_fastRPC_util.so:system/lib64/libsns_fastRPC_util.so \
-    vendor/google/sargo/proprietary/lib64/libsns_low_lat_stream_stub.so:system/lib64/libsns_low_lat_stream_stub.so \
     vendor/google/sargo/proprietary/lib64/libtzcom.so:system/lib64/libtzcom.so \
     vendor/google/sargo/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
@@ -298,18 +183,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/sargo/proprietary/lib64/vendor.display.config@1.2.so:system/lib64/vendor.display.config@1.2.so \
     vendor/google/sargo/proprietary/lib64/vendor.display.config@1.3.so:system/lib64/vendor.display.config@1.3.so \
     vendor/google/sargo/proprietary/lib64/vendor.display.config@1.4.so:system/lib64/vendor.display.config@1.4.so \
-    vendor/google/sargo/proprietary/lib64/vendor.display.config@1.5.so:system/lib64/vendor.display.config@1.5.so \
     vendor/google/sargo/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.alarm@1.0.so:system/lib64/vendor.qti.hardware.alarm@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.biometrics.face@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.biometrics.face@1.0-adapter-helper.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.biometrics.face@1.0.so:system/lib64/vendor.qti.hardware.biometrics.face@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.am@1.0.so:system/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.ims@1.0.so:system/lib64/vendor.qti.hardware.radio.ims@1.0.so \
@@ -317,7 +196,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.ims@1.2.so:system/lib64/vendor.qti.hardware.radio.ims@1.2.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.ims@1.3.so:system/lib64/vendor.qti.hardware.radio.ims@1.3.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.ims@1.4.so:system/lib64/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.lpa@1.0.so:system/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:system/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:system/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:system/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
@@ -325,27 +203,21 @@ PRODUCT_COPY_FILES += \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.uim@1.1.so:system/lib64/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:system/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:system/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:system/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
+    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.scve.panorama@1.0.so:system/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
+    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.seccam@1.0.so:system/lib64/vendor.qti.hardware.seccam@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.soter@1.0.so:system/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.vpp@1.2.so:system/lib64/vendor.qti.hardware.vpp@1.2.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:system/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:system/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so \
     vendor/google/sargo/proprietary/lib64/vendor.qti.ims.callinfo@1.0.so:system/lib64/vendor.qti.ims.callinfo@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vendor.qti.voiceprint@1.0.so:system/lib64/vendor.qti.voiceprint@1.0.so \
-    vendor/google/sargo/proprietary/lib64/vndk-28/libprotobuf-cpp-full.so:system/lib64/vndk-28/libprotobuf-cpp-full.so \
-    vendor/google/sargo/proprietary/priv-app/EuiccGoogle/esim-full-v0.img:system/priv-app/EuiccGoogle/esim-full-v0.img \
-    vendor/google/sargo/proprietary/priv-app/EuiccGoogle/esim-v1.img:system/priv-app/EuiccGoogle/esim-v1.img \
-    vendor/google/sargo/proprietary/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so:system/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
+    vendor/google/sargo/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
 
+# Prebuilt product apps
 PRODUCT_PACKAGES += \
-    EaselServicePrebuilt \
+    arcore \
+    com.qualcomm.qti.services.secureui \
     MobileFeliCaClient \
     MobileFeliCaMenuApp \
     MobileFeliCaMenuMainApp \
@@ -353,62 +225,159 @@ PRODUCT_PACKAGES += \
     MobileFeliCaWebPlugin \
     MobileFeliCaWebPluginBoot \
     Ornament \
-    QtiTelephonyService \
     SSRestartDetector \
     Tycho \
-    VZWAPNLib \
-    arcore \
-    com.qualcomm.qti.services.secureui \
-    datastatusnotification \
-    embms \
-    ims \
-    remotesimlockservice \
-    smcinvokepkgmgr \
-    uceShimService \
-    uimlpaservice \
+    VZWAPNLib
+
+# Prebuilt product privileged apps
+PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
     AppDirectedSMSService \
-    CNEService \
     CarrierServices \
     CarrierSetup \
     ConnMO \
     DCMO \
-    DMService \
     DiagMon \
+    DMService \
     EuiccGoogle \
+    EuiccSupportPixel \
     GCS \
+    GoogleANGLEPrebuilt \
+    grilservice \
     HardwareInfo \
     HotwordEnrollmentOKGoogleRT5514 \
     HotwordEnrollmentXGoogleRT5514 \
-    LLKAgent \
-    ModemService \
+    LLKAgent\
     MyVerizonServices \
     OBDM_Permissions \
+    obdm_stub \
     OemDmTrigger \
+    RilConfigService \
     SCONE \
     Showcase \
     SprintDM \
     SprintHM \
-    VerizonAuthDialog \
+    TetheringEntitlement \
+    TmobileGrsuPrebuilt \
     VzwOmaTrigger \
-    WfcActivation \
-    grilservice \
-    obdm_stub \
-    qcrilmsgtunnel \
-    QtiTelephonyServicelibrary \
-    VerizonUnifiedSettings \
-    com.google.android.camera.experimental2018 \
-    com.qualcomm.qti.uceservice-V2.0-java \
-    embmslibrary \
-    libhwinfo \
-    qcrilhook \
-    uimlpalibrary \
-    uimremotesimlocklibrary \
-    vendor.qti.hardware.alarm-V1.0-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
-    vendor.qti.hardware.fingerprint-V1.0-java \
-    vendor.qti.hardware.soter-V1.0-java \
-    vendor.qti.hardware.wigig.netperftuner-V1.0-java \
-    vendor.qti.hardware.wigig.supptunnel-V1.0-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.voiceprint-V1.0-java
+    WfcActivation
+
+# Prebuilt product jars
+PRODUCT_PACKAGES += \
+    libhwinfo
+
+PRODUCT_COPY_FILES += \
+    vendor/google/sargo/proprietary/product/etc/ambient/matcher_tah.leveldb:$(TARGET_COPY_OUT_PRODUCT)/etc/ambient/matcher_tah.leveldb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/airtel_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/airtel_in.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/att5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att5g_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/att_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/bell_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bell_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/bouygues_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bouygues_fr.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/carrier_list.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/carrier_list.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/cellcom_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cellcom_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/cht_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cht_tw.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/cricket5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cricket5g_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/cricket_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cricket_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/cspire_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cspire_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/default.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/default.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/docomo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/docomo_jp.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/ee_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ee_gb.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/fet_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fet_tw.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/fido_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fido_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/firstnetpacific_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/firstnetpacific_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/firstnet_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/firstnet_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/fi_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fi_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/fizz_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fizz_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/freedommobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/freedommobile_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/h3_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_gb.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/idea_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idea_in.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/idmobile_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idmobile_gb.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/kddi_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kddi_jp.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/koodo_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/koodo_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/luckymobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/luckymobile_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/o2_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2_de.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/o2postpaid_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2postpaid_gb.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/o2prepaid_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2prepaid_gb.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/optus_au.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/optus_au.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/orange_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/orange_es.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/orange_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/orange_fr.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/others.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/others.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/pcmobilebell_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/pcmobilebell_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/rakuten_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rakuten_jp.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/rjio_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rjio_in.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/rogers_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/rogers_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/sfr_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sfr_fr.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/singtel_sg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/singtel_sg.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/softbank_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/softbank_jp.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/solomobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/solomobile_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/sprint_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprint_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/sprintwholesale_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprintwholesale_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/starhub_sg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/starhub_sg.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/telekom_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_de.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/telstra_au.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telstra_au.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/telus_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telus_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/tmobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/twm_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/twm_tw.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/uscc_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uscc_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/verizon_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/verizon_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/videotron_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/videotron_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/virgin_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/virgin_ca.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/visible_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/visible_us.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/vodafone_au.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_au.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/vodafone_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_de.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/vodafone_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_es.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/vodafone_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_gb.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/vodafone_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_in.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/vodafone_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_it.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/vodafone_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/vodafone_nl.pb \
+    vendor/google/sargo/proprietary/product/etc/CarrierSettings/xfinity_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/xfinity_us.pb \
+    vendor/google/sargo/proprietary/product/etc/felica/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
+    vendor/google/sargo/proprietary/product/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
+    vendor/google/sargo/proprietary/product/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg \
+    vendor/google/sargo/proprietary/product/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.descriptor \
+    vendor/google/sargo/proprietary/product/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.sound_model \
+    vendor/google/sargo/proprietary/product/etc/permissions/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.omadm.service.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.connmo.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.android.sdm.plugins.dcmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.dcmo.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.android.sdm.plugins.sprintdm.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.android.vzwomatrigger.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.vzwomatrigger.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.customermobile.preload.vzw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.customermobile.preload.vzw.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.google.android.hardwareinfo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.hardwareinfo.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.google.omadm.trigger.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.omadm.trigger.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.verizon.apn.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.apn.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.verizon.llkagent.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.llkagent.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/com.verizon.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.services.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/features-verizon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/features-verizon.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/obdm_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/obdm_permissions.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/privapp-permissions-google-ps.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-ps.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/tmo_grsu_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/tmo_grsu_permissions.xml \
+    vendor/google/sargo/proprietary/product/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vzw_mvs_permissions.xml \
+    vendor/google/sargo/proprietary/product/etc/sysconfig/pixel_2018_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2018_exclusive.xml \
+    vendor/google/sargo/proprietary/product/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/qti_whitelist.xml \
+    vendor/google/sargo/proprietary/product/etc/sysconfig/tmo_grsu_sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/tmo_grsu_sysconfig.xml \
+    vendor/google/sargo/proprietary/product/etc/sysconfig/vzw_mvs_sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/vzw_mvs_sysconfig.xml \
+    vendor/google/sargo/proprietary/product/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/whitelist_com.android.omadm.service.xml \
+    vendor/google/sargo/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/google/sargo/proprietary/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so \
+    vendor/google/sargo/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
+    vendor/google/sargo/proprietary/product/lib/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureuisvc_jni.so \
+    vendor/google/sargo/proprietary/product/lib/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.google.wifi_ext@1.0.so \
+    vendor/google/sargo/proprietary/product/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/google/sargo/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
+    vendor/google/sargo/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    vendor/google/sargo/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
+    vendor/google/sargo/proprietary/product/lib64/libgdx.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgdx.so \
+    vendor/google/sargo/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
+    vendor/google/sargo/proprietary/product/lib64/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.google.wifi_ext@1.0.so \
+    vendor/google/sargo/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/google/sargo/proprietary/product/priv-app/EuiccGoogle/esim-full-v0.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccGoogle/esim-full-v0.img \
+    vendor/google/sargo/proprietary/product/priv-app/EuiccGoogle/esim-v1.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccGoogle/esim-v1.img \
+    vendor/google/sargo/proprietary/product/priv-app/EuiccSupportPixel/esim-full-v0.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccSupportPixel/esim-full-v0.img \
+    vendor/google/sargo/proprietary/product/priv-app/EuiccSupportPixel/esim-v1.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccSupportPixel/esim-v1.img \
+    vendor/google/sargo/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
+    vendor/google/sargo/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so \
+    vendor/google/sargo/proprietary/product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
