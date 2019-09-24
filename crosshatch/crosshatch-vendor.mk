@@ -16,7 +16,6 @@
 PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
     AppDirectedSMSService \
-    arcore \
     atfwd \
     CarrierServices \
     CarrierSettings \
@@ -49,7 +48,6 @@ PRODUCT_PACKAGES += \
     OBDM_Permissions \
     obdm_stub \
     OemDmTrigger \
-    Ornament \
     PresencePolling \
     QAS_DVC_MSP \
     QAS_DVC_MSP_VZW \
