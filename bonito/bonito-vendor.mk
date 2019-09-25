@@ -216,7 +216,6 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt product apps
 PRODUCT_PACKAGES += \
-    arcore \
     com.qualcomm.qti.services.secureui \
     MobileFeliCaClient \
     MobileFeliCaMenuApp \
@@ -224,7 +223,6 @@ PRODUCT_PACKAGES += \
     MobileFeliCaSettingApp \
     MobileFeliCaWebPlugin \
     MobileFeliCaWebPluginBoot \
-    Ornament \
     SSRestartDetector \
     Tycho \
     VZWAPNLib
