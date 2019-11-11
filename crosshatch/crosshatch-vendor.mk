@@ -338,6 +338,10 @@ PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/tmo_grsu_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/tmo_grsu_permissions.xml \
     vendor/google/crosshatch/proprietary/product/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vzw_mvs_permissions.xml \
+    vendor/google/crosshatch/proprietary/product/etc/res/images/charger/battery_fail.png:$(TARGET_COPY_OUT_PRODUCT)/etc/res/images/charger/battery_fail.png \
+    vendor/google/crosshatch/proprietary/product/etc/res/images/charger/battery_scale.png:$(TARGET_COPY_OUT_PRODUCT)/etc/res/images/charger/battery_scale.png \
+    vendor/google/crosshatch/proprietary/product/etc/res/images/charger/main_font.png:$(TARGET_COPY_OUT_PRODUCT)/etc/res/images/charger/main_font.png \
+    vendor/google/crosshatch/proprietary/product/etc/res/values/charger/animation.txt:$(TARGET_COPY_OUT_PRODUCT)/etc/res/values/charger/animation.txt \
     vendor/google/crosshatch/proprietary/product/etc/sysconfig/dreamliner.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dreamliner.xml \
     vendor/google/crosshatch/proprietary/product/etc/sysconfig/pixel_2018_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2018_exclusive.xml \
     vendor/google/crosshatch/proprietary/product/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/qti_whitelist.xml \
