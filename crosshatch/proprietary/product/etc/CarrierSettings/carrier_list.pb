@@ -159,8 +159,8 @@ NRJ MOBILE
 
 aliv_bs
 20809	208090021
-
-20809
+
+sfr_fr
 20809
 
 20810GID1=12
@@ -402,6 +402,10 @@ $
 
 iliad_it
 22250"F003
+#
+windtre99_it
+22288"
+0000000099
 
 windtre99_it
 22288"99
@@ -739,7 +743,7 @@ LYCAMOBILE
 h3_gb
 23494
 
-23594
+h3_gb
 23594
 -
 23801IMSI=2380101XXXXXXXX
@@ -808,6 +812,9 @@ $
 
 sky_gb
 24007"0C
+
+	gigsky_us
+24007"6F
 
 gamma_gb
 2400724007561
@@ -1009,8 +1016,8 @@ telekom_de
 
 vodafone_de
 26202
-
-26203
+
+eplus_de
 26203
  
 o2prepaid_de
@@ -1204,8 +1211,8 @@ telekom_de
 
 fido_ca
 302370"DD
-
-302370
+
+fido_ca
 302370
 
 freedommobile_ca
@@ -1325,8 +1332,9 @@ testing_us
 
 310020
 310020
-
-310026
+
+
+tmobile_us
 310026
 
 310028
@@ -1377,6 +1385,9 @@ $
 
 fi_us
 310120"A00184
+
+	sprint_us
+310120"FFFFFF
 
 fi_us
 310120
@@ -1464,8 +1475,8 @@ tmobile_us
 !
 redpockettmo_us
 310260"4201
-!
-310260GID1=534D
+
+	simple_us
 310260"534D
 
 metropcs_us
@@ -1475,10 +1486,10 @@ tmobile_us
 310260"7031
  
 tracfonetmo_us
-310260"ddff
+310260"DDFF
  
 tracfonetmo_us
-310260"deff
+310260"DEFF
 
 fi_us
 31026031026097
@@ -1493,9 +1504,39 @@ tmobile_us
 
 tmobile_us
 310270
+
+attmvnos_us
+310280"2AC9
+
+attmvnos_us
+310280"4102
+!
+redpocketatt_us
+310280"4201
+
+attmvnos_us
+310280"44FF
+
+attmvnos_us
+310280"49FF
 
 att5g_us
 310280"53FF
+!
+310410GID1=60FF
+310280"60FF
+
+attmvnos_us
+310280"62FF
+
+attmvnos_us
+310280"69FF
+ 
+tracfoneatt_us
+310280"DDFF
+ 
+tracfoneatt_us
+310280"DEFF
 
 att_us
 310280
@@ -1531,6 +1572,9 @@ tmobile_us
 
 310380GID1=50
 310380"50
+
+	gigsky_us
+310380"6F
 
 att_us
 310380
@@ -1552,9 +1596,6 @@ tmobile_us
 
 attmvnos_us
 310410"49FF
-
-attmvnos_us
-310410"50FF
 
 att5g_us
 310410"53FF
@@ -1833,8 +1874,8 @@ visible_us
 
 verizon_us
 311480
-
-311490
+
+	virgin_us
 311490
 2
 311500SPN=24-7 WIRELESS
@@ -1912,8 +1953,8 @@ MOSAIC RPT
 
 cellcom_us
 311850
-
-311870
+
+boost_us
 311870
 
 311910
@@ -1948,6 +1989,12 @@ $
 $
 sprintprepaid_us
 312530"000004
+
+fi_us
+312530"A00184
+
+	sprint_us
+312530"FFFFFF
 
 sprintwholesale_us
 312530
@@ -3572,8 +3619,8 @@ telstra_au
 
 50588
 50588
-
-50590
+
+optus_au
 50590
 
 50599
@@ -3667,6 +3714,9 @@ singtel_sg
 /
 52505IMSI=525053095XXXXXX
 52505	525053095
+
+giga_sg
+52505giga
 
 
 starhub_sg
@@ -4600,4 +4650,4 @@ $
 74810
 
 bics_be
-90158ËÉ¯ %
+90158çñ…Ú,
