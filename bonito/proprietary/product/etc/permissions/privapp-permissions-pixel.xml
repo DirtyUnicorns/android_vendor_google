@@ -93,6 +93,7 @@
 
     <privapp-permissions package="com.google.android.grilservice">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="com.google.android.permission.USE_GRIL" />
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.hardwareinfo">
@@ -101,6 +102,10 @@
 
     <privapp-permissions package="com.google.android.GoogleCamera">
         <permission name="android.permission.BIND_WALLPAPER"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.angle">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.as">
@@ -278,6 +283,10 @@
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.verizon.obdm">
+        <permission name="android.permission.READ_LOGS"/>
     </privapp-permissions>
 
 </permissions>
