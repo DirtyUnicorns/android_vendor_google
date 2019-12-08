@@ -103,6 +103,10 @@
         <permission name="android.permission.BIND_WALLPAPER"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.google.android.angle">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.google.android.as">
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.CAPTURE_MEDIA_OUTPUT"/>
