@@ -1,5 +1,5 @@
 
-vodafone_nl´Ë¯ %rp
+vodafone_nl´ó…Ú,rp
 Vodafone NLlive.vodafone.comBvodafoneJvodafonePZhttp://mmsc.mms.vodafone.nlb192.168.251.150j8799"î)
 %auto_retry_failed_wifi_emergency_call((
 $carrier_default_wfc_ims_enabled_bool($
