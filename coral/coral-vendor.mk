@@ -115,18 +115,28 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/google/coral/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.uceservice@2.0.so \
     vendor/google/coral/proprietary/lib/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadsprpc_system.so \
+    vendor/google/coral/proprietary/lib/libcacertclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcacertclient.so \
     vendor/google/coral/proprietary/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcdsprpc_system.so \
+    vendor/google/coral/proprietary/lib/libdiag.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag.so \
     vendor/google/coral/proprietary/lib/libDiagService.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libDiagService.so \
     vendor/google/coral/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
     vendor/google/coral/proprietary/lib/libdisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdisplayconfig.so \
+    vendor/google/coral/proprietary/lib/libdsutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdsutils.so \
+    vendor/google/coral/proprietary/lib/libidl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libidl.so \
+    vendor/google/coral/proprietary/lib/libjnihelper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjnihelper.so \
     vendor/google/coral/proprietary/lib/liblogwrap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liblogwrap.so \
+    vendor/google/coral/proprietary/lib/libmdmdetect.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdmdetect.so \
     vendor/google/coral/proprietary/lib/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdsprpc_system.so \
     vendor/google/coral/proprietary/lib/libminui.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libminui.so \
     vendor/google/coral/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
     vendor/google/coral/proprietary/lib/libnl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnl.so \
     vendor/google/coral/proprietary/lib/libOpenCL_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOpenCL_system.so \
     vendor/google/coral/proprietary/lib/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-full.so \
+    vendor/google/coral/proprietary/lib/libqmi_cci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmi_cci.so \
     vendor/google/coral/proprietary/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmi_cci_system.so \
+    vendor/google/coral/proprietary/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmi_client_qmux.so \
+    vendor/google/coral/proprietary/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmi_encdec.so \
+    vendor/google/coral/proprietary/lib/libqmiservices.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmiservices.so \
     vendor/google/coral/proprietary/lib/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsdsprpc_system.so \
     vendor/google/coral/proprietary/lib/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_amb_engine.so \
     vendor/google/coral/proprietary/lib/libvraudio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvraudio.so \
@@ -142,6 +152,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.config@1.6.so \
     vendor/google/coral/proprietary/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.postproc@1.0.so \
     vendor/google/coral/proprietary/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.alarm@1.0.so \
+    vendor/google/coral/proprietary/lib/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.cacert@1.0.so \
     vendor/google/coral/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/google/coral/proprietary/lib/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.factory@1.0.so \
     vendor/google/coral/proprietary/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.iop@1.0.so \
@@ -170,17 +181,27 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/google/coral/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/google/coral/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
+    vendor/google/coral/proprietary/lib64/libcacertclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcacertclient.so \
     vendor/google/coral/proprietary/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcdsprpc_system.so \
+    vendor/google/coral/proprietary/lib64/libdiag.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag.so \
     vendor/google/coral/proprietary/lib64/libDiagService.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libDiagService.so \
     vendor/google/coral/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
     vendor/google/coral/proprietary/lib64/libdisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdisplayconfig.so \
+    vendor/google/coral/proprietary/lib64/libdsutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdsutils.so \
+    vendor/google/coral/proprietary/lib64/libidl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libidl.so \
+    vendor/google/coral/proprietary/lib64/libjnihelper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjnihelper.so \
+    vendor/google/coral/proprietary/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdmdetect.so \
     vendor/google/coral/proprietary/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdsprpc_system.so \
     vendor/google/coral/proprietary/lib64/libminui.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libminui.so \
     vendor/google/coral/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
     vendor/google/coral/proprietary/lib64/libnl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnl.so \
     vendor/google/coral/proprietary/lib64/libOpenCL_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOpenCL_system.so \
     vendor/google/coral/proprietary/lib64/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libprotobuf-cpp-full.so \
+    vendor/google/coral/proprietary/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmi_cci.so \
     vendor/google/coral/proprietary/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmi_cci_system.so \
+    vendor/google/coral/proprietary/lib64/libqmi_client_qmux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmi_client_qmux.so \
+    vendor/google/coral/proprietary/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmi_encdec.so \
+    vendor/google/coral/proprietary/lib64/libqmiservices.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmiservices.so \
     vendor/google/coral/proprietary/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdsprpc_system.so \
     vendor/google/coral/proprietary/lib64/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_amb_engine.so \
     vendor/google/coral/proprietary/lib64/libvraudio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvraudio.so \
@@ -197,6 +218,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.config@1.6.so \
     vendor/google/coral/proprietary/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.postproc@1.0.so \
     vendor/google/coral/proprietary/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/google/coral/proprietary/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.cacert@1.0.so \
     vendor/google/coral/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/google/coral/proprietary/lib64/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.factory@1.0.so \
     vendor/google/coral/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.iop@1.0.so \
