@@ -812,6 +812,9 @@ $
 
 sky_gb
 24007"0C
+
+	gigsky_us
+24007"6F
 
 gamma_gb
 2400724007561
@@ -1383,6 +1386,9 @@ $
 fi_us
 310120"A00184
 
+	sprint_us
+310120"FFFFFF
+
 fi_us
 310120
 Fi Network
@@ -1498,9 +1504,39 @@ tmobile_us
 
 tmobile_us
 310270
+
+attmvnos_us
+310280"2AC9
+
+attmvnos_us
+310280"4102
+!
+redpocketatt_us
+310280"4201
+
+attmvnos_us
+310280"44FF
+
+attmvnos_us
+310280"49FF
 
 att5g_us
 310280"53FF
+!
+310410GID1=60FF
+310280"60FF
+
+attmvnos_us
+310280"62FF
+
+attmvnos_us
+310280"69FF
+ 
+tracfoneatt_us
+310280"DDFF
+ 
+tracfoneatt_us
+310280"DEFF
 
 att_us
 310280
@@ -1536,6 +1572,9 @@ tmobile_us
 
 310380GID1=50
 310380"50
+
+	gigsky_us
+310380"6F
 
 att_us
 310380
@@ -1557,9 +1596,6 @@ tmobile_us
 
 attmvnos_us
 310410"49FF
-
-attmvnos_us
-310410"50FF
 
 att5g_us
 310410"53FF
@@ -1956,6 +1992,9 @@ $
 
 fi_us
 312530"A00184
+
+	sprint_us
+312530"FFFFFF
 
 sprintwholesale_us
 312530
@@ -3675,6 +3714,9 @@ singtel_sg
 /
 52505IMSI=525053095XXXXXX
 52505	525053095
+
+giga_sg
+52505giga
 
 
 starhub_sg
@@ -4608,4 +4650,4 @@ $
 74810
 
 bics_be
-90158γέύ(
+90158ηρ…Ϊ,
