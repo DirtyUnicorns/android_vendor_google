@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     embms \
     EuiccGoogle \
     EuiccSupportPixel \
-    GoogleANGLEPrebuilt \
     grilservice \
     HardwareInfo \
     HotwordEnrollmentOKGoogleWCD9340 \
