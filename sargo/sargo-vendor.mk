@@ -240,7 +240,6 @@ PRODUCT_PACKAGES += \
     DMService \
     EuiccGoogle \
     EuiccSupportPixel \
-    GoogleANGLEPrebuilt \
     grilservice \
     HardwareInfo \
     HotwordEnrollmentOKGoogleRT5514 \
