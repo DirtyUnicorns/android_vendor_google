@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/google/coral/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
     vendor/google/coral/proprietary/etc/permissions/privapp-permissions-platform.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-platform.xml \
+    vendor/google/coral/proprietary/lib/dsp/elmyra.so:$(TARGET_COPY_OUT_SYSTEM)/lib/dsp/elmyra.so \
     vendor/google/coral/proprietary/lib/android.hardware.radio@1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.radio@1.3.so \
     vendor/google/coral/proprietary/lib/android.hardware.radio@1.4.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.radio@1.4.so \
     vendor/google/coral/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \

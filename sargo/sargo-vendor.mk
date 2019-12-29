@@ -66,6 +66,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sargo/proprietary/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteclient.xml \
     vendor/google/sargo/proprietary/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteserver.xml \
     vendor/google/sargo/proprietary/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/UimService.xml \
+    vendor/google/sargo/proprietary/lib/dsp/elmyra.so:$(TARGET_COPY_OUT_SYSTEM)/lib/dsp/elmyra.so \
     vendor/google/sargo/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_SYSTEM)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/google/sargo/proprietary/lib/vndk-29/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vndk-29/libprotobuf-cpp-full.so \
     vendor/google/sargo/proprietary/lib/android.hardware.radio.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.radio.config@1.0.so \

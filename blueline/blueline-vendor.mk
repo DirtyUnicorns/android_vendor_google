@@ -97,6 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/google/blueline/proprietary/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/telephonyservice.xml \
     vendor/google/blueline/proprietary/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/UimService.xml \
+    vendor/google/blueline/proprietary/lib/dsp/elmyra.so:$(TARGET_COPY_OUT_SYSTEM)/lib/dsp/elmyra.so \
     vendor/google/blueline/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_SYSTEM)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/google/blueline/proprietary/lib/vndk-29/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vndk-29/libprotobuf-cpp-full.so \
     vendor/google/blueline/proprietary/lib/android.hardware.radio.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.radio.config@1.0.so \
