@@ -79,17 +79,6 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := AppDirectedSMSService
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
@@ -187,6 +176,19 @@ LOCAL_MODULE := AmbientSensePrebuilt
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_PRODUCT)/priv-app
 LOCAL_SRC_FILES := proprietary/product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := AppDirectedSMSService
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_PRODUCT)/priv-app
+LOCAL_SRC_FILES := proprietary/product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
