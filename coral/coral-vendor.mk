@@ -118,7 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/lib/libcacertclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcacertclient.so \
     vendor/google/coral/proprietary/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcdsprpc_system.so \
     vendor/google/coral/proprietary/lib/libdiag.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag.so \
-    vendor/google/coral/proprietary/lib/libDiagService.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libDiagService.so \
     vendor/google/coral/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
     vendor/google/coral/proprietary/lib/libdisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdisplayconfig.so \
     vendor/google/coral/proprietary/lib/libdsutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdsutils.so \
@@ -184,7 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/lib64/libcacertclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcacertclient.so \
     vendor/google/coral/proprietary/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcdsprpc_system.so \
     vendor/google/coral/proprietary/lib64/libdiag.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag.so \
-    vendor/google/coral/proprietary/lib64/libDiagService.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libDiagService.so \
     vendor/google/coral/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
     vendor/google/coral/proprietary/lib64/libdisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdisplayconfig.so \
     vendor/google/coral/proprietary/lib64/libdsutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdsutils.so \
