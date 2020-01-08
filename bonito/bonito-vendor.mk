@@ -20,11 +20,9 @@ PRODUCT_PACKAGES += \
     ims \
     PresencePolling \
     QAS_DVC_MSP \
-    QAS_DVC_MSP_VZW \
     QtiTelephonyService \
     RcsService \
-    uceShimService \
-    vzw_msdc_api
+    uceShimService
 
 # Prebuilt system privileged apps
 PRODUCT_PACKAGES += \
@@ -53,18 +51,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/bonito/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/google/bonito/proprietary/etc/permissions/com.quicinc.cne.CNEService.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.CNEService.xml \
     vendor/google/bonito/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.xml \
-    vendor/google/bonito/proprietary/etc/permissions/com.verizon.embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.embms.xml \
-    vendor/google/bonito/proprietary/etc/permissions/com.verizon.provider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.provider.xml \
     vendor/google/bonito/proprietary/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/embms.xml \
     vendor/google/bonito/proprietary/etc/permissions/LteDirectDiscovery.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/LteDirectDiscovery.xml \
     vendor/google/bonito/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
     vendor/google/bonito/proprietary/etc/permissions/privapp-permissions-platform.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-platform.xml \
     vendor/google/bonito/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
-    vendor/google/bonito/proprietary/etc/permissions/radioconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/radioconfig.xml \
-    vendor/google/bonito/proprietary/etc/permissions/radioconfiginterface.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/radioconfiginterface.xml \
     vendor/google/bonito/proprietary/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/telephonyservice.xml \
-    vendor/google/bonito/proprietary/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteclient.xml \
-    vendor/google/bonito/proprietary/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteserver.xml \
     vendor/google/bonito/proprietary/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/UimService.xml \
     vendor/google/bonito/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_SYSTEM)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/google/bonito/proprietary/lib/vndk-29/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vndk-29/libprotobuf-cpp-full.so \
@@ -385,8 +377,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/bonito/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
     vendor/google/bonito/proprietary/product/lib64/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.google.wifi_ext@1.0.so \
     vendor/google/bonito/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/google/bonito/proprietary/product/priv-app/EuiccGoogle/esim-full-v0.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccGoogle/esim-full-v0.img \
-    vendor/google/bonito/proprietary/product/priv-app/EuiccGoogle/esim-v1.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccGoogle/esim-v1.img \
     vendor/google/bonito/proprietary/product/priv-app/EuiccSupportPixel/esim-full-v0.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccSupportPixel/esim-full-v0.img \
     vendor/google/bonito/proprietary/product/priv-app/EuiccSupportPixel/esim-v1.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccSupportPixel/esim-v1.img \
     vendor/google/bonito/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
