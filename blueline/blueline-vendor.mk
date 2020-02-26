@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     embms \
     EuiccGoogle \
     EuiccSupportPixel \
+    GCS \
     grilservice \
     HardwareInfo \
     HotwordEnrollmentOKGoogleWCD9340 \
@@ -61,7 +62,6 @@ PRODUCT_PACKAGES += \
     SprintHM \
     SSRestartDetector \
     TetheringEntitlement \
-    TmobileGrsuPrebuilt \
     Tycho \
     uceShimService \
     vzw_msdc_api \
