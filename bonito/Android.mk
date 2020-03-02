@@ -280,6 +280,18 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := CarrierWifi
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/product/priv-app/CarrierWifi/CarrierWifi.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := ConnMO
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/priv-app/ConnMO/ConnMO.apk
