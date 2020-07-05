@@ -145,7 +145,8 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/app/MobileFeliCaClient/MobileFeliCaClient.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -156,7 +157,8 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/app/MobileFeliCaMenuApp/MobileFeliCaMenuApp.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -167,7 +169,8 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -178,7 +181,8 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -189,7 +193,8 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/app/MobileFeliCaWebPlugin/MobileFeliCaWebPlugin.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
@@ -200,7 +205,8 @@ LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
