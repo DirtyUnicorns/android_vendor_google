@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
     DMService \
     DreamlinerPrebuilt \
     DreamlinerUpdater \
-    embms \
     EuiccGoogle \
     EuiccSupportPixel \
     GCS \
@@ -52,7 +51,6 @@ PRODUCT_PACKAGES += \
     OemDmTrigger \
     PresencePolling \
     QAS_DVC_MSP \
-    QAS_DVC_MSP_VZW \
     qcrilmsgtunnel \
     QtiTelephonyService \
     RcsService \
@@ -65,7 +63,6 @@ PRODUCT_PACKAGES += \
     TetheringEntitlement \
     Tycho \
     uceShimService \
-    vzw_msdc_api \
     VZWAPNLib \
     VzwOmaTrigger \
     WfcActivation
@@ -74,7 +71,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     com.qualcomm.qti.uceservice-V2.0-java \
-    embmslibrary \
     libhwinfo \
     qcrilhook \
     QtiTelephonyServicelibrary \
@@ -92,8 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/com.quicinc.cne.CNEService.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.CNEService.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.xml \
-    vendor/google/crosshatch/proprietary/etc/permissions/com.verizon.embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.embms.xml \
-    vendor/google/crosshatch/proprietary/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/embms.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/telephonyservice.xml \
@@ -374,7 +368,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/product/etc/sysconfig/pixel_2018_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2018_exclusive.xml \
     vendor/google/crosshatch/proprietary/product/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/qti_whitelist.xml \
     vendor/google/crosshatch/proprietary/product/etc/sysconfig/tmo_grsu_sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/tmo_grsu_sysconfig.xml \
-    vendor/google/crosshatch/proprietary/product/etc/sysconfig/vzw_mvs_sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/vzw_mvs_sysconfig.xml \
     vendor/google/crosshatch/proprietary/product/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/google/crosshatch/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/google/crosshatch/proprietary/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so \

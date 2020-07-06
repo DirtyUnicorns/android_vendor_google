@@ -37,16 +37,6 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := embms
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
@@ -67,16 +57,6 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QAS_DVC_MSP_VZW
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -90,16 +70,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := uceShimService
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vzw_msdc_api
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/vzw_msdc_api/vzw_msdc_api.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := platform
@@ -635,16 +605,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.qti.uceservice-V2.0-java
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := embmslibrary
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/embmslibrary.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
