@@ -29,16 +29,6 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := embms
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
@@ -49,29 +39,9 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QAS_DVC_MSP_VZW
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := uceShimService
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vzw_msdc_api
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/vzw_msdc_api/vzw_msdc_api.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -515,16 +485,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.quicinc.cne
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/com.quicinc.cne.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := embmslibrary
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/framework/embmslibrary.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES

@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     DCMO \
     DiagMon \
     DMService \
-    embms \
     EuiccGoogle \
     EuiccSupportPixel \
     GCS \
@@ -41,7 +40,6 @@ PRODUCT_PACKAGES += \
     MyVerizonServices \
     OBDM_Permissions \
     obdm_stub \
-    QAS_DVC_MSP_VZW \
     QtiTelephonyService \
     qcrilmsgtunnel \
     SprintDM \
@@ -53,7 +51,6 @@ PRODUCT_PACKAGES += \
     uceShimService \
     VZWAPNLib \
     VzwOmaTrigger \
-    vzw_msdc_api \
     wahoo_gfxdrv \
     WfcActivation
 
@@ -63,7 +60,6 @@ PRODUCT_PACKAGES += \
     com.google.android.camera.experimental2017 \
     com.quicinc.cne.api-V1.0-java \
     com.quicinc.cne \
-    embmslibrary \
     libhwinfo \
     qcrilhook \
     qti-vzw-ims-internal \
@@ -81,7 +77,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/etc/permissions/com.android.vzwomatrigger.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.vzwomatrigger.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.customermobile.preload.vzw.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.customermobile.preload.vzw.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.google.android.camera.experimental2017.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.camera.experimental2017.xml \
-    vendor/google/taimen/proprietary/etc/permissions/com.verizon.embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.embms.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.verizon.llkagent.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.llkagent.xml \
     vendor/google/taimen/proprietary/etc/permissions/privapp-permissions-aosp_wahoo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aosp_wahoo.xml \
     vendor/google/taimen/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
@@ -229,7 +224,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/product/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vzw_mvs_permissions.xml \
     vendor/google/taimen/proprietary/product/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nexus.xml \
     vendor/google/taimen/proprietary/product/etc/sysconfig/pixel_experience_2017.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2017.xml \
-    vendor/google/taimen/proprietary/product/etc/sysconfig/vzw_mvs_sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/vzw_mvs_sysconfig.xml \
     vendor/google/taimen/proprietary/product/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/google/taimen/proprietary/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so \
     vendor/google/taimen/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
