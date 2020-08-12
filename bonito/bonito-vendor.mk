@@ -622,6 +622,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/bonito/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/google/bonito/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/google/bonito/proprietary/vendor/etc/permissions/com.google.android.camera.experimental2018.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.google.android.camera.experimental2018.xml \
+    vendor/google/bonito/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
+    vendor/google/bonito/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
     vendor/google/bonito/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
     vendor/google/bonito/proprietary/vendor/etc/sensors/config/b4_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/b4_ak991x_0.json \
     vendor/google/bonito/proprietary/vendor/etc/sensors/config/b4_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/b4_tmd2725_0.json \
