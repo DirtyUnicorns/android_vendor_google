@@ -21,7 +21,6 @@
     </permission>
 
     <privapp-permissions package="com.verizon.obdm">
-        <permission name="android.permission.READ_LOGS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     </privapp-permissions>
 

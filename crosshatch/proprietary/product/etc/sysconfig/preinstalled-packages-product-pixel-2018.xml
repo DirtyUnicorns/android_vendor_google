@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- System packages to preinstall on Pixel 2018 devices, per user type.
+     Documentation at frameworks/base/data/etc/preinstalled-packages-platform.xml
+-->
+<config>
+    <install-in-user-type package="com.breel.wallpapers18">
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+</config>
