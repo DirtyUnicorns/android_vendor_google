@@ -54,7 +54,8 @@ mcfg_sw/generic/Pixel/APAC/Idea/Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/Free/Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/Vodafone/Lab/VoLTE/Germany/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/ID/Commercial/UK/mcfg_sw.mbn
-mcfg_sw/generic/Pixel/NA/CSpire/IMSless/mcfg_sw.mbn
+mcfg_sw/generic/Pixel/EU/ESN/Commercial/mcfg_sw.mbn
+mcfg_sw/generic/Pixel/NA/CSpire/VoLTE/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Chatr/NonVoLTE/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Freedom/VoLTE/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Inland/Commercial/mcfg_sw.mbn

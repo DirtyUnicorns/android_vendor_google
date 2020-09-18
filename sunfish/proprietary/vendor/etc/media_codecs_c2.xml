@@ -125,6 +125,8 @@
             <Limit name="blocks-per-second" min="24" max="489600" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-120" />
+            <!-- <Limit name="performance-point-4096x2160" value="24" /> -->
+            <!-- <Limit name="performance-point-3840x2160" value="30" /> -->
             <Limit name="performance-point-1920x1080" value="120" />
             <Limit name="performance-point-1280x720" value="240" />
             <!-- <Limit name="performance-point-720x480" value="240" /> -->
@@ -211,7 +213,7 @@
             <Feature name="bitrate-modes" value="CQ" />
         </MediaCodec>
         <MediaCodec name="c2.qti.heic.encoder" type="image/vnd.android.heic">
-            <Limit name="size" min="512x512" max="8192x8192" />
+            <Limit name="size" min="512x512" max="4096x2160" />
             <Limit name="block-count" range="1024-138240" /> <!--max-spatial: 8192x4320 -->
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
@@ -239,6 +241,8 @@
             <Limit name="bitrate" range="1-40000000" />
             <Limit name="frame-rate" range="1-120" />
             <Limit name="concurrent-instances" max="16" />
+            <!-- <Limit name="performance-point-4096x2304" value="24" /> -->
+            <!-- <Limit name="performance-point-3840x2160" value="30" /> -->
             <Limit name="performance-point-1920x1080" value="120" />
             <Limit name="performance-point-1280x720" value="240" />
             <!-- <Limit name="performance-point-720x480" value="240" /> -->

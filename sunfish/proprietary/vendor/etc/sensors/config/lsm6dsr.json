@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": [ "OEM", "SLVTE_SURF", "MTP", "IDP" ],
-    "soc_id": [ "339", "361", "400", "365" ]
+    "soc_id": [ "339", "361", "365" ]
   },
   "lsm6dsr_0":{
     "owner": "lsm6dsr",

@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": ["MTP", "Dragon", "Surf", "OEM", "SLVTE_SURF", "IDP"],
-    "soc_id": ["291", "246", "305", "321", "339", "361", "400", "365"]
+    "soc_id": ["291", "246", "305", "321", "339", "361", "365"]
   },
   "lis2mdl_0":{
     "owner": "lis2mdl",

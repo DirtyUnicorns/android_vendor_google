@@ -134,28 +134,28 @@
           "data": "1"
         },
         "c_ch_offset":{ "type": "flt", "ver": "0",
-          "data": "2.9"
+          "data": "0.0"
         },
         "r_ch_offset":{ "type": "flt", "ver": "0",
-          "data": "2.9"
+          "data": "0.0"
         },
         "g_ch_offset":{ "type": "flt", "ver": "0",
-          "data": "3.0"
+          "data": "0.0"
         },
         "b_ch_offset":{ "type": "flt", "ver": "0",
-          "data": "3.1"
+          "data": "0.0"
         },
-        "jump_up_layers":{ "type": "int", "ver": "0",
-          "data": "4"
+        "fast_filter_size":{ "type": "int", "ver": "0",
+          "data": "10"
         },
-        "jump_down_layers":{ "type": "int", "ver": "0",
-          "data": "3"
+        "slow_filter_size":{ "type": "int", "ver": "0",
+          "data": "100"
         },
-        "lux_boundaries":{ "type": "str", "ver": "0",
-          "data": "32 54 89 147 244 402 664 1096 1807 2980 4999"
+        "darkening_threshold":{ "type": "flt", "ver": "0",
+          "data": "0.1"
         },
-        "debounce_table":{ "type": "str", "ver": "0",
-          "data": "5 10 15 25 36 57 112 166 241 393 631"
+        "brightening_threshold":{ "type": "flt", "ver": "0",
+          "data": "0.1"
         },
         "itime_table_brightness":{ "type": "str", "ver": "0",
           "data": "30 50 70 200 255"
@@ -167,7 +167,10 @@
           "data": "1500 600 400 300 200"
         },
         "itime_table_lux_offset":{ "type": "str", "ver": "0",
-          "data": "0 2 3 25 30"
+          "data": "0 0 0 0 0"
+        },
+        "itime_table_lux_debounce":{ "type": "str", "ver": "0",
+          "data": "2 5 8 20 25"
         },
         "itime_screen_off":{ "type": "int", "ver": "0",
           "data": "50000"
@@ -192,6 +195,12 @@
         },
         "pldrive":{ "type": "int", "ver": "0",
           "data": "12"
+        },
+        "ore":{ "type": "int", "ver": "0",
+          "data": "-1"
+        },
+        "poffset":{ "type": "int", "ver": "0",
+          "data": "-256"
         }
       },
       ".params":{
@@ -215,7 +224,7 @@
           "data": "150"
         },
         "ppulse2":{ "type": "int", "ver": "0",
-          "data": "25.0"
+          "data": "5.0"
         },
         "ptime":{ "type": "int", "ver": "0",
           "data": "200160"
