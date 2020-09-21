@@ -13,6 +13,7 @@ mcfg_sw/generic/Pixel/EU/Bouygues/Commercial/pixel_France/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/DT/Commercial/pixel_NL/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/DT/VoLTE/pixel_Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/EE/pixel_Commercial/mcfg_sw.mbn
+mcfg_sw/generic/Pixel/EU/ESN/Commercial/pixel_UK/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/Free/Commercial/pixel_Free/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/H3G/Commercial/pixel_UK/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/EU/ID/Commercial/pixel_UK/mcfg_sw.mbn
@@ -38,7 +39,7 @@ mcfg_sw/generic/Pixel/NA/Bell_mvno/MTS/pixel_CA/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Bell_mvno/Solo_PC/pixel_CA/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/CBRS/pixel_CBRS/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/CBRS_Chatr/pixel_CBRS_Chatr/mcfg_sw.mbn
-mcfg_sw/generic/Pixel/NA/CSpire/pixel_IMSless/mcfg_sw.mbn
+mcfg_sw/generic/Pixel/NA/CSpire/VoLTE/pixel_CSpire/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Cellcom/pixel_Cellcom/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Cricket/pixel_Cricket/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Freedom/pixel_VoLTE/mcfg_sw.mbn
@@ -47,11 +48,13 @@ mcfg_sw/generic/Pixel/NA/Rogers/Commercial/pixel_CA/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Rogers_mvno/pixel_Chatr/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Rogers_mvno/pixel_TbayCity/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Rogers_mvno/pixel_Ztar/mcfg_sw.mbn
+mcfg_sw/generic/Pixel/NA/Spectrum_Data/pixel_Spectrum_Data/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Sprint/pixel_Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Sprint_FI/pixel_Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Sprint_Fi_data/pixel_Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/TMO/pixel_Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/TMO_FI/pixel_Commercial/mcfg_sw.mbn
+mcfg_sw/generic/Pixel/NA/TMO_RCS_Test/pixel_TMO_RCS_Test/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Telus/Commercial/pixel_CA/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Telus/Koodo/pixel_CA/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/NA/Telus/Lab/pixel_CA/mcfg_sw.mbn

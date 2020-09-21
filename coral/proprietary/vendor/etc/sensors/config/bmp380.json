@@ -1,8 +1,8 @@
 {
   "config":
   {
-    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "OEM", "SLVTE_SURF"],
-    "soc_id": ["291", "246", "300", "301", "305", "321", "336", "341", "339", "361"]
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "OEM", "SLVTE_SURF", "IDP"],
+    "soc_id": ["291", "246", "300", "301", "305", "321", "336", "341", "339", "361", "365"]
   },
   "bmp380_0":{
     "owner": "sns_bmp380",

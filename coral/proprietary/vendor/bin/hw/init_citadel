@@ -46,6 +46,11 @@ KNOWN_OLD_SHA=(
     03e9a1391    # 2018-10-02 (OTA-RC8)
     89f6e56e3    # 2018-11-08 (OTA-RC9)
     ba09257ef    # 2018-11-15 (OTA-RC10)
+    d3e98fe92    # 2019-01-04 (abandoned)
+    d4b88b081    # 2019-02-07 (OTA-RC11)
+    0229d0f99    # 2019-06-06 (OTA-RC12)
+    5b47d37e     # 2019-06-25 (OTA-RC13)
+    2d3a8cfc     # 2019-09-17 (OTA-RC14)
     # device-specific, pre-mp images
     168c7ec08    # 2018-11-30 (first Doodle FW)
     b7db2674f    # 2018-12-11 (Doodle WIP1)
@@ -78,11 +83,22 @@ KNOWN_OLD_SHA=(
     db8b670a     # 2019-09-17 (MP-QT-QPR1-04)
     5b0ba5b53    # 2019-09-24 (MP-QT-QPR1-05)
     14cb8152     # 2019-10-02 (MP-QT-QPR1-06)
-    #07463a51f   # 2019-12-05 (MP-QT-QPR1-07)  # Issued to Sunfish etc. only
+    07463a51f    # 2019-12-05 (MP-QT-QPR1-07)
     da8b82770    # 2019-12-10 (MP-QT-QPR1-08)
-    #6ab893d86   # 2019-12-09 (MP-QT-QPR1-09)  # Issued to Sunfish etc. only
-    #a9dacb5c9   # 2020-01-15 (MP-QT-QPR1-10)
-    #3bfefeddb   # 2020-02-10 (MP-QT-QPR1-11)  # Issued to Sunfish etc. only
+    6ab893d86    # 2019-12-09 (MP-QT-QPR1-09)
+    a9dacb5c9    # 2020-01-15 (MP-QT-QPR1-10)
+    3bfefeddb    # 2020-02-10 (MP-QT-QPR1-11)
+    2208be32c    # 2019-10-25 (MP-RVC-01)
+    3c1018c58    # 2019-12-11 (MP-RVC-02)
+    a596dd972    # 2019-01-19 (MP-RVC-03)
+    008a08cda    # 2019-03-24 (MP-RVC-04)
+    734cf2fdb    # 2019-04-10 (abandoned)
+    53a62202c    # 2020-04-10 (MP-RVC-05)
+    29c97ad31    # 2020-04-29 (MP-RVC-06)
+    db1a711bd    # 2020-06-04 (MP-RVC-07)
+    afbd4d2ca    # 2020-06-16 (MP-RVC-08)
+    57402c8aa    # 2020-06-25 (MP-RVC-09)
+    #97b23b2e4    # 2020-07-02 (MP-RVC-10)
     # NOTE: Update citadel_embedding_versions.h when updating this section.
 )
 
@@ -192,6 +208,20 @@ update_firmware() {
                 sleep 1
             else
                 log_info "Could not enable Citadel update: password required"
+            fi
+
+            # See what we can tell
+            version=$("${UPDATER}" -v)
+            if [[ $? -ne 0 ]] ; then
+              log_error "Failed to get citadel version after update"
+            else
+              log_info "now Citadel version: ${version}"
+
+              # long info?
+              version=$("${UPDATER}" -l)
+              if [[ $? -eq 0 ]] ; then
+                log_info "more Citadel info: ${version}"
+              fi
             fi
 
             break
@@ -362,6 +392,12 @@ do
         if [ $round -ge $MAX_ROUNDS ] ; then
             log_error "Already failed $round rounds. Abort..."
             break
+        fi
+        if [ $round -ge $((MAX_ROUNDS-1)) ] ; then
+            log_info "Reboot citadel forcely before final round $round..."
+            if ! "${UPDATER}" --force_reset; then
+                log_error "Failed to force reboot citadel"
+            fi
         fi
         # retrying next round 3 seconds later...
         sleep 3
