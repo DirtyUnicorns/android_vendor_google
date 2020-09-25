@@ -1,11 +1,11 @@
-{ "nanoapps": [
-    "/vendor/dsp/adsp/activity",
-    "/vendor/dsp/adsp/cc",
-    "/vendor/dsp/adsp/drop",
-    "/vendor/dsp/adsp/elmyra",
-    "/vendor/dsp/adsp/geofence",
-    "/vendor/dsp/adsp/gesture",
-    "/vendor/dsp/adsp/imu_cal",
-    "/vendor/dsp/adsp/sleep",
-    "/vendor/dsp/adsp/smartbatching"
+{ "source_dir": "/vendor/dsp/adsp",
+  "nanoapps": [
+    "activity",
+    "cc",
+    "drop",
+    "elmyra",
+    "geofence",
+    "gesture",
+    "imu_cal",
+    "smartbatching"
 ]}

@@ -32,7 +32,7 @@ mcfg_sw/generic/NA/TMO/Commercial/mcfg_sw.mbn
 mcfg_sw/generic/NA/Telus/Commercial/CA/mcfg_sw.mbn
 mcfg_sw/generic/NA/USCC/Commercial/mcfg_sw.mbn
 mcfg_sw/generic/NA/Verizon/hVoLTE/mcfg_sw.mbn
-mcfg_sw/generic/NA/CSpire/IMSless/mcfg_sw.mbn
+mcfg_sw/generic/NA/CSpire/VoLTE/mcfg_sw.mbn
 mcfg_sw/generic/SEA/ChunghwaTel/Commercial/TW/mcfg_sw.mbn
 mcfg_sw/generic/SEA/FarEastOne/Commercial/mcfg_sw.mbn
 mcfg_sw/generic/SEA/TM/Commercial/mcfg_sw.mbn

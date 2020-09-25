@@ -1,4 +1,4 @@
-VERSION:575963244
+VERSION:575996078
 
 1,II,WLAN_BWA_SET_PMAC_BW: mac_id=%d, pmac_bw=%d [!WAL_EOK returned] 
 2,III,WLAN_BWA_UPDATE_VDEV_BW: phy_mode=%d, opmode=%d, Requested operating voltage corner=0x%x 
@@ -1960,9 +1960,9 @@ VERSION:575963244
 1919,IIIII,NAN ->     MSG_DATA: %02X %02X %02X %02X %02X 
 1920,II,NAN -  OTA_PKT_HEADER:  isTx %u  frameLength %u 
 1921,IIIII,NAN ->      PKT_DATA: %02X %02X %02X %02X 
-1922,IIIIII,NAN20_CACHE - clear LRU cache for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-1923,,NAN20_CACHE: NAN cache is full 
-1924,IIIIII,NAN20_CACHE - ADD cache for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+1922,,NAN20_CACHE: NAN cache is full 
+1923,IIIIII,NAN20_CACHE - clear LRU cache for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+1924,IIIIIII,NAN20_CACHE - ADD cache for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x entry_index=%d 
 1925,IIIIIII,NAN20_CACHE - SEARCH cache %d for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
 1926,,wlan_nan_mac: wakeup for nan_enable 
 1927,,5G LB/UB discovery not available 
@@ -1994,718 +1994,718 @@ VERSION:575963244
 1951,II,NANMAC_ConfigCommittedDW #2 %d:%d 
 1952,II,role 0x%x, debuggingflags 0x%x 
 1953,I,debuggingflags 0x%x 
-1954,I,NAN20_CACHE - ALLOC %d 
-1955,,TransmitDwServiceDiscoveryFrame : Faild to TX 
-1956,,TransmitDwServiceDiscoveryFrame : DW SDF queued for transmit 
-1957,,NAN_FOLLOWUP : Frame allocation failed 
-1958,II,NAN_FOLLOWUP : NANMAC_BuildFollowupFrame short of len so exiting : %u : %u 
-1959,II,NAN_FOLLOWUP : NANMAC_BuildFollowupFrame VSA short of len so exiting : %u : %u 
-1960,,NANMAC_TransmitDwFollowupFrame : FollowupBuf NULL 
-1961,,NANMAC_TransmitDwFollowupFrame : Failed to TX SDF 
-1962,,NANMAC_TransmitDwFollowupFrame : DW FollowupFrame queued for transmit 
-1963,,DW frame buffer allocation failed ERR ERR 
+1954,,TransmitDwServiceDiscoveryFrame : Faild to TX 
+1955,,TransmitDwServiceDiscoveryFrame : DW SDF queued for transmit 
+1956,,NAN_FOLLOWUP : Frame allocation failed 
+1957,II,NAN_FOLLOWUP : NANMAC_BuildFollowupFrame short of len so exiting : %u : %u 
+1958,II,NAN_FOLLOWUP : NANMAC_BuildFollowupFrame VSA short of len so exiting : %u : %u 
+1959,,NANMAC_TransmitDwFollowupFrame : FollowupBuf NULL 
+1960,,NANMAC_TransmitDwFollowupFrame : Failed to TX SDF 
+1961,,NANMAC_TransmitDwFollowupFrame : DW FollowupFrame queued for transmit 
+1962,,DW frame buffer allocation failed ERR ERR 
+1963,II,NAN_SDF : NANMAC_BuildDwServiceDiscoveryFrame short of len so exiting : %u : %u 
 1964,II,NAN_SDF : NANMAC_BuildDwServiceDiscoveryFrame short of len so exiting : %u : %u 
-1965,II,NAN_SDF : NANMAC_BuildDwServiceDiscoveryFrame short of len so exiting : %u : %u 
-1966,II,NAN_FOLLOWUP : NANMAC_BuildFollowupFrame VSA short of len so exiting : %u : %u 
-1967,,NANPUB_Init: pNan is Null returning A_EFAULT 
-1968,,NAN_PrepareFAAttr_ForSDF 
-1969,I,SDEA Control Received in Publish Value new value%d 
-1970,,SDEA Control Received in Publish 
-1971,,PMK Set, building PMKID 
-1972,I,txType = %d 
-1973,I,PMK Set, len %d 
-1974,I,PASSPHRASE Set, len %d 
-1975,I,Cancel Range Request with id: %d 
-1976,I,NAN_DBGID_INVALID_MSG_PARAM, tlv.length: 0x%x 
-1977,I,NAN-PUBSUB_UPDATED: handle %u 
-1978,III,SDEA Control Received in Publish Value security_required %d ranging_required %d range_report_required %d 
-1979,I,NAN PUBLISH SDEA UPDATATE INDI : %d 
-1980,I,Clearing the Ranging required flag NANPUB pParam->sdea_ctrl_val : %d 
-1981,III,NAN-PUBSUB_PROCESSED: handle %u	status %u  value %u 
-1982,I,NAN-PUBSUB_REMOVE_DEFERRED: handle %u 
-1983,I,NAN-PUBSUB_REMOVE_PENDING: handle %u 
-1984,I,NAN-PUBSUB_REMOVED: handle %u 
-1985,I,NAN-PUB : isServiceUpdateId : %d 
-1986,IIIIIII,NAN-PUBSUB_MATCHED: handle %u  svcId %02X:%02X:%02X:%02X:%02X:%02X  
-1987,IIII,NAN-PUBSUB_MATCHED: inId %u  reqId %u  svcCtrl 0x%02x  len %u 
-1988,IIIIIIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X  macAddr %02X:%02X:%02X:%02X:%02X:%02X 
-1989,IIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X inId %u  reqId %u 
-1990,II,NAN-PUBSUB_PREPARED: handle %u  flags 0x%X 
-1991,,WMI_EVENT_BUFFER not available for NAN 
-1992,IIII,NAN-SUBSCRIBE_MATCH_LOG: handle %u  match handle %u  match timestamp %u  timestamp %u 
-1993,,nan_rx_filter: Wake 
-1994,,nan_rx_filter: Sleep 
-1995,,INVALID SDF: ieee80211_frame not found 
-1996,,INVALID SDF: ieee80211_action_nan not found 
-1997,I,_wlan_nan_if_internal_rx_sdf_handler drop this frame seq_no:%d 
-1998,III,MyBcn dropping %0x %0x %0x 
-1999,,nan_rx_offload_register: Wake 
-2000,,nan_rx_offload_register: NAN_ENABLE sleep 
-2001,III,NAN20_StartScanPeriodicULW: Enabled(%d) ActiveScanInProgress(%d) ScanSchedIdx(%d) 
-2002,III,NAN20_StartScanPeriodicULW start_time internal %x external %x curr_time %x 
-2003,,NAN20_StartScanPeriodicULW: Start ULW failed as ulw allocation failed 
-2004,IIII,NAN20_StopScanPeriodicULW: Enabled(%d) ActiveScanInProgress(%d) ScanSchedIdx(%d) force(%d) 
-2005,II,NAN20_StopScanPeriodicULW curr_time %x force:%d 
-2006,,NAN20_StopScanPeriodicULW: Stop ULW failed as ulw update failed 
-2007,,NANScan_Event: p2p scan starts, disable NAN 
-2008,IIIIII,NANScan_Event: scanid=%d, event=0x%x, rsn=0x%x, ch=%d nanScanType:%d numPendingScan:%d 
-2009,IIIII,NANScan_Event: STARTED, %d %d 0x%x %d %d 
-2010,III,NANScan_Event: COMPLETED, %d %d 0x%x 
-2011,IIII,NANScan_Event: START_FAILED/DEQUEUED, %d %d %d 0x%x 
-2012,IIII,NANScan_Event: PREEMPTED/SUSPENDED, %d %d %d 0x%x 
-2013,IIII,NANScan_Event: CH_SWITCH, %d %d 0x%x 0x%x 
-2014,IIII,NANScan_Event: UNHANDLED EVENT, 0x%x %d %d 0x%x 
-2015,II,CHANNEL_TYPE:%d channel_Freq %d 
-2016,II,NAN_ENABLE_DBG_STATS: enabled:%d period:%d 
-2017,,NAN_RESET_DBG_STATS: Resetting debug stats 
-2018,III,NAN_PRINT_DBG_STATS: Printing debug stats(periodInDw:%u, dwCount:%u, dwSkippedCount:%u) 
-2019,II,NAN_PRINT_DBG_STATS: FAType:%d chan:%d 
-2020,IIII,NAN_PRINT_DBG_STATS: faTotalTime:%u faActiveTime:%u(Percentage:%d) faSkippedCount:%d 
-2021,IIII,NAN_PRINT_DBG_STATS: faInLateTime:%u faOutInBetweenTime:%u faOutEarlyTime:%u faUlwTime:%u 
+1965,II,NAN_FOLLOWUP : NANMAC_BuildFollowupFrame VSA short of len so exiting : %u : %u 
+1966,,NANPUB_Init: pNan is Null returning A_EFAULT 
+1967,,NAN_PrepareFAAttr_ForSDF 
+1968,I,SDEA Control Received in Publish Value new value%d 
+1969,,SDEA Control Received in Publish 
+1970,,PMK Set, building PMKID 
+1971,I,txType = %d 
+1972,I,PMK Set, len %d 
+1973,I,PASSPHRASE Set, len %d 
+1974,I,Cancel Range Request with id: %d 
+1975,I,NAN_DBGID_INVALID_MSG_PARAM, tlv.length: 0x%x 
+1976,I,NAN-PUBSUB_UPDATED: handle %u 
+1977,III,SDEA Control Received in Publish Value security_required %d ranging_required %d range_report_required %d 
+1978,I,NAN PUBLISH SDEA UPDATATE INDI : %d 
+1979,I,Clearing the Ranging required flag NANPUB pParam->sdea_ctrl_val : %d 
+1980,III,NAN-PUBSUB_PROCESSED: handle %u	status %u  value %u 
+1981,I,NAN-PUBSUB_REMOVE_DEFERRED: handle %u 
+1982,I,NAN-PUBSUB_REMOVE_PENDING: handle %u 
+1983,I,NAN-PUBSUB_REMOVED: handle %u 
+1984,I,NAN-PUB : isServiceUpdateId : %d 
+1985,IIIIIII,NAN-PUBSUB_MATCHED: handle %u  svcId %02X:%02X:%02X:%02X:%02X:%02X  
+1986,IIII,NAN-PUBSUB_MATCHED: inId %u  reqId %u  svcCtrl 0x%02x  len %u 
+1987,IIIIIIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X  macAddr %02X:%02X:%02X:%02X:%02X:%02X 
+1988,IIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X inId %u  reqId %u 
+1989,II,NAN-PUBSUB_PREPARED: handle %u  flags 0x%X 
+1990,,WMI_EVENT_BUFFER not available for NAN 
+1991,IIII,NAN-SUBSCRIBE_MATCH_LOG: handle %u  match handle %u  match timestamp %u  timestamp %u 
+1992,,nan_rx_filter: Wake 
+1993,,nan_rx_filter: Sleep 
+1994,,INVALID SDF: ieee80211_frame not found 
+1995,,INVALID SDF: ieee80211_action_nan not found 
+1996,I,_wlan_nan_if_internal_rx_sdf_handler drop this frame seq_no:%d 
+1997,III,MyBcn dropping %0x %0x %0x 
+1998,,nan_rx_offload_register: Wake 
+1999,,nan_rx_offload_register: NAN_ENABLE sleep 
+2000,III,NAN20_StartScanPeriodicULW: Enabled(%d) ActiveScanInProgress(%d) ScanSchedIdx(%d) 
+2001,III,NAN20_StartScanPeriodicULW start_time internal %x external %x curr_time %x 
+2002,,NAN20_StartScanPeriodicULW: Start ULW failed as ulw allocation failed 
+2003,IIII,NAN20_StopScanPeriodicULW: Enabled(%d) ActiveScanInProgress(%d) ScanSchedIdx(%d) force(%d) 
+2004,II,NAN20_StopScanPeriodicULW curr_time %x force:%d 
+2005,,NAN20_StopScanPeriodicULW: Stop ULW failed as ulw update failed 
+2006,,NANScan_Event: p2p scan starts, disable NAN 
+2007,IIIIII,NANScan_Event: scanid=%d, event=0x%x, rsn=0x%x, ch=%d nanScanType:%d numPendingScan:%d 
+2008,IIIII,NANScan_Event: STARTED, %d %d 0x%x %d %d 
+2009,III,NANScan_Event: COMPLETED, %d %d 0x%x 
+2010,IIII,NANScan_Event: START_FAILED/DEQUEUED, %d %d %d 0x%x 
+2011,IIII,NANScan_Event: PREEMPTED/SUSPENDED, %d %d %d 0x%x 
+2012,IIII,NANScan_Event: CH_SWITCH, %d %d 0x%x 0x%x 
+2013,IIII,NANScan_Event: UNHANDLED EVENT, 0x%x %d %d 0x%x 
+2014,II,CHANNEL_TYPE:%d channel_Freq %d 
+2015,II,NAN_ENABLE_DBG_STATS: enabled:%d period:%d 
+2016,,NAN_RESET_DBG_STATS: Resetting debug stats 
+2017,III,NAN_PRINT_DBG_STATS: Printing debug stats(periodInDw:%u, dwCount:%u, dwSkippedCount:%u) 
+2018,II,NAN_PRINT_DBG_STATS: FAType:%d chan:%d 
+2019,IIII,NAN_PRINT_DBG_STATS: faTotalTime:%u faActiveTime:%u(Percentage:%d) faSkippedCount:%d 
+2020,IIII,NAN_PRINT_DBG_STATS: faInLateTime:%u faOutInBetweenTime:%u faOutEarlyTime:%u faUlwTime:%u 
+2021,IIIII,NAN-RX_CALLBACK: type 0x%X  lenth %u  currTsf 0x%08x  rssi %u  freq %u 
 2022,IIIII,NAN-RX_CALLBACK: type 0x%X  lenth %u  currTsf 0x%08x  rssi %u  freq %u 
-2023,IIIII,NAN-RX_CALLBACK: type 0x%X  lenth %u  currTsf 0x%08x  rssi %u  freq %u 
-2024,IIIII,NAN-TX_COMPLETE: type 0x%X  handle %p  buf %p  status %u  currTsf 0x%08x 
-2025,IIII,NAN_SCHED: Flushing pending frames SDF(%d)/FOLLOWUP(%d)/NMF(%d)/Total(%d) in SW queue at Pre DW 
-2026,II,NAN_DBGID_BEACON_TX_SEND Dw Sync Bcn Tbd= %d, DWtype = %d 
-2027,,NAN-NAN_DBGID_SPARE_80: 0xFFFA 
-2028,,NANSCHED_HandleDwEnd 
-2029,,NANSCHED_HandleDwEnd Primary DW 
-2030,IIII,NAN_DBGID_TSF_DUMP: #2 curr_tsf_upper 0x%X, curr_tsf_lower 0x%X, nextDwTsf_upper 0x%X, nextDwTsf_lower 0x%X 
-2031,III,NANSCHED_GetCurrNanSlot: Tsf:0x%x(U) 0x%x(L) dwOffset:%d 
-2032,III,NANSCHED_GetCurrNanSlot: dw0SlotNum:%d slotNum:%d slotOffset:%d 
-2033,IIII,NANSCHED_NanTimeoutSlotStart: dw0SlotNum:%d slotNum:%d slotOffset:%d timerDuration:%d 
-2034,II,NANSCHED_NanTimeoutSlotStart: Forcing to end FA %d early %d 
-2035,II,NANSCHED_NanTimeoutSlotStart: idx:%d slotActive:%d 
-2036,,nan_sched:wal_tsf_dw_timer: wake 
-2037,II,NAN-TSF_TIMEOUT: currTsf 0x%08x  usecs %u 
-2038,,NANSCHED_TsfTimeoutDWTbtt:wake 
-2039,,NAN-NAN_DBGID_SPARE_80: 0xFFF9 
-2040,,nan_sched: DW Channel grant: Wake 
-2041,,nan_sched: DW Channel grant error: sleep 
-2042,III,NAN_DBGID_SPARE_80: type 0x%X  freq %p  curr_tsf 0x%08x 
-2043,IIII,NAN_DBGID_TSF_DUMP: curr_tsf_upper 0x%X, curr_tsf_lower 0x%X, nextDwTsf_upper 0x%X, nextDwTsf_lower 0x%X 
-2044,III,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X, diff: 0x%X 
-2045,III,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X, diff: 0x%x 
-2046,III,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X, diff: %p 
-2047,,NAN_DBGID_SPARE_80:0xFFF5 
-2048,I,NAN_DBGID_SPARE_80:0xFFF4, timer: 0x%X 
-2049,,nan_sched: DW Channel end Wake 
-2050,,Start DB Request 
-2051,,Stop DB Request 
-2052,,nan_sched:DW Channel end sleep 
-2053,,nan_sched: Disc channel Wake 
-2054,I,NAN_DBGID_BEACON_TX_SEND DB Bcn Tbd= %d 
-2055,,nan_faw_channel_grant: Wake 
-2056,,nan_sched faw_grant_end sleep 
-2057,III,NAN-CHREQ_GRANT: freq %u  type %u  tsfLo 0x%08x 
-2058,III,NAN-CHREQ_END: freq %u  type %u  tsfLo 0x%08x 
-2059,III,NAN-CHREQ_ERROR: freq %u  type %u  tsfLo 0x%08x 
-2060,,NAN_SCHED_DO_CHANNEL_REQ: Read config error 
-2061,II,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X 
-2062,II,NAN_DBGID_DW_SKIP:0x%X, next_tsf_lower:0x%X 
-2063,II,NAN_DBGID_DW_SKIP:0x%X, offset:0x%X 
-2064,II,NAN_DBGID_DW_SKIP:0x%X, start_time:0x%X 
-2065,,wlan_nan_sched: Wakeup not permitted in 5G 
-2066,II,nan_sched: offset_tbtt %d sta_Channel %d 
-2067,II,nan_sched: no time for one more DB diff:%d interval:%d 
-2068,III,nan_sched: offset %d pSync->nextDwTsf %d curr_tsf %d  
-2069,,NAN_SCHED_DO_CHANNEL_REQ: Read config error 
-2070,I,5G DW freq:%d 
-2071,,NAN_SCHED_DO_CHANNEL_REQ: Read config error 
-2072,II,5G DW Start: %d status_error:%d 
-2073,I,5G DW Start status: %d 
-2074,IIII,NANSCHED_StartDw_5g() status: %d fa_entry: %p dw_secondary_started: %d nanSecFreq: %d 
-2075,IIII,NANSCHED_StopDw_5g() status: %d fa_entry: %p dw_secondary_started: %d dw_secondary_active: %d 
-2076,,nan_sched: SM sessions in progress not scheduling DB 
-2077,,Stop DB Request 
-2078,I,NAN-NAN_DBGID_SPARE_80: NANSCHED_StartFaw: channel %d 
-2079,,NAN - 5G Enabled failed  
-2080,III,NANSCHED_FaScheduler: Triggering FA index:%d FA type:%d Active:%d 
-2081,,NAN_SCHED: FawChannelGrant 
-2082,,# UN-Pause NDP vdev 
-2083,I,NAN_SCHED: Un-Pause NDP vdev : %d 
-2084,I,NAN_SCHED: Pause NDP vdev : %d 
-2085,,NAN_SCHED: FawChannelEnd 
-2086,,nan_sched_resmgr_link: NAN Ctxt NULL 
-2087,,nan_sched_resmgr_link: NAN VDEV is NULL - NAN is not enabled 
-2088,,nan_sched_resmgr_link: Channel->mhz zero or channel is NULL 
-2089,I,nan_sched_resmgr_link nss: %d 
-2090,,nan_sched_resmgr_link: Channel->mhz zero or channel is NULL 
-2091,II,nan_sched_resmgr_link: create new link channel:%d flags: 0x%x 
-2092,I,nan_sched_resmgr_link nss: %d 
-2093,,NANSCHED_GetNANDwEnd_Tsf() pSync NULL !!! 
-2094,IIII,NAN-Dw End Tsf: offset %x start_time %x currSlot %x slotOffset %x 
-2095,IIII,NAN_DBGID_TSF_DUMP: #1 curr_tsf_upper 0x%X, curr_tsf_lower 0x%X, nextDwTsf_upper 0x%X, nextDwTsf_lower 0x%X 
-2096,I,NAN_SCHED: ULW distance to the next DW %x 
-2097,IIII,NANSCHED_GetSlotTimer_Duration: FA[%d] curr_slot_dw0:%d temp_slot_dw0:%d num_slots:%d 
-2098,IIII,NANSCHED_GetSlotTimer_Duration: #2 FA[%d] curr_slot_dw0:%d temp_slot_dw0:%d num_slots:%d 
-2099,,NANSUB_Init: pNan is Null returning A_EFAULT 
-2100,I,NAN-PUBSUB_REMOVED: handle %u 
-2101,I,PASSPHRASE Set, len %d 
-2102,I,Ranging config indication event %d 
-2103,II,Ranging config ingress distance:%d egress distance:%d  
-2104,I,Initiate service based ranging with range_id %d 
-2105,,Match not found Range initiation failed 
-2106,,Cancel ranging 
-2107,,Cancel Ranging failed 
-2108,I,NAN-PUBSUB_UPDATED: handle %u 
-2109,I,NAN SUBSCRIBE SDEA UPDATATE INDI : %d 
-2110,I,Clearing the Ranging required flag NANSUB pParam->sdea_ctrl_val : %d 
-2111,,NAN SUBSCRIBE SDEA Ranging Disabled: Delete ranging instance 
-2112,III,NAN-PUBSUB_PROCESSED: handle %u	status %u  value %u 
-2113,I,NAN-PUBSUB_REMOVE_DEFERRED: handle %u 
-2114,I,NAN-PUBSUB_REMOVE_PENDING: handle %u 
-2115,I,NAN-PUBSUB_REMOVED: handle %u 
-2116,I,NANSUB_SubscribeUpdateLocalMatchFilter : %d 
-2117,,Updating Match Info Failed#3
+2023,IIIII,NAN-TX_COMPLETE: type 0x%X  handle %p  buf %p  status %u  currTsf 0x%08x 
+2024,IIII,NAN_SCHED: Flushing pending frames SDF(%d)/FOLLOWUP(%d)/NMF(%d)/Total(%d) in SW queue at Pre DW 
+2025,II,NAN_DBGID_BEACON_TX_SEND Dw Sync Bcn Tbd= %d, DWtype = %d 
+2026,,NAN-NAN_DBGID_SPARE_80: 0xFFFA 
+2027,,NANSCHED_HandleDwEnd 
+2028,,NANSCHED_HandleDwEnd Primary DW 
+2029,IIII,NAN_DBGID_TSF_DUMP: #2 curr_tsf_upper 0x%X, curr_tsf_lower 0x%X, nextDwTsf_upper 0x%X, nextDwTsf_lower 0x%X 
+2030,III,NANSCHED_GetCurrNanSlot: Tsf:0x%x(U) 0x%x(L) dwOffset:%d 
+2031,III,NANSCHED_GetCurrNanSlot: dw0SlotNum:%d slotNum:%d slotOffset:%d 
+2032,IIII,NANSCHED_NanTimeoutSlotStart: dw0SlotNum:%d slotNum:%d slotOffset:%d timerDuration:%d 
+2033,II,NANSCHED_NanTimeoutSlotStart: Forcing to end FA %d early %d 
+2034,II,NANSCHED_NanTimeoutSlotStart: idx:%d slotActive:%d 
+2035,,nan_sched:wal_tsf_dw_timer: wake 
+2036,II,NAN-TSF_TIMEOUT: currTsf 0x%08x  usecs %u 
+2037,,NANSCHED_TsfTimeoutDWTbtt:wake 
+2038,,NAN-NAN_DBGID_SPARE_80: 0xFFF9 
+2039,,nan_sched: DW Channel grant: Wake 
+2040,,nan_sched: DW Channel grant error: sleep 
+2041,III,NAN_DBGID_SPARE_80: type 0x%X  freq %p  curr_tsf 0x%08x 
+2042,IIII,NAN_DBGID_TSF_DUMP: curr_tsf_upper 0x%X, curr_tsf_lower 0x%X, nextDwTsf_upper 0x%X, nextDwTsf_lower 0x%X 
+2043,III,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X, diff: 0x%X 
+2044,III,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X, diff: 0x%x 
+2045,III,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X, diff: %p 
+2046,,NAN_DBGID_SPARE_80:0xFFF5 
+2047,I,NAN_DBGID_SPARE_80:0xFFF4, timer: 0x%X 
+2048,,nan_sched: DW Channel end Wake 
+2049,,Start DB Request 
+2050,,Stop DB Request 
+2051,,nan_sched:DW Channel end sleep 
+2052,,nan_sched: Disc channel Wake 
+2053,I,NAN_DBGID_BEACON_TX_SEND DB Bcn Tbd= %d 
+2054,,nan_faw_channel_grant: Wake 
+2055,,nan_sched faw_grant_end sleep 
+2056,III,NAN-CHREQ_GRANT: freq %u  type %u  tsfLo 0x%08x 
+2057,III,NAN-CHREQ_END: freq %u  type %u  tsfLo 0x%08x 
+2058,III,NAN-CHREQ_ERROR: freq %u  type %u  tsfLo 0x%08x 
+2059,,NAN_SCHED_DO_CHANNEL_REQ: Read config error 
+2060,II,NAN_DBGID_DW_SKIP:0x%X, curr_tsf_lower:0x%X 
+2061,II,NAN_DBGID_DW_SKIP:0x%X, next_tsf_lower:0x%X 
+2062,II,NAN_DBGID_DW_SKIP:0x%X, offset:0x%X 
+2063,II,NAN_DBGID_DW_SKIP:0x%X, start_time:0x%X 
+2064,,wlan_nan_sched: Wakeup not permitted in 5G 
+2065,II,nan_sched: offset_tbtt %d sta_Channel %d 
+2066,II,nan_sched: no time for one more DB diff:%d interval:%d 
+2067,III,nan_sched: offset %d pSync->nextDwTsf %d curr_tsf %d  
+2068,,NAN_SCHED_DO_CHANNEL_REQ: Read config error 
+2069,I,5G DW freq:%d 
+2070,,NAN_SCHED_DO_CHANNEL_REQ: Read config error 
+2071,II,5G DW Start: %d status_error:%d 
+2072,I,5G DW Start status: %d 
+2073,IIII,NANSCHED_StartDw_5g() status: %d fa_entry: %p dw_secondary_started: %d nanSecFreq: %d 
+2074,IIII,NANSCHED_StopDw_5g() status: %d fa_entry: %p dw_secondary_started: %d dw_secondary_active: %d 
+2075,,nan_sched: SM sessions in progress not scheduling DB 
+2076,,Stop DB Request 
+2077,I,NAN-NAN_DBGID_SPARE_80: NANSCHED_StartFaw: channel %d 
+2078,,NAN - 5G Enabled failed  
+2079,III,NANSCHED_FaScheduler: Triggering FA index:%d FA type:%d Active:%d 
+2080,,NAN_SCHED: FawChannelGrant 
+2081,,# UN-Pause NDP vdev 
+2082,I,NAN_SCHED: Un-Pause NDP vdev : %d 
+2083,I,NAN_SCHED: Pause NDP vdev : %d 
+2084,,NAN_SCHED: FawChannelEnd 
+2085,,nan_sched_resmgr_link: NAN Ctxt NULL 
+2086,,nan_sched_resmgr_link: NAN VDEV is NULL - NAN is not enabled 
+2087,,nan_sched_resmgr_link: Channel->mhz zero or channel is NULL 
+2088,I,nan_sched_resmgr_link nss: %d 
+2089,,nan_sched_resmgr_link: Channel->mhz zero or channel is NULL 
+2090,II,nan_sched_resmgr_link: create new link channel:%d flags: 0x%x 
+2091,I,nan_sched_resmgr_link nss: %d 
+2092,,NANSCHED_GetNANDwEnd_Tsf() pSync NULL !!! 
+2093,IIII,NAN-Dw End Tsf: offset %x start_time %x currSlot %x slotOffset %x 
+2094,IIII,NAN_DBGID_TSF_DUMP: #1 curr_tsf_upper 0x%X, curr_tsf_lower 0x%X, nextDwTsf_upper 0x%X, nextDwTsf_lower 0x%X 
+2095,I,NAN_SCHED: ULW distance to the next DW %x 
+2096,IIII,NANSCHED_GetSlotTimer_Duration: FA[%d] curr_slot_dw0:%d temp_slot_dw0:%d num_slots:%d 
+2097,IIII,NANSCHED_GetSlotTimer_Duration: #2 FA[%d] curr_slot_dw0:%d temp_slot_dw0:%d num_slots:%d 
+2098,,NANSUB_Init: pNan is Null returning A_EFAULT 
+2099,I,NAN-PUBSUB_REMOVED: handle %u 
+2100,I,PASSPHRASE Set, len %d 
+2101,I,Ranging config indication event %d 
+2102,II,Ranging config ingress distance:%d egress distance:%d  
+2103,I,Initiate service based ranging with range_id %d 
+2104,,Match not found Range initiation failed 
+2105,,Cancel ranging 
+2106,,Cancel Ranging failed 
+2107,I,NAN-PUBSUB_UPDATED: handle %u 
+2108,I,NAN SUBSCRIBE SDEA UPDATATE INDI : %d 
+2109,I,Clearing the Ranging required flag NANSUB pParam->sdea_ctrl_val : %d 
+2110,,NAN SUBSCRIBE SDEA Ranging Disabled: Delete ranging instance 
+2111,III,NAN-PUBSUB_PROCESSED: handle %u	status %u  value %u 
+2112,I,NAN-PUBSUB_REMOVE_DEFERRED: handle %u 
+2113,I,NAN-PUBSUB_REMOVE_PENDING: handle %u 
+2114,I,NAN-PUBSUB_REMOVED: handle %u 
+2115,I,NANSUB_SubscribeUpdateLocalMatchFilter : %d 
+2116,,Updating Match Info Failed#3
  
-2118,,Updating Match Info Failed#1
+2117,,Updating Match Info Failed#1
  
-2119,IIIIII,NAN20_RANGING - Get Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2120,III,NAN-SUBSCRIBE_MATCH_NEW: handle %u  match handle %u	timestamp %u 
-2121,I,NANSUB_SubscribeHandleRepeatMatch 1 = %d 
-2122,,NANSUB_SubscribeHandleRepeatMatch 2 
-2123,I,NAN-SUBSCRIBE_MATCH_REPEAT: handle %u - Ranging supported  
-2124,III,NAN-SUBSCRIBE_MATCH_REPEAT: handle %u  match handle %u  timestamp %u 
-2125,III,NAN-SUBSCRIBE %d, %d, %d 
-2126,IIIIIII,NAN-PUBSUB_MATCHED_SKIPPED_SSI: handle %u  svcId %02X:%02X:%02X:%02X:%02X:%02X  
-2127,IIII,NAN-PUBSUB_MATCHED: inId %u  reqId %u  svcCtrl 0x%02x  len %u 
-2128,IIIIIII,NAN-PUBSUB_MATCHED: handle %u  svcId %02X:%02X:%02X:%02X:%02X:%02X  
-2129,IIII,NAN-PUBSUB_MATCHED: inId %u  reqId %u  svcCtrl 0x%02x  len %u 
-2130,IIIIIIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X  macAddr %02X:%02X:%02X:%02X:%02X:%02X 
-2131,IIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X inId %u  reqId %u 
-2132,IIII,NAN-SUBSCRIBE_MATCH_LOG: handle %u  match handle %u  match timestamp %u  timestamp %u 
-2133,IIII,NAN-NEW_ANCHORMASTER: rank=0x%08x_%08x (mp=%d  rf=%d) 
-2134,III,NAN-ANCHORMASTER_RECORD_UPDATE_LAST:  rank=0x%08x_%08x BTT=0x%08x 
-2135,IIII,NAN-ANCHORMASTER_RECORD_UPDATE: rank=0x%08x_%08x HC=%d BTT=0x%08x 
-2136,,NAN MAC randomization timer expired 
-2137,IIIIII,old mac: %02x:%02x:%02x:%02x:%02x:%02x 
-2138,IIIIII,new mac: %02x:%02x:%02x:%02x:%02x:%02x 
-2139,III,NAN-BEACON_TX (prepare): buf %p  len %u  rval %u 
-2140,IIII,NAN-BEACON_TX_SEND: type 0x%X  tsfLo 0x%08x  rval %u  hc %u 
-2141,I,NAN-BEACON_TX_CANCEL: tsfLo 0x%08x 
-2142,II,NAN20_Sync stats ndp freq1:%d freq2:%d 
-2143,,nan_sync Set ClusterID: Wake 
-2144,I,NANSYNC_SetClusterId: %d 
-2145,,nan_sync Set ClusterID: Sleep 
-2146,II,NANSYNC_EnableDisableDiscMacRandomization(): %d RandomTimeout: %d 
-2147,III,NAN-ROLE_CHANGE: %d -> %d (isFORCED=%d) 
-2148,IIII,NAN-NEW_MASTERRANK: rank=0x%08x_%08x (mp=%d  rf=%d) 
-2149,,NANMATCH_Init: pNan is Null returning A_EFAULT 
-2150,II,NAN-REQUESTOR_ID: code 0x%X  requestorId 0x%X 
+2118,IIIIII,NAN20_RANGING - Get Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2119,III,NAN-SUBSCRIBE_MATCH_NEW: handle %u  match handle %u	timestamp %u 
+2120,I,NANSUB_SubscribeHandleRepeatMatch 1 = %d 
+2121,,NANSUB_SubscribeHandleRepeatMatch 2 
+2122,I,NAN-SUBSCRIBE_MATCH_REPEAT: handle %u - Ranging supported  
+2123,III,NAN-SUBSCRIBE_MATCH_REPEAT: handle %u  match handle %u  timestamp %u 
+2124,III,NAN-SUBSCRIBE %d, %d, %d 
+2125,IIIIIII,NAN-PUBSUB_MATCHED_SKIPPED_SSI: handle %u  svcId %02X:%02X:%02X:%02X:%02X:%02X  
+2126,IIII,NAN-PUBSUB_MATCHED: inId %u  reqId %u  svcCtrl 0x%02x  len %u 
+2127,IIIIIII,NAN-PUBSUB_MATCHED: handle %u  svcId %02X:%02X:%02X:%02X:%02X:%02X  
+2128,IIII,NAN-PUBSUB_MATCHED: inId %u  reqId %u  svcCtrl 0x%02x  len %u 
+2129,IIIIIIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X  macAddr %02X:%02X:%02X:%02X:%02X:%02X 
+2130,IIII,NAN-PUBSUB_FOLLOWUP_RECEIVED: handle %u  matchHandle 0x%04X inId %u  reqId %u 
+2131,IIII,NAN-SUBSCRIBE_MATCH_LOG: handle %u  match handle %u  match timestamp %u  timestamp %u 
+2132,IIII,NAN-NEW_ANCHORMASTER: rank=0x%08x_%08x (mp=%d  rf=%d) 
+2133,III,NAN-ANCHORMASTER_RECORD_UPDATE_LAST:  rank=0x%08x_%08x BTT=0x%08x 
+2134,IIII,NAN-ANCHORMASTER_RECORD_UPDATE: rank=0x%08x_%08x HC=%d BTT=0x%08x 
+2135,,NAN MAC randomization timer expired 
+2136,IIIIII,old mac: %02x:%02x:%02x:%02x:%02x:%02x 
+2137,IIIIII,new mac: %02x:%02x:%02x:%02x:%02x:%02x 
+2138,III,NAN-BEACON_TX (prepare): buf %p  len %u  rval %u 
+2139,IIII,NAN-BEACON_TX_SEND: type 0x%X  tsfLo 0x%08x  rval %u  hc %u 
+2140,I,NAN-BEACON_TX_CANCEL: tsfLo 0x%08x 
+2141,II,NAN20_Sync stats ndp freq1:%d freq2:%d 
+2142,,nan_sync Set ClusterID: Wake 
+2143,I,NANSYNC_SetClusterId: %d 
+2144,,nan_sync Set ClusterID: Sleep 
+2145,II,NANSYNC_EnableDisableDiscMacRandomization(): %d RandomTimeout: %d 
+2146,III,NAN-ROLE_CHANGE: %d -> %d (isFORCED=%d) 
+2147,IIII,NAN-NEW_MASTERRANK: rank=0x%08x_%08x (mp=%d  rf=%d) 
+2148,,NANMATCH_Init: pNan is Null returning A_EFAULT 
+2149,II,NAN-REQUESTOR_ID: code 0x%X  requestorId 0x%X 
+2150,I,NAN_SD_ATTR_INSTANCE_ID_DONT_CARE: code 0x%X 
 2151,I,NAN_SD_ATTR_INSTANCE_ID_DONT_CARE: code 0x%X 
 2152,I,NAN_SD_ATTR_INSTANCE_ID_DONT_CARE: code 0x%X 
 2153,I,NAN_SD_ATTR_INSTANCE_ID_DONT_CARE: code 0x%X 
-2154,I,NAN_SD_ATTR_INSTANCE_ID_DONT_CARE: code 0x%X 
-2155,II,NAN-REQUESTOR_ID: code 0x%X  requestorId 0x%X 
-2156,I,NAN_SD_ATTR_INSTANCE_ID_DONT_CARE: code 0x%X 
-2157,IIII,NANMATCH_RepeatMatchCheck: matchFilterMatch:%d serviceInfoMatch:%d service_update_indicator:%d service_update_indicator:%d 
-2158,,wlan_nan_match: NAN20_CACHE(no dealloc #2) Match not, de-allocating cache 
-2159,IIII,NAN : SUBSCRIBE_MATCH_EXPIRED serviceHandle:0x%x handle:%d timestamp1:%d timestamp2:%d 
-2160,II,NAN : MATCH_EXPIRED delta:%d unmatchTimeout:%d 
-2161,,WMI_EVENT_BUFFER not available for NAN 
-2162,II,NANMATCH_SendRangeResult ranging_indication_event 0x%x range_measurement %d 
-2163,II,NAN : SUBSCRIBE_MATCH_EXPIRED serviceHandle:0x%x handle:%d 
-2164,,NANMATCH_SendRangeResult: Range configuration doesn't support ranging 
-2165,II,NANMATCH_SendRangeResult:Inner_threshold %d Outer_threshold %d 
-2166,,NANMATCH_SendRangeResult: Continuous range result 
-2167,,NANMATCH_SendRangeResult: Notify if the devices enters or exits subsequently 
-2168,,NANMATCH_SendRangeResult: Ingress_egress met no action needed 
-2169,,NANMATCH_SendRangeResult: Ingress_egress met 
-2170,,NANMATCH_SendRangeResult: Notify if the devices enters subsequently 
-2171,,NANMATCH_SendRangeResult: Ingress met no action needed 
-2172,,NANMATCH_SendRangeResult: Ingress met 
-2173,,NANMATCH_SendRangeResult: Egress met no action needed 
-2174,,NANMATCH_SendRangeResult: Egress met 
-2175,II,NANMATCH_SendRangeResult ranging_indication_event 0x%x range_measurement %d 
-2176,I,nan_match_delete_ranging_instances: range_id %d 
-2177,I,NAN_20_Utils_BuildDwNANManagementFrame ERR: Already a frame built for this queue_type:%d 
-2178,,Failed to alloc NMF buffer 
-2179,,NAN_20_Utils_free rtt frame 
-2180,I,NAN_20_Utils_Enqueue_nmfAttr: Enqueue NDP attr 0x%x 
-2181,I,NAN_20_Utils_Enqueue_nmfAttr: Enqueue RTT attr 0x%x 
-2182,,NAN_20_Utils_Dequeue_nmfAttr: Dequeue NDP attr Failed 
-2183,I,NAN_20_Utils_Dequeue_nmfAttr: Dequeue NDP attr 0x%x 
-2184,,NAN_20_Utils_Dequeue_nmfAttr: Dequeue RTT attr Failed 
-2185,I,NAN_20_Utils_Dequeue_nmfAttr: Dequeue RTT attr 0x%x 
-2186,I,NAN_20_Utils_Remove_nmfAttr: Remove NDP attr 0x%x 
-2187,I,NAN_20_Utils_Remove_nmfAttr: Remove RTT attr 0x%x 
+2154,II,NAN-REQUESTOR_ID: code 0x%X  requestorId 0x%X 
+2155,I,NAN_SD_ATTR_INSTANCE_ID_DONT_CARE: code 0x%X 
+2156,IIII,NANMATCH_RepeatMatchCheck: matchFilterMatch:%d serviceInfoMatch:%d service_update_indicator:%d service_update_indicator:%d 
+2157,,wlan_nan_match: NAN20_CACHE(no dealloc #2) Match not, de-allocating cache 
+2158,IIII,NAN : SUBSCRIBE_MATCH_EXPIRED serviceHandle:0x%x handle:%d timestamp1:%d timestamp2:%d 
+2159,II,NAN : MATCH_EXPIRED delta:%d unmatchTimeout:%d 
+2160,,WMI_EVENT_BUFFER not available for NAN 
+2161,II,NANMATCH_SendRangeResult ranging_indication_event 0x%x range_measurement %d 
+2162,II,NAN : SUBSCRIBE_MATCH_EXPIRED serviceHandle:0x%x handle:%d 
+2163,,NANMATCH_SendRangeResult: Range configuration doesn't support ranging 
+2164,II,NANMATCH_SendRangeResult:Inner_threshold %d Outer_threshold %d 
+2165,,NANMATCH_SendRangeResult: Continuous range result 
+2166,,NANMATCH_SendRangeResult: Notify if the devices enters or exits subsequently 
+2167,,NANMATCH_SendRangeResult: Ingress_egress met no action needed 
+2168,,NANMATCH_SendRangeResult: Ingress_egress met 
+2169,,NANMATCH_SendRangeResult: Notify if the devices enters subsequently 
+2170,,NANMATCH_SendRangeResult: Ingress met no action needed 
+2171,,NANMATCH_SendRangeResult: Ingress met 
+2172,,NANMATCH_SendRangeResult: Egress met no action needed 
+2173,,NANMATCH_SendRangeResult: Egress met 
+2174,II,NANMATCH_SendRangeResult ranging_indication_event 0x%x range_measurement %d 
+2175,I,nan_match_delete_ranging_instances: range_id %d 
+2176,I,NAN_20_Utils_BuildDwNANManagementFrame ERR: Already a frame built for this queue_type:%d 
+2177,,Failed to alloc NMF buffer 
+2178,,NAN_20_Utils_free rtt frame 
+2179,I,NAN_20_Utils_Enqueue_nmfAttr: Enqueue NDP attr 0x%x 
+2180,I,NAN_20_Utils_Enqueue_nmfAttr: Enqueue RTT attr 0x%x 
+2181,,NAN_20_Utils_Dequeue_nmfAttr: Dequeue NDP attr Failed 
+2182,I,NAN_20_Utils_Dequeue_nmfAttr: Dequeue NDP attr 0x%x 
+2183,,NAN_20_Utils_Dequeue_nmfAttr: Dequeue RTT attr Failed 
+2184,I,NAN_20_Utils_Dequeue_nmfAttr: Dequeue RTT attr 0x%x 
+2185,I,NAN_20_Utils_Remove_nmfAttr: Remove NDP attr 0x%x 
+2186,I,NAN_20_Utils_Remove_nmfAttr: Remove RTT attr 0x%x 
+2187,III,Failed to transmit NMF status: %d, index %d flags %d
+ 
 2188,III,Failed to transmit NMF status: %d, index %d flags %d
  
-2189,III,Failed to transmit NMF status: %d, index %d flags %d
+2189,I,NAN20_UTILS: NMF Sched update notify tx com len %x 
+2190,I,NAN20_utils_process_sched_update_notify_tx_comp:data len: %x 
+2191,I,NAN20_UTILS: NMF Sched update notify tx com len %x 
+2192,II,NAN20_UTILS: NMF Tx Completion; Couldn't find peer discovery mac addr from ndi mac addr(ost:%d, sent:%d) 
+2193,II,NAN20_UTILS: NMF Tx Completion with oui_subtype: %d sentFlag:%d 
+2194,IIII,NAN20_UTILS:1 FA time_bit_map1[%d]-%x, time_bit_map2[%d]-%x 
+2195,IIII,NAN20_UTILS:2 NDC/IMMU time_bit_map1[%d]-%x, time_bit_map2[%d]-%x 
+2196,,NAN20_UTILS: wlan_nan20_validate_ndc_attr - ** Invalid NDC 
+2197,II,NAN20_UTILS: wlan_nan20_validate_ndc_attr - ** Invalid NDC mapId %d FA map id %d 
+2198,,NAN20_UTILS: wlan_nan20_validate_ndc_attr - Valid NDC 
+2199,,NAN20_UTILS: wlan_nan20_validate_ndl_attr - ** Invalid immutable 
+2200,III,NAN20_UTILS: wlan_nan20_validate_ndc_attr - ** Invalid NDL entry[%d] mapId %d FA map id %d 
+2201,,NAN20_UTILS: wlan_nan20_validate_ndl_attr - Valid immutable 
+2202,,NAN20_UTILS: wlan_nan20_validate_fa_attr - ** Invalid FA attr 
+2203,,NAN20_UTILS: wlan_nan20_validate_fa_attr - Valid FA attr 
+2204,,NAN20_UTILS: wlan_nan20_validate_attr invalid NDC attr 
+2205,,NAN20_UTILS: wlan_nan20_validate_attr invalid NDL attr 
+2206,,NAN20_UTILS: wlan_nan20_validate_attr invalid FA attr 
+2207,,NAN20_utils: 2nd avail attribute decode failed 
+2208,I,NAN20_utils: 2nd avail attribute received with mapId:%d 
+2209,,NAN20_utils: 1st avail attribute decode failed 
+2210,I,NAN20_utils: 1st avail attribute received with mapId:%d 
+2211,I,NAN_20_ReceiveNMF_Parse_And_Validate: Input Length(%d) validation failed 
+2212,II,NAN_20_ReceiveNMF_Parse_And_Validate: Received NMF with oui_subtype: %d framelen:%d 
+2213,II,NAN20_UTILS: NMF attrId%x attrLen %x  
+2214,IIII, %x %x %x %x  
+2215,I, %x  
+2216,,NAN20_UTILS: NDC attribute processing failed 
+2217,II,NAN20_UTILS: NDC attribute processed isProposed(%d) mapId(%d) 
+2218,I,NAN20_utils: element container len: %d 
+2219,I,parsing nan_element_container_attr failed status: %d 
+2220,,NAN20_UTILS: Max ULW entries reached, Ignoring received ULW attr 
+2221,,NAN20_UTILS: Invalid ULW attr 
+2222,,NAN20_UTILS: element container not found: Reject NDP 
+2223,,NAN20_UTILS: Immutable schedule entry can't handle#1: Reject NDP 
+2224,,NAN20_UTILS: Picking second Availability attribute as it matches with proposed NDC 
+2225,,NAN20_UTILS: Immutable schedule entry can't handle#2: Reject NDP 
+2226,,NAN20_UTILS: Immutable schedule entry can't handle#3: Reject NDP 
+2227,,NAN20_UTILS: Picking second Availability attribute as it matches with immutable schedule 
+2228,,NAN20_UTILS: Invalid attribute params 
+2229,,NAN_20_ReceiveNMF_Parse_And_Validate: Confirm receieved without NDP attribute 
+2230,,NAN_20_ReceiveNMF_Parse_And_Validate: RSUA was not accepted 
+2231,,NAN20_UTILS: NMF RANGING TERMINATE RECEIVED 
+2232,,NAN20_UTILS: NMF NAN_SCHEDULE_REQUEST RECEIVED 
+2233,,NAN20_UTILS: NMF NAN_SCHEDULE_RESPONSE RECEIVED 
+2234,,NAN20_UTILS: NMF NAN_SCHEDULE_CONFIRM RECEIVED 
+2235,,NAN20_UTILS: NMF NAN_RANGING_REPORT RECEIVED 
+2236,,NAN20_UTILS: NMF NAN UPDATE NOTIFICATION RECEIVED 
+2237,I,NAN_20_ReceiveNMF_Parse_And_Validate failed: status: %d 
+2238,,NAN20_UTILS: NMF RANGING TERMINATE RECEIVED 
+2239,,NAN20_UTILS: NMF NAN_SCHEDULE_REQUEST RECEIVED 
+2240,,NAN20_UTILS: NMF NAN_SCHEDULE_RESPONSE RECEIVED 
+2241,,NAN20_UTILS: NMF NAN_SCHEDULE_CONFIRM RECEIVED 
+2242,,NAN20_UTILS: NMF NAN_RANGING_REPORT RECEIVED 
+2243,,NAN20_UTILS: NMF NAN UPDATE NOTIFICATION RECEIVED 
+2244,I,sdea_ctrl_val: 0x%x 
+2245,IIIII,wlan_nan_get_default_fa_channel =%d/%d, Band=%d, BandConfigured=%d, ndp_channel_cfg=%d 
+2246,,wlan_nan_get_default_fa_channel ====5G is all marked passive in regulatory, forcing 2G==== 
+2247,,wlan_nan_get_default_fa_channel: ERR: 5G channel can't be forced because of self/peer capabilities 
+2248,II,wlan_nan_get_default_fa_channel ====2.4G==== channel:%d phy_mode:%d 
+2249,II,wlan_nan_get_default_fa_channel Forcing STA SCC in 2.4G ==== channel:%d phy_mode:%d 
+2250,II,wlan_nan_get_default_fa_channel ====5G==== channel:%d phy_mode:%d 
+2251,IIIIII,NAN20_RANGING - Create Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2252,III,NAN20_RANGING - Ranging instance created(idx : %d) with req_id : %x token_id : %d 
+2253,,NAN20_RANGING - Ranging instance create failed - No free slots 
+2254,IIIIII,NAN20_RANGING - Get Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2255,II,NAN20_RANGING - Ranging instance match found (idx : %d) with req_id : %x 
+2256,IIIIII,NAN20_RANGING - Get Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2257,III,NAN20_RANGING - Ranging instance match found (idx : %d) with req_id : %x token_id : %d 
+2258,II,NAN20_RANGING - Ranging instance not found - No match for req_id : %x token_id : %d 
+2259,IIIIIIII,NAN20_RANGING role: %d req_id: %d token_id: %d - Delete ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2260,II,NAN20_RANGING : rsu: Role: %d role: %d 
+2261,III,NAN20_RANGING - Ranging instance deleted (idx : %d) with req_id : %x token_id : %d 
+2262,I,NANRTT_Active: i: %d 
+2263,,NANRTT_Active:FALSE 
+2264,I,NAN20_RANGING: Allocated RSUA (cnt:%d) 
+2265,,NAN20_RANGING ERROR: Alloc RSUA failed 
+2266,I,NAN20_RANGING: Deallocated RSUA (cnt:%d) 
+2267,,NAN20_RANGING: Dealloc RSUA failed 
+2268,II,NAN20_RANGING ERROR: Build RSUA Invalid arguments pBuf:0x%x buf_len:%d 
+2269,,NAN20_RANGING: Ranging not supported 
+2270,,NAN20_RANGING: Building RSUA with status as REJECTED 
+2271,,NAN20_RANGING: Ranging required bit set 
+2272,IIII,NAN20_RANGING: Built RSUA token_id:%d status:%d valid_bit_map:%d reason_code:%d 
+2273,,NAN20_RANGING - ERROR_FA: is zero bytes #4 
+2274,II,NAN20_RANGING: valid_bit_map: %d flags: %d 
+2275,IIII,NAN_20_Build_RSUA_RESP: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
+2276,II,NAN_20_Build_RSUA_RESP: TMB[%d]:0x%x 
+2277,,NAN20_RANGING:RANGE REPORT FLAG SET 
+2278,,NAN20_RANGING: Pick Availability slots from RSUA_RESP  
+2279,III,NAN20_RANGING: Calling Ranging status notification handler with status:%d rep_ss_period:%d client_id:%d
  
-2190,I,NAN20_UTILS: NMF Sched update notify tx com len %x 
-2191,I,NAN20_utils_process_sched_update_notify_tx_comp:data len: %x 
-2192,I,NAN20_UTILS: NMF Sched update notify tx com len %x 
-2193,II,NAN20_UTILS: NMF Tx Completion; Couldn't find peer discovery mac addr from ndi mac addr(ost:%d, sent:%d) 
-2194,II,NAN20_UTILS: NMF Tx Completion with oui_subtype: %d sentFlag:%d 
-2195,IIII,NAN20_UTILS:1 FA time_bit_map1[%d]-%x, time_bit_map2[%d]-%x 
-2196,IIII,NAN20_UTILS:2 NDC/IMMU time_bit_map1[%d]-%x, time_bit_map2[%d]-%x 
-2197,,NAN20_UTILS: wlan_nan20_validate_ndc_attr - ** Invalid NDC 
-2198,II,NAN20_UTILS: wlan_nan20_validate_ndc_attr - ** Invalid NDC mapId %d FA map id %d 
-2199,,NAN20_UTILS: wlan_nan20_validate_ndc_attr - Valid NDC 
-2200,,NAN20_UTILS: wlan_nan20_validate_ndl_attr - ** Invalid immutable 
-2201,III,NAN20_UTILS: wlan_nan20_validate_ndc_attr - ** Invalid NDL entry[%d] mapId %d FA map id %d 
-2202,,NAN20_UTILS: wlan_nan20_validate_ndl_attr - Valid immutable 
-2203,,NAN20_UTILS: wlan_nan20_validate_fa_attr - ** Invalid FA attr 
-2204,,NAN20_UTILS: wlan_nan20_validate_fa_attr - Valid FA attr 
-2205,,NAN20_UTILS: wlan_nan20_validate_attr invalid NDC attr 
-2206,,NAN20_UTILS: wlan_nan20_validate_attr invalid NDL attr 
-2207,,NAN20_UTILS: wlan_nan20_validate_attr invalid FA attr 
-2208,,NAN20_utils: 2nd avail attribute decode failed 
-2209,I,NAN20_utils: 2nd avail attribute received with mapId:%d 
-2210,,NAN20_utils: 1st avail attribute decode failed 
-2211,I,NAN20_utils: 1st avail attribute received with mapId:%d 
-2212,I,NAN_20_ReceiveNMF_Parse_And_Validate: Input Length(%d) validation failed 
-2213,II,NAN_20_ReceiveNMF_Parse_And_Validate: Received NMF with oui_subtype: %d framelen:%d 
-2214,II,NAN20_UTILS: NMF attrId%x attrLen %x  
-2215,IIII, %x %x %x %x  
-2216,I, %x  
-2217,,NAN20_UTILS: NDC attribute processing failed 
-2218,II,NAN20_UTILS: NDC attribute processed isProposed(%d) mapId(%d) 
-2219,I,NAN20_utils: element container len: %d 
-2220,I,parsing nan_element_container_attr failed status: %d 
-2221,,NAN20_UTILS: Max ULW entries reached, Ignoring received ULW attr 
-2222,,NAN20_UTILS: Invalid ULW attr 
-2223,,NAN20_UTILS: element container not found: Reject NDP 
-2224,,NAN20_UTILS: Immutable schedule entry can't handle#1: Reject NDP 
-2225,,NAN20_UTILS: Picking second Availability attribute as it matches with proposed NDC 
-2226,,NAN20_UTILS: Immutable schedule entry can't handle#2: Reject NDP 
-2227,,NAN20_UTILS: Immutable schedule entry can't handle#3: Reject NDP 
-2228,,NAN20_UTILS: Picking second Availability attribute as it matches with immutable schedule 
-2229,,NAN20_UTILS: Invalid attribute params 
-2230,,NAN_20_ReceiveNMF_Parse_And_Validate: Confirm receieved without NDP attribute 
-2231,,NAN_20_ReceiveNMF_Parse_And_Validate: RSUA was not accepted 
-2232,,NAN20_UTILS: NMF RANGING TERMINATE RECEIVED 
-2233,,NAN20_UTILS: NMF NAN_SCHEDULE_REQUEST RECEIVED 
-2234,,NAN20_UTILS: NMF NAN_SCHEDULE_RESPONSE RECEIVED 
-2235,,NAN20_UTILS: NMF NAN_SCHEDULE_CONFIRM RECEIVED 
-2236,,NAN20_UTILS: NMF NAN_RANGING_REPORT RECEIVED 
-2237,,NAN20_UTILS: NMF NAN UPDATE NOTIFICATION RECEIVED 
-2238,I,NAN_20_ReceiveNMF_Parse_And_Validate failed: status: %d 
-2239,,NAN20_UTILS: NMF RANGING TERMINATE RECEIVED 
-2240,,NAN20_UTILS: NMF NAN_SCHEDULE_REQUEST RECEIVED 
-2241,,NAN20_UTILS: NMF NAN_SCHEDULE_RESPONSE RECEIVED 
-2242,,NAN20_UTILS: NMF NAN_SCHEDULE_CONFIRM RECEIVED 
-2243,,NAN20_UTILS: NMF NAN_RANGING_REPORT RECEIVED 
-2244,,NAN20_UTILS: NMF NAN UPDATE NOTIFICATION RECEIVED 
-2245,I,sdea_ctrl_val: 0x%x 
-2246,IIIII,wlan_nan_get_default_fa_channel =%d/%d, Band=%d, BandConfigured=%d, ndp_channel_cfg=%d 
-2247,,wlan_nan_get_default_fa_channel ====5G is all marked passive in regulatory, forcing 2G==== 
-2248,,wlan_nan_get_default_fa_channel: ERR: 5G channel can't be forced because of self/peer capabilities 
-2249,II,wlan_nan_get_default_fa_channel ====2.4G==== channel:%d phy_mode:%d 
-2250,II,wlan_nan_get_default_fa_channel Forcing STA SCC in 2.4G ==== channel:%d phy_mode:%d 
-2251,II,wlan_nan_get_default_fa_channel ====5G==== channel:%d phy_mode:%d 
-2252,IIIIII,NAN20_RANGING - Create Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2253,III,NAN20_RANGING - Ranging instance created(idx : %d) with req_id : %x token_id : %d 
-2254,,NAN20_RANGING - Ranging instance create failed - No free slots 
-2255,IIIIII,NAN20_RANGING - Get Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2256,II,NAN20_RANGING - Ranging instance match found (idx : %d) with req_id : %x 
-2257,IIIIII,NAN20_RANGING - Get Ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2258,III,NAN20_RANGING - Ranging instance match found (idx : %d) with req_id : %x token_id : %d 
-2259,II,NAN20_RANGING - Ranging instance not found - No match for req_id : %x token_id : %d 
-2260,IIIIIIII,NAN20_RANGING role: %d req_id: %d token_id: %d - Delete ranging instance for peer 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2261,II,NAN20_RANGING : rsu: Role: %d role: %d 
-2262,III,NAN20_RANGING - Ranging instance deleted (idx : %d) with req_id : %x token_id : %d 
-2263,I,NANRTT_Active: i: %d 
-2264,,NANRTT_Active:FALSE 
-2265,I,NAN20_RANGING: Allocated RSUA (cnt:%d) 
-2266,,NAN20_RANGING ERROR: Alloc RSUA failed 
-2267,I,NAN20_RANGING: Deallocated RSUA (cnt:%d) 
-2268,,NAN20_RANGING: Dealloc RSUA failed 
-2269,II,NAN20_RANGING ERROR: Build RSUA Invalid arguments pBuf:0x%x buf_len:%d 
-2270,,NAN20_RANGING: Ranging not supported 
-2271,,NAN20_RANGING: Building RSUA with status as REJECTED 
-2272,,NAN20_RANGING: Ranging required bit set 
-2273,IIII,NAN20_RANGING: Built RSUA token_id:%d status:%d valid_bit_map:%d reason_code:%d 
-2274,,NAN20_RANGING - ERROR_FA: is zero bytes #4 
-2275,II,NAN20_RANGING: valid_bit_map: %d flags: %d 
-2276,IIII,NAN_20_Build_RSUA_RESP: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
-2277,II,NAN_20_Build_RSUA_RESP: TMB[%d]:0x%x 
-2278,,NAN20_RANGING:RANGE REPORT FLAG SET 
-2279,,NAN20_RANGING: Pick Availability slots from RSUA_RESP  
-2280,III,NAN20_RANGING: Calling Ranging status notification handler with status:%d rep_ss_period:%d client_id:%d
+2280,,NAN20_RANGING: Invalid attribute buffer
  
-2281,,NAN20_RANGING: Invalid attribute buffer
- 
-2282,I,wlan_nan20_check_ranging_required_is_valid:%d 
-2283,II,wlan_nan20_update_ranging_param: enable(%d) serviceCtrlType:%x 
-2284,I,wlan_nan20_update_ranging_param: enable sdea_ctrl_val:%x 
-2285,I,wlan_nan20_update_ranging_param: disable sdea_ctrl_val:%x 
-2286,I,wlan_nan20_update_ranging_param: Pub enable sdea_ctrl_val:%x 
-2287,I,wlan_nan20_update_ranging_param: Pub disable sdea_ctrl_val:%x 
-2288,I,wlan_nan20_update_ranging:%d 
-2289,I,NAN20_RANGING: RSUA Decode with token_id:%d 
-2290,I,NAN20_RANGING: Publish ranging failed %d 
-2291,II,NAN20_RANGING: type_state_field %d RangeControl:data: 0x%x 
-2292,,NAN20_RANGING: Time bitmap decode failed; Removing ranging instance 
-2293,I,nan20_ranging_handle_session_timeout: %d 
-2294,,NAN20_Ranging instance is not yet active 
-2295,IIII,NAN20_Ranging Instance timed out:0x%x 0x%X timestamp1:%d timestamp2:%d 
-2296,IIIIII,NAN20_RANGING - Ranging session is NULL, peer mac: 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2297,IIIIII,NAN20_RANGING - Ranging session is active 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2298,I,NAN20_RANGING: Ranging Role %d 
-2299,,NAN20_RANGING: Instance not found, cancel failed 
-2300,I,wlan_nan20_sm_ranging terminatd failed: status %d 
-2301,,NAN20_RANGING - Get Ranging instance failed 
-2302,II,NAN20_RANGING: Built Range Report token_id:%d ranging_report_length:%d 
-2303,,NAN20_RANGING: Ranging not supported 
-2304,,NAN20_RANGING - Intiating range request failed: Session active 
-2305,,NAN20_RANGING- Obataining peer channel failed 
-2306,,NAN20_RANGING- Defaulting to 2G channel 
-2307,III,NAN20_RANGING- Obataining peer channel success: mhz: %d, CF1: %d phymode: %d 
-2308,IIIIII,NAN20_RANGING - Initiate ranging with MAC: 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2309,IIIIII,NAN20_RANGING - Send ranging report for peer: 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2310,,NAN20_RANGING: responder instance not found 
-2311,,NAN20_RANGING: Ranging not supported 
-2312,,NAN20_RANGING- Obataining peer channel failed 
-2313,,NAN20_RANGING- Defaulting to 2G channel - APPS request 
-2314,III,Ranging_request_already_queued: MAC_ADDR : 0X%x:0X%x:0X%x 
-2315,,Ranging_queue_element_not_allocated 
-2316,IIIIII,NAN20_RANGING - New peer added 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
-2317,II,wlan_nan20_ranging_set_active_ndp: %d %d set NDP active 
-2318,III,wlan_nan20_ranging_ndp_inactive: %d %d set NDP inactive apps_rtt: %d 
-2319,,NAN20_RANGING - trying to dequeue if any requests are in the queue 
-2320,II,NAN20_RANGING - NDP_Active %d Apps_RTT_active %d 
-2321,,NAN20_RANGING - some session is in progress not initiating any requests 
-2322,III,Trying to initiate range_request:0x%x:0x%x:0x%x 
-2323,,APPS meas done 
-2324,,Responder Instance not found 
-2325,III,NAN20_RANGING - Ranging Instance complete: req_id: %d distance: %d completion_status: %d 
-2326,II,NAN20_RANGING - process range result client_id: %d RangeControl: 0x%x 
-2327,,NAN20_RANGING - Ranging_report bit set by the peer 
-2328,,NAN20_RANGING: Ranging not supported 
-2329,I,NAN20_RANGING: Ranging request handler client_id:%d 
-2330,,NAN20_RANGING: Ranging instance creation failure 
-2331,,NAN20_RANGING - ERROR_FA: is zero bytes #5 
-2332,II,NAN20_RANGING - fa_session:0x%x fa_sessions_allocated:%d 
-2333,II,NAN20_RANGING - Fa[%d] valid:%d TMB_Len:%d 
-2334,IIII,NAN_20_ranging_request_cb_handler: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
-2335,II,NAN_20_ranging_request_cb_handler: TMB[%d]:0x%x 
-2336,,NAN20_RANGING: Entering build range report function 
-2337,,NAN_20_Set_Committed_Slot_Changed: Update SDF with FA_ATTR_Control 
-2338,I,NAN_20_Update_FA_AttributeControl: update_sdf: %d  
-2339,,NAN_20_Update_FA_AttributeControl: update_sdf: TRUE  
-2340,,NAN_20_Update_FA_AttributeControl: Update SDF with FA_ATTR_Control 
-2341,II,wlan_nan20_get_cf1_from_center_freq: found cf1 ch %d for center ch%d 
-2342,IIII,GetDefaultPrimaryChannelInfo_ForOperClass: %d, %x, %x, %d 
-2343,,NAN_20_Build_Avail_Attribute: ERROR_FA: Build availability basic sanity fails: No FA generated 
-2344,IIII,wlan_nan20_save_fa_information: Saving FA information ost:%d freq:%d center_freq:%d OperClass:%d 
-2345,IIII,wlan_nan20_save_fa_information: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
-2346,II,wlan_nan20_save_fa_information: TMB[%d]:0x%x 
-2347,III,wlan_nan20_save_fa_information: Failed to Save FA information ost:%d mode:%d channel:%d 
-2348,I,wlan_nan20_convert_band_only_info_to_channel_info: Phymode=%d 
-2349,,wlan_nan20_pick_best_peer_fa: Incorrect center frequency 
-2350,,wlan_nan20_pick_best_peer_fa: Incorrect primar channel 
-2351,IIIII,wlan_nan20_process_and_save_individual_fa_session: OperClass:%d ChanBitmap:0x%x PrimaryChanBitmap:0x%x chanNum:%d PhyMode:%d 
-2352,,wlan_nan20_pick_best_peer_fa:Invalid channel or DFS channel 
-2353,,wlan_nan20_process_and_save_individual_fa_session: channel forced skipping saving entry 
-2354,I,wlan_nan20_process_and_save_individual_fa_session: Update slots failed (avoidDwNextSlot:%d) 
-2355,,wlan_nan20_process_and_save_individual_fa_session: No more time slots ignore 
-2356,II,wlan_nan20_process_and_save_individual_fa_session: FA session count %d avoidDwNextSlot %d 
-2357,,wlan_nan20_process_and_save_individual_fa_session ERR: Maximum FA sessions reached 
-2358,I,wlan_nan20_process_and_save_individual_fa_session: FA session count %d 
-2359,I,wlan_nan20_process_and_save_individual_fa_session: availabilitytype%x  
-2360,,wlan_nan20_pick_best_peer_fa: No more time slots ignore 
-2361,,wlan_nan20_pick_best_peer_fa: Found some slots on ch 6 for counter 
-2362,II,wlan_nan20_is_chan_present_in_chan_bitmap: tempchannel %d channel:%d 
-2363,I,wlan_nan20_is_chan_present_in_chan_bitmap: tempchannel %d 
-2364,,wlan_nan20_is_chan_present_in_chan_bitmap: Channel matched 
-2365,,wlan_nan20_peer_chan_band_info_pick_best_channel: Couldn't find the forced channel 
-2366,IIIII,wlan_nan20_update_save_peer_chan_band_info: saved_peer_chan_bitmap:0x%x peer_chan_bitmap:0x%x primary_chan_bitmap:0x%x chan_req_type:%d chan_mhz:%d 
-2367,,wlan_nan20_update_save_peer_chan_band_info: Skipping potential entry as usage preference is zero 
-2368,,wlan_nan20_update_save_peer_chan_band_info: error finding global operatig  class 
-2369,I,wlan_nan20_update_save_peer_chan_band_info Skipping saving potential entry with chan bitmap 0x%x as channel is forced 
-2370,,wlan_nan20_update_save_peer_chan_band_info: Skipping 5G entry as it is not supported 
-2371,I,wlan_nan20_update_save_peer_chan_band_info: 0x00 ptemp_nan_peer_chan_band_info->ChanBitMap %d  
-2372,,wlan_nan20_update_save_peer_chan_band_info: 0x01 
-2373,II,wlan_nan20_update_save_peer_chan_band_info: 0x02 GlobalOperClassTabIndex %d index %d 
-2374,I,wlan_nan20_update_save_peer_chan_band_info: 0x03 index1 %d 
-2375,I,wlan_nan20_update_save_peer_chan_band_info: 0x04 %d 
-2376,I,wlan_nan20_update_save_peer_chan_band_info:0x05 %d 
-2377,,wlan_nan20_update_save_peer_chan_band_info:0x06 
-2378,,wlan_nan20_update_save_peer_chan_band_info: Overriding saved peer chan info bitmap 
-2379,,wlan_nan20_update_save_peer_chan_band_info: Skipping as no valid channel in the entry 
-2380,,Peer proposed NDC is not present in data response so rejecting 
-2381,II,wlan_nan20_pick_best_peer_fa: OuiSubtype:%d map_id:%d  
-2382,I,wlan_nan20_pick_best_peer_fa: Process and save FA failed %d 
-2383,I,wlan_nan20_pick_best_peer_fa PeerMaxChannelSwitch:0x%d 
-2384,,wlan_nan20_pick_best_peer_fa ERR: No channels found with peer trying channel 6 
-2385,,wlan_nan20_pick_best_peer_fa ERR: No common channels found with peer 
-2386,I,wlan_nan20_pick_best_peer_fa PeerMaxChannelSwitch:0x%d 
-2387,,wlan_nan20_pick_best_peer_fa ERR: NDC can't be served returning 
-2388,,wlan_nan20_pick_best_peer_fa ERR: NDL can't be served returning 
-2389,III,wlan_nan20_fill_fa_nan_avail_attr: map_id:%d p_fa_session:0x%x band_config:%d  
-2390,,wlan_nan20_fill_fa_nan_avail_attr: Maximum entry list count reached 
-2391,II,wlan_nan20_fill_fa_nan_avail_attr: Skipping FA: %d; entry_list_cnt: 0x%x 
-2392,I,wlan_nan20_fill_fa_nan_avail_attr: Filling entry list of type %d  
-2393,,wlan_nan20_fill_fa_nan_avail_attr: Final timebitmap  
-2394,II,wlan_nan20_fill_fa_nan_avail_attr: : entry_list_cnt:%d numBandOrChannelEntries:%d  
-2395,I,ResolveFa: channel freq %x 
-2396,I,ResolveFa: returning error %d 
-2397,I,ResolveFa: peer cache null and channel null for OuiSubtype %d 
-2398,II,ResolveFa: peer cache null and channel %d for OuiSubtype %d 
-2399,III,ResolveFa: OuiSubtype%d mhz%x phymode%d 
-2400,,ResolveFa: NDC can't be honored/prepared 
-2401,I,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: calling incorrect function for ouitype %d 
-2402,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Channel forced but no channel info provided 
-2403,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Channel forced to 2G when device is in 5G only 
-2404,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Channel forced to 5G when device is in 2G only 
-2405,I,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Unable to create FA Session for outsubtype %d 
-2406,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: NDP or Ranging Instance is NULL cannot build FA/NA 
-2407,I,wlan_nan20_build_nan_availability_attr_nmf: pnan_fa_session_for_peer %u 
-2408,,wlan_nan20_build_nan_availability_attr_nmf: FA session already present, do save fa 
+2281,I,wlan_nan20_check_ranging_required_is_valid:%d 
+2282,II,wlan_nan20_update_ranging_param: enable(%d) serviceCtrlType:%x 
+2283,I,wlan_nan20_update_ranging_param: enable sdea_ctrl_val:%x 
+2284,I,wlan_nan20_update_ranging_param: disable sdea_ctrl_val:%x 
+2285,I,wlan_nan20_update_ranging_param: Pub enable sdea_ctrl_val:%x 
+2286,I,wlan_nan20_update_ranging_param: Pub disable sdea_ctrl_val:%x 
+2287,I,wlan_nan20_update_ranging:%d 
+2288,I,NAN20_RANGING: RSUA Decode with token_id:%d 
+2289,I,NAN20_RANGING: Publish ranging failed %d 
+2290,II,NAN20_RANGING: type_state_field %d RangeControl:data: 0x%x 
+2291,,NAN20_RANGING: Time bitmap decode failed; Removing ranging instance 
+2292,I,nan20_ranging_handle_session_timeout: %d 
+2293,,NAN20_Ranging instance is not yet active 
+2294,IIII,NAN20_Ranging Instance timed out:0x%x 0x%X timestamp1:%d timestamp2:%d 
+2295,IIIIII,NAN20_RANGING - Ranging session is NULL, peer mac: 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2296,IIIIII,NAN20_RANGING - Ranging session is active 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2297,I,NAN20_RANGING: Ranging Role %d 
+2298,,NAN20_RANGING: Instance not found, cancel failed 
+2299,I,wlan_nan20_sm_ranging terminatd failed: status %d 
+2300,,NAN20_RANGING - Get Ranging instance failed 
+2301,II,NAN20_RANGING: Built Range Report token_id:%d ranging_report_length:%d 
+2302,,NAN20_RANGING: Ranging not supported 
+2303,,NAN20_RANGING - Intiating range request failed: Session active 
+2304,,NAN20_RANGING- Obataining peer channel failed 
+2305,,NAN20_RANGING- Defaulting to 2G channel 
+2306,III,NAN20_RANGING- Obataining peer channel success: mhz: %d, CF1: %d phymode: %d 
+2307,IIIIII,NAN20_RANGING - Initiate ranging with MAC: 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2308,IIIIII,NAN20_RANGING - Send ranging report for peer: 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2309,,NAN20_RANGING: responder instance not found 
+2310,,NAN20_RANGING: Ranging not supported 
+2311,,NAN20_RANGING- Obataining peer channel failed 
+2312,,NAN20_RANGING- Defaulting to 2G channel - APPS request 
+2313,III,Ranging_request_already_queued: MAC_ADDR : 0X%x:0X%x:0X%x 
+2314,,Ranging_queue_element_not_allocated 
+2315,IIIIII,NAN20_RANGING - New peer added 0x%x:0x%x:0x%x:0x%x:0x%x:0x%x 
+2316,II,wlan_nan20_ranging_set_active_ndp: %d %d set NDP active 
+2317,III,wlan_nan20_ranging_ndp_inactive: %d %d set NDP inactive apps_rtt: %d 
+2318,,NAN20_RANGING - trying to dequeue if any requests are in the queue 
+2319,II,NAN20_RANGING - NDP_Active %d Apps_RTT_active %d 
+2320,,NAN20_RANGING - some session is in progress not initiating any requests 
+2321,III,Trying to initiate range_request:0x%x:0x%x:0x%x 
+2322,,APPS meas done 
+2323,,Responder Instance not found 
+2324,III,NAN20_RANGING - Ranging Instance complete: req_id: %d distance: %d completion_status: %d 
+2325,II,NAN20_RANGING - process range result client_id: %d RangeControl: 0x%x 
+2326,,NAN20_RANGING - Ranging_report bit set by the peer 
+2327,,NAN20_RANGING: Ranging not supported 
+2328,I,NAN20_RANGING: Ranging request handler client_id:%d 
+2329,,NAN20_RANGING: Ranging instance creation failure 
+2330,,NAN20_RANGING - ERROR_FA: is zero bytes #5 
+2331,II,NAN20_RANGING - fa_session:0x%x fa_sessions_allocated:%d 
+2332,II,NAN20_RANGING - Fa[%d] valid:%d TMB_Len:%d 
+2333,IIII,NAN_20_ranging_request_cb_handler: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
+2334,II,NAN_20_ranging_request_cb_handler: TMB[%d]:0x%x 
+2335,,NAN20_RANGING: Entering build range report function 
+2336,,NAN_20_Set_Committed_Slot_Changed: Update SDF with FA_ATTR_Control 
+2337,I,NAN_20_Update_FA_AttributeControl: update_sdf: %d  
+2338,,NAN_20_Update_FA_AttributeControl: update_sdf: TRUE  
+2339,,NAN_20_Update_FA_AttributeControl: Update SDF with FA_ATTR_Control 
+2340,II,wlan_nan20_get_cf1_from_center_freq: found cf1 ch %d for center ch%d 
+2341,IIII,GetDefaultPrimaryChannelInfo_ForOperClass: %d, %x, %x, %d 
+2342,,NAN_20_Build_Avail_Attribute: ERROR_FA: Build availability basic sanity fails: No FA generated 
+2343,IIII,wlan_nan20_save_fa_information: Saving FA information ost:%d freq:%d center_freq:%d OperClass:%d 
+2344,IIII,wlan_nan20_save_fa_information: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
+2345,II,wlan_nan20_save_fa_information: TMB[%d]:0x%x 
+2346,III,wlan_nan20_save_fa_information: Failed to Save FA information ost:%d mode:%d channel:%d 
+2347,I,wlan_nan20_convert_band_only_info_to_channel_info: Phymode=%d 
+2348,,wlan_nan20_pick_best_peer_fa: Incorrect center frequency 
+2349,,wlan_nan20_pick_best_peer_fa: Incorrect primar channel 
+2350,IIIII,wlan_nan20_process_and_save_individual_fa_session: OperClass:%d ChanBitmap:0x%x PrimaryChanBitmap:0x%x chanNum:%d PhyMode:%d 
+2351,,wlan_nan20_pick_best_peer_fa:Invalid channel or DFS channel 
+2352,,wlan_nan20_process_and_save_individual_fa_session: channel forced skipping saving entry 
+2353,I,wlan_nan20_process_and_save_individual_fa_session: Update slots failed (avoidDwNextSlot:%d) 
+2354,,wlan_nan20_process_and_save_individual_fa_session: No more time slots ignore 
+2355,II,wlan_nan20_process_and_save_individual_fa_session: FA session count %d avoidDwNextSlot %d 
+2356,,wlan_nan20_process_and_save_individual_fa_session ERR: Maximum FA sessions reached 
+2357,I,wlan_nan20_process_and_save_individual_fa_session: FA session count %d 
+2358,I,wlan_nan20_process_and_save_individual_fa_session: availabilitytype%x  
+2359,,wlan_nan20_pick_best_peer_fa: No more time slots ignore 
+2360,,wlan_nan20_pick_best_peer_fa: Found some slots on ch 6 for counter 
+2361,II,wlan_nan20_is_chan_present_in_chan_bitmap: tempchannel %d channel:%d 
+2362,I,wlan_nan20_is_chan_present_in_chan_bitmap: tempchannel %d 
+2363,,wlan_nan20_is_chan_present_in_chan_bitmap: Channel matched 
+2364,,wlan_nan20_peer_chan_band_info_pick_best_channel: Couldn't find the forced channel 
+2365,IIIII,wlan_nan20_update_save_peer_chan_band_info: saved_peer_chan_bitmap:0x%x peer_chan_bitmap:0x%x primary_chan_bitmap:0x%x chan_req_type:%d chan_mhz:%d 
+2366,,wlan_nan20_update_save_peer_chan_band_info: Skipping potential entry as usage preference is zero 
+2367,,wlan_nan20_update_save_peer_chan_band_info: error finding global operatig  class 
+2368,I,wlan_nan20_update_save_peer_chan_band_info Skipping saving potential entry with chan bitmap 0x%x as channel is forced 
+2369,,wlan_nan20_update_save_peer_chan_band_info: Skipping 5G entry as it is not supported 
+2370,I,wlan_nan20_update_save_peer_chan_band_info: 0x00 ptemp_nan_peer_chan_band_info->ChanBitMap %d  
+2371,,wlan_nan20_update_save_peer_chan_band_info: 0x01 
+2372,II,wlan_nan20_update_save_peer_chan_band_info: 0x02 GlobalOperClassTabIndex %d index %d 
+2373,I,wlan_nan20_update_save_peer_chan_band_info: 0x03 index1 %d 
+2374,I,wlan_nan20_update_save_peer_chan_band_info: 0x04 %d 
+2375,I,wlan_nan20_update_save_peer_chan_band_info:0x05 %d 
+2376,,wlan_nan20_update_save_peer_chan_band_info:0x06 
+2377,,wlan_nan20_update_save_peer_chan_band_info: Overriding saved peer chan info bitmap 
+2378,,wlan_nan20_update_save_peer_chan_band_info: Skipping as no valid channel in the entry 
+2379,,Peer proposed NDC is not present in data response so rejecting 
+2380,II,wlan_nan20_pick_best_peer_fa: OuiSubtype:%d map_id:%d  
+2381,I,wlan_nan20_pick_best_peer_fa: Process and save FA failed %d 
+2382,I,wlan_nan20_pick_best_peer_fa PeerMaxChannelSwitch:0x%d 
+2383,,wlan_nan20_pick_best_peer_fa ERR: No channels found with peer trying channel 6 
+2384,,wlan_nan20_pick_best_peer_fa ERR: No common channels found with peer 
+2385,I,wlan_nan20_pick_best_peer_fa PeerMaxChannelSwitch:0x%d 
+2386,,wlan_nan20_pick_best_peer_fa ERR: NDC can't be served returning 
+2387,,wlan_nan20_pick_best_peer_fa ERR: NDL can't be served returning 
+2388,III,wlan_nan20_fill_fa_nan_avail_attr: map_id:%d p_fa_session:0x%x band_config:%d  
+2389,,wlan_nan20_fill_fa_nan_avail_attr: Maximum entry list count reached 
+2390,II,wlan_nan20_fill_fa_nan_avail_attr: Skipping FA: %d; entry_list_cnt: 0x%x 
+2391,I,wlan_nan20_fill_fa_nan_avail_attr: Filling entry list of type %d  
+2392,,wlan_nan20_fill_fa_nan_avail_attr: Final timebitmap  
+2393,II,wlan_nan20_fill_fa_nan_avail_attr: Filling entry_list operclass=%d chanbitmap=%d 
+2394,II,wlan_nan20_fill_fa_nan_avail_attr: Filling entry_list operclass=%d chanbitmap=%d 
+2395,II,wlan_nan20_fill_fa_nan_avail_attr: : entry_list_cnt:%d numBandOrChannelEntries:%d  
+2396,I,ResolveFa: channel freq %x 
+2397,I,ResolveFa: returning error %d 
+2398,I,ResolveFa: peer cache null and channel null for OuiSubtype %d 
+2399,II,ResolveFa: peer cache null and channel %d for OuiSubtype %d 
+2400,III,ResolveFa: OuiSubtype%d mhz%x phymode%d 
+2401,,ResolveFa: NDC can't be honored/prepared 
+2402,I,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: calling incorrect function for ouitype %d 
+2403,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Channel forced but no channel info provided 
+2404,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Channel forced to 2G when device is in 5G only 
+2405,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Channel forced to 5G when device is in 2G only 
+2406,I,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: Unable to create FA Session for outsubtype %d 
+2407,,wlan_nan20_build_nan_availability_attr_nmf: ERROR_FA: NDP or Ranging Instance is NULL cannot build FA/NA 
+2408,I,wlan_nan20_build_nan_availability_attr_nmf: pnan_fa_session_for_peer %u 
 2409,,wlan_nan20_build_nan_availability_attr_nmf: FA session already present, do save fa 
-2410,I,wlan_nan20_build_nan_availability_attr_nmf: pnan_fa_session_for_peer %u 
-2411,III,wlan_nan20_fa_time_bitmap_decode: Incorrect arguments 0x%x 0x%x or length %d 
-2412,II,wlan_nan20_fa_time_bitmap_decode: Time bitmap length(%d) out of bound(len:%d) 
-2413,III,wlan_nan20_fa_time_bitmap_decode: Incorrect timebitmap content tmbLen:%d tmbPeriod:%d tmbDuration:%d 
-2414,IIII,wlan_nan20_fa_time_bitmap_decode: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
-2415,II,wlan_nan20_fa_time_bitmap_decode: TMB[%d]:0x%x 
-2416,I,wlan_nan20_received_nan_fa: Avail attribute(%d) minimum length not met 
-2417,I,wlan_nan20_received_nan_fa: Avail Entry(%d) minimum length not met 
-2418,II,wlan_nan20_received_nan_fa: Avail Entry(%d) length %d out of bound 
-2419,,wlan_nan20_received_nan_fa: TimeBitmap decode failed 
-2420,,wlan_nan20_received_nan_fa: Band/Chan Entry List not present 
-2421,,wlan_nan20_received_nan_fa: Band/Chan Entry List out of bound 
-2422,II,wlan_nan20_received_nan_fa: Skiping chan/band entries[%d] %d 
-2423,II,wlan_nan20_received_nan_fa: Received OperClass %d ChanBitMap:0x%x 
-2424,II,wlan_nan20_received_nan_fa: Unavailability_channels_2g:0x%x Unavailability_channels_5g:0x%x 
-2425,,wlan_get_nan_active_fa_channels: FA Error no FA session 
-2426,,wlan_get_nan_fa_channel_info: FA Error no FA session 
-2427,,wlan_nan_fa_get_phymode: FA Error no FA session 
-2428,I,NAN_20_FA: Schedule update for peer entry fa_session 0x%x 
-2429,,NAN_20_FA: Schedule update for peer failed 
-2430,I,wlan_nan_update_fa: p_fa_peer_availability->entry_list_cnt %d 
-2431,I,wlan_nan_update_fa: p_fa_peer_availability->entry_list..chan_band_entry_count %d 
-2432,II,wlan_nan_update_fa: self operating class%d time_bmap %x 
-2433,II,wlan_nan_update_fa: peer operating class%d time_bmap %x 
-2434,III,NAN_20_FA: Schedule updated for operating class%d entry%d updated bmap %x 
-2435,,wlan_nan20_set_fa_session_active: FA Error no FA session 
-2436,,wlan_nan20_set_fa_session_active: ULW Notify set to TRUE 
-2437,I,NAN20_FA: wlan_nan20_set_fa_session_active vdev_id:%d 
-2438,,wlan_nan20_set_fa_session_active: Res mgr link failure 
-2439,IIII,wlan_nan20_pick_best_peer_fa: chan Type(%d), AvailabilityType(%d), UsagePref(%d), TimeBitMapPresent(%d) 
-2440,IIII,wlan_nan20_pick_best_peer_fa: Timebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
-2441,II,TMB[%d]:0x%x 
-2442,II,wlan_nan20_pick_best_peer_fa 1: pDeviceCap->band_config:%d peer_dev_cap->supported_band:%d 
-2443,,wlan_nan20_pick_best_peer_fa: skipping 5G entry as local or remote end is 2G only #1 
-2444,,wlan_nan20_pick_best_peer_fa: ERR More than one channel is marked as committed/conditional in an entry 
-2445,II,wlan_nan20_pick_best_peer_fa 2: pDeviceCap->band_config:%d peer_dev_cap->supported_band:%d 
-2446,,wlan_nan20_pick_best_peer_fa: skipping 5G entry as local or remote end is 2G only #2 
-2447,II,wlan_nan20_fa_session_index: Counter band %d stored FA %d 
-2448,II,wlan_nan20_fa_sessioni_index: Counter channel %d stored FA %d 
-2449,I,wlan_nan20_fa_session_index: FA Counter channel %d 
-2450,I,wlan_nan20_fa_session_index: FA session count %d 
-2451,III,wlan_nan20_get_sm_session_check_state_role(%d): token mismatch sm:%d dialog_token:%d 
-2452,III,wlan_nan20_get_sm_session_check_state_role(%d): role mismatch sm:%d role:%d 
-2453,III,wlan_nan20_get_sm_session_check_state_role(%d): state mismatch sm:%d state:%d 
-2454,II,wlan_nan20_create_sm_session(): mode:%d dialog_token:%d 
-2455,II,NAN20_SM: Current state %d  session_dw_count %d 
-2456,II,NAN20_SM: Current state:%d Event:%d 
-2457,I,wlan_nan20_sm_parse_buffer:  get dialog token 0, OUI sub type 0x%x 
-2458,II,NAN20_SM: wlan_nan20_delete_sm_session count: %d p_sm_session: %p 
-2459,IIII,NAN20_SM: wlan_nan20_delete_sm_session index:%d sm: %d flag:0x%x buf 0x%x 
-2460,IIII,i: %d, j: %d NAN20_SM: wlan_nan20_delete_sm_session found matching session=%d oui_sub_type: %d 
-2461,II,NAN20_SM: wlan_nan20_delete_sm_session ndp_id:%d dialog_token: %d 
-2462,I,NAN20_SM: wlan_nan20_delete_sm count: %d  
-2463,,NAN20_SM: wlan_nan20_delete_sm_session num active SM is 0 
-2464,,NAN20_SM: wlan_nan20_sm_free_need_again_buffer START 
-2465,III,NAN20_SM: wlan_nan20_sm_free_need_again_buffer index:%d flags:0x%x buf 0x%x 
-2466,II,NAN20_SM: wlan_nan20_age_sm_session session_dw_count:%d state:%d 
-2467,II,NAN20_SM: Age SM session timeout for mode:%d reason_code:%d 
-2468,II,NAN20_SM: wlan_nan20_age_sm_session session_dw_count:%d state:%d 
-2469,,NAN20_SM : wlan_nan20_sm_recvd_responder_req_from_service 
-2470,,NAN20_SM : wlan_nan20_sm_recvd_peer_create_event 
-2471,I,Ignore peer delete for sm session because of invalid state(%d) 
-2472,,NAN20_SM : wlan_nan20_sm_build_initiator_req 
-2473,,NAN20_SM : wlan_nan20_sm_build_initiator_req invalid sm_session 
-2474,,NAN20_SM : wlan_nan20_sm_send_initiator_req sm session not found 
-2475,I,NAN20_SM : wlan_nan20_sm_send_initiator_req state: %d 
-2476,,NAN20_SM : wlan_nan20_sm_send_initiator_req 
-2477,,NAN20_SM : wlan_nan20_sm_recv_frame_pre_validation Clean up 
-2478,,NAN20_SM : received response with reject 
-2479,,NAN20_SM : wlan_nan20_sm_send_responder_req sm session not found 
-2480,I,NAN20_SM : wlan_nan20_sm_send_responder_req state: %d 
-2481,II,NAN20_SM: wlan_nan20_sm_recvd_indication duplicated, token: %d, ndp_id: %d 
-2482,III,NAN20_SM: wlan_nan20_sm_recvd_indication pub_id:%d status:%d ndp_control:%d 
-2483,,NAN20_SM : wlan_nan20_sm_recvd_nmf_3rd_msg Invalid SM 
-2484,,wlan_nan20_sm_build_data_end: get pm_session_failed 
-2485,,NDP end is in progress return 
-2486,I,wlan_nan20_sm_build_data_end: state %d 
-2487,IIIIII,NAN20_SM: send_sched_update_notif can't find sm session for mac addr %x:%x:%x:%x:%x:%x 
-2488,,NAN20_SM: send_sched_update_notif invalid state 
-2489,,NAN20_SM: SCHED_UPDATE_NOTIF invalid NMF 
-2490,,NAN20_SM: =====Q'd SCHED NOTIFY====== 
-2491,,NAN20_SM: =====SENT SCHED NOTIFY====== 
-2492,I,p_sm_session: %p 
-2493,,nan20_sm_data_end_ack 
-2494,,NAN20_SM : wlan_nan20_sm_recvd_data_end Null sm session 
-2495,,NAN20_SM : wlan_nan20_sm_recvd_data_end Clear NDP end while security enabled will drop here 
-2496,II,nan20_sm_data_end_received_ota data_end_in_progress: %d state = %d 
-2497,II,nan20_sm_recvd_ranging_terminate received_ota data_end_in_progress: %d state = %d 
-2498,,NAN20_SM : Range report build event 
-2499,,NAN20_SM: build_send_sched_conf invalid sm session 
-2500,,NAN20_SM: build_send_sched_conf invalid NMF 
-2501,,NAN20_SM: build_send_sched_rsp invalid sm session 
-2502,,NAN20_SM: build_send_sched_rsp invalid NMF 
-2503,,NAN20_SM: build_send_sched_req invalid sm session 
-2504,,NAN20_SM: build_send_sched_req invalid NMF 
-2505,III,NAN20_SM: wlan_nan20_sm_recvd_ack oui_subtype: %d sent_flag:%d dialog_token:%d 
-2506,I,NAN20_SM: wlan_nan20_sm_recvd_ack received unknown OUI oui_subtype: %d 
-2507,,NAN20_SM: wlan_nan20_sm_recvd_ack Invalid SM Session 
-2508,II,NAN20_SM: wlan_nan20_sm_recvd_ack oui_subtype: %d event_type:%d 
-2509,II,NAN20_SM : wlan_nan20_sm_process_nmf TYPE : %d, dialog_token : %d 
-2510,,NAN20_SM: =====SENT MULTICAST NMF====== 
-2511,I,NAN20_SM: nan20_sm_process_nmf Unknown frame %d 
-2512,II,NAN20_SM : wlan_nan20_sm_process_nmf TYPE : %d, dialog_token : %d 
-2513,I,NAN20_SM: nan20_sm_process_nmf Unknown frame %d 
-2514,IIII,NAN20_SM : wlan_nan20_sm_process_nmf TYPE : %d, dialog_token : %d ndp:%d/rtt:%d 
-2515,,NAN20_SM : wlan_nan20_sm_state_idle_event BUILD_INITIATOR_REQ 
-2516,,NAN20_SM : wlan_nan20_sm_state_idle_event SEND_INITIATOR_REQ 
-2517,,NAN20_SM wlan_nan20_sm_state_idle_event STATE_SEND_RESPONDER_REQ 
-2518,II,NAN20_SM: Current state:%d Event:%d 
-2519,I,NAN20_SM: wlan_nan20_sm_state_active_entry mode : %d 
-2520,I,NAN20_SM: wlan_nan20_sm_state_active_entry ndp_id : %d 
-2521,,NAN20_SM: Found NDP instance turn off disc beacon 
-2522,,wlan_nan20_sm_state_active_event: Build Data End 
-2523,,wlan_nan20_sm_state_active_event: Transmit Data End 
-2524,,NAN20_SM: Range report frame build failed 
-2525,,NAN20_SM: Range report frame built 
-2526,,NAN20_SM : wlan_nan20_sm_state_terminating_event 
-2527,,NAN20_SM : wlan_nan20_sm_state_send_initiator_req_entry 
-2528,,wlan_nan20_sm_state_initiator_req_event: Build Data End 
-2529,,wlan_nan20_sm_state_initiator_req_event: Send Data End 
-2530,,wlan_nan20_sm_state_initiator_req_event: Recvd data end 
-2531,I,NAN20_SM : wlan_nan20_sm_state_wait_for_responder_req_from_service_event : %d 
-2532,,NAN20_SM : wlan_nan20_sm_state_wait_for_peer_create_event 
-2533,,Responder request NMF buffer is not prepared 
-2534,,NAN20_SM : wlan_nan20_sm_state_wait_for_peer_create_event terminating 
-2535,,wlan_nan20_sm_state_responder_req_event: Recvd data end 
-2536,,NAN20_SM: wlan_nan20_sm_state_send_security_install_entry 
-2537,I,NAN20_SM: event=%d not handled 
-2538,,NAN20_SM: wlan_nan20_sm_state_send_sched_rsp_entry 
-2539,I,NAN20_SM: event=%d not handled 
-2540,,NAN20_SM: wlan_nan20_sm_state_send_sched_conf_entry 
-2541,I,NAN20_SM: event=%d not handled 
-2542,I,nan_unit_test GET_NAN_DW_END_TSF: end_dwTsf: 0x%x  
-2543,III,nan_unit_test GET_2G_NDL_ACTIVE: ndp_channel_present: %d is_2Gndl_present: %d start_time: 0x%x 
-2544,I,NAN20_NDP - wlan_nan20_create_ndp_instance ndp_ctxt_ndp_id=%d 
-2545,I,NAN20_NDP - p_vdev for vdev_id %d is NULL 
-2546,I,NAN20_NDP - Register MAC address for NDI, vdev_id=%d 
-2547,IIIIII,NAN20_NDP - Create NDP instance Addr:0x%x 0x%x ndp_id:%d ndp_instance_id:%d role:%d dialog_token:%d 
-2548,I,NAN20_NDP -wlan_nan20_get_num_active_ndp_instance:%d 
-2549,IIIIIIIII,NAN20_NDP - Delete NDP instance Addr:%2x:%2x:%2x:%2x:%2x:%2x ndp_id:%d ndp_instance_id:%d vdev_id:%d 
-2550,IIIIII,NAN20_NDP - Delete NDP instance Self NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x 
-2551,IIIIIII,NAN20_NDP - Delete NDP instance Peer NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x dialog_token:%d 
-2552,I,NAN20_NDP - p_vdev is NULL for self_ndi_vdev_id: %d 
-2553,I,NAN20_NDP - VDEV_DOWN call for ndp_vdev_id: %d 
-2554,I,NAN20_NDP - Unregister MAC address for NDI vdev_id=%d 
-2555,II,wlan_nan20_get_ndp_instance_by_ndp_id %d %d 
-2556,II,wlan_nan20_get_ndp_instance_by_ndp_id %x %x 
-2557,II,wlan_nan20_ndp_alloc_ndp: Alloc NDP attr 0x%x %d 
-2558,I,wlan_nan20_ndp_alloc_ndp: Alloc NDP attr Failed %d 
-2559,II,wlan_nan20_ndp_dealloc_ndp: Dealloc NDP attr 0x%x %d 
-2560,II,NAN20_NDP - wlan_nan20_ndp_initiator_rsp_event_hdlr - %d:%d 
-2561,II,NAN20_NDP - wlan_nan20_ndp_responder_rsp_event_hdlr %d:%d 
-2562,,wlan_nan20_get_ndl_attr: TimeBitmap decode failed 
-2563,I,wlan_nan20_get_ndc_schedule: %x 
-2564,I,wlan_nan20_update_tx_ndc_schedule: Invalid arguments. Can't build NDC for OuiSubType:%d 
-2565,I,wlan_nan20_update_tx_ndc_schedule: No Selected NDC in frame with OuiSubType:%d 
-2566,I,wlan_nan20_update_tx_ndc_schedule: No FA entries present. Can't build NDC for OuiSubType:%d 
-2567,I,wlan_nan20_update_tx_ndc_schedule: No FA found. Can't build NDC for OuiSubType:%d 
-2568,I,wlan_nan20_update_tx_ndc_schedule: Can't combine FA Attributes to build NDC for OuiSubType:%d 
-2569,I,wlan_nan20_update_tx_ndc_schedule: Can't combine FA and NDC for OuiSubType:%d 
-2570,I,wlan_nan20_update_tx_ndc_schedule: NDC overlap with FA failed for OuiSubType:%d 
-2571,I,wlan_nan20_build_ndc_attr: Couldn't build valid timebitmap for proposed NDC 0x%x 
-2572,,wlan_nan20_get_ndc_attr: TimeBitmap decode failed 
-2573,III,wlan_nan20 data attr %d %d %d 
-2574,,NAN20_NDP: wlan_nan20_disable_ndp_instance 
-2575,,NAN20_NDP: get_ndp_instance failed in wlan_nan20_disable_ndp_instance 
-2576,I,NAN20_NDP: wlan_nan20_disable_ndp_instance ndp_instance_id:%d  
-2577,,NAN20_NDP NDP NOT allowed because of Different configuration(Open/Security) 
-2578,,NAN20_NDP Passphrase Same 
-2579,,NAN20_NDP Passphrase different 
-2580,,NAN20_NDP PMK same 
-2581,,NAN20_NDP PMK different 
-2582,,NAN20_NDP NDP allowed on this NDI 
-2583,,Invalid channel or DFS channel 
-2584,II,NAN20_NDP This is first request towards the peer : Channel Validation Success peer_disc_mac : 0x%x 0x%x 
-2585,II,NAN20_NDP Channel not forced : Channel Validation Success peer_disc_mac : 0x%x 0x%x 
-2586,IIIII,NAN20_NDP Channel forced Channel Validation Failed peer_disc_mac : 0x%x 0x%x channel_mhz : %d Freq1 : %d Freq2 : %d 
-2587,IIIII,NAN20_NDP Channel forced Channel Validation Success peer_disc_mac : 0x%x 0x%x channel_mhz : %d Freq1 : %d Freq2 : %d 
-2588,II,NAN20_NDP This is first request towards the peer : Peer validation Success for peer_disc_mac : 0x%x 0x%x 
-2589,II,NAN20_NDP Peer validation Failed for peer_disc_mac : 0x%x 0x%x 
-2590,II,NAN20_NDP Peer validation Success for peer_disc_mac : 0x%x 0x%x 
-2591,,NAN20_NDP wlan_nan20_ndp_concurrency_validation Failed 
-2592,,NAN20_NDP wlan_nan20_ndp_concurrency_validation Success 
-2593,,NAN20_NDP INITIATOR Channel validation failed 
-2594,,NAN20_NDP INITIATOR Peer validation failed 
-2595,IIIII,NAN20_NDP ndp_initiator_validation status %dNDI: 0x%x 0x%x peer_disc_mac : 0x%x 0x%x 
-2596,,NAN20_NDP responder validation Failed 
-2597,,NAN20_NDP responder validation Success 
-2598,III,NAN20_NDP - NDP initiation Request Addr: 0x%x 0x%x dialog_token:%d 
-2599,I,wlan_nan20_create_ndp_instance returend fail indicating reason_code=%x 
-2600,,NAN20_NDP INITIATOR Concurrency validation failed 
-2601,,wlan_nan20_ndp_alloc_ndp call #1 
-2602,III,NAN20_NDP - ndp_initiator_req : rsp_status: %d reason_code: %d nan20_log_index: %d 
-2603,,nan20_ndp_responder_req_hdlr: wake 
-2604,II,NAN20_NDP : wlan_nan20_ndp_responder_req_hdlr rsp_code:%d vdev_id:%d 
-2605,II,NAN20_NDP : wlan_nan20_ndp_responder_req_hdlr: self_ndi_vdev_id:%dvdev_id :%d are differnt so replace 
-2606,I,NAN20_NDP - responder_req_hdlr Register MAC address for NDI, vdev_id=%d 
-2607,I,NAN20_NDP - responder_req_hdlr Unregister MAC address for NDI, vdev_id=%d 
-2608,I,wlan_nan20_sm_recvd_responder_req_from_service call failed status: %d 
-2609,III,NAN20_NDP - ndp_responder_req: rsp_status: %d reason_code: %d nan20_log_index: %d 
-2610,,NAN20_NDP select NDI:First instance 
-2611,I,NAN20_NDP: wlan_nan20_ndp_indication_event_hdlr security:%d 
-2612,I,NAN20_NDP select NDI:Configuration :%d 
-2613,I,NAN20_NDP: Auto responder NDI not available, PMK not present: %d 
-2614,,NAN20_NDP select NDI:Configuration matches Secure 
-2615,,NAN20_NDP select NDI:Configuration matches Open 
-2616,,NAN20_NDP : wlan_nan20_build_ndp_responder_req 
-2617,,NAN20_NDP RESPNDR Concurrency validation failed 
-2618,III,wlan_nan20_ndp_alloc_ndp call #2 %x %x %x 
-2619,,NAN20_NDP: wlan_nan20_build_ndp_responder_req Invalid vdev 
-2620,,Changing the committed DW to 5G 
-2621,,NAN20_NDP - ERROR_FA: is zero bytes #2 
-2622,,NAN20_NDP - SETTING COUNTER, NDL STATUS is CONTINUED 
-2623,,wlan_nan20_ndp_alloc_ndp call #3 
-2624,,NAN20_NDP - ERROR_FA: is zero bytes #3 
-2625,,wlan_nan20_ndp_alloc_ndp call #4 
-2626,,wlan_nan20 ndp alloc ndp failed #5 
-2627,,wlan_nan20 data end for initiator role 
-2628,,wlan_nan20 data end for responder role 
-2629,IIII,ndp_attr.dialog_token %d ndp_attr.type %d ndp_attr.ndp_id %d ndp_attr.ndp_control %d 
-2630,,wlan_nan20_ndp_end_req_hdlr: NAN Discovery disabled #3 
-2631,,wlan_nan20_ndp_instance not found 
-2632,,wlan_nan20_ndp NMF pool alloc failed 
-2633,,wlan_nan20_ndp Invalid Instance ID 
-2634,IIIIIIIII,NAN20_NDP : wlan_nan20_ndp_end_req_hdlr NDP id : %d NDP_INST id : %d vdev_id:%dSelf Peer NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x 
-2635,IIIIII,NAN20_NDP : Peer Peer NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x 
-2636,I,wlan_nan20_sm_build_data_end() failed: status %d 
-2637,,NAN20_NDP: Non Auto responder NDI not available 
-2638,,NAN20_NDP: Auto responder NDI not available 
-2639,,NAN20_NDP: wlan_nan20_create_ndp_instance return failure 
-2640,,NAN20_NDP: Decided to reject so no need to Indicate 
-2641,I,NAN20_NDP : wlan_nan20_ndp_indication_event_hdlr vdev_id : %d 
-2642,I,NAN20_NDP : register wlan_nan20_ndp_register_for_vdev_notif ndp_id : %d  
-2643,I,NAN20_NDP: wlan_nan20_ndp_confirm_event_hdlr %x 
-2644,,NAN20_NDP: Suppressing NDP confirm event 
-2645,II,NO NDL SCHEDULE UPDATE %x %d 
-2646,,NO NDP SESSION WITH PEER 
-2647,,NAN20_NDP : wlan_nan20_ndp_end_indication_event_hdlr 
-2648,III,NAN20_NDP: wlan_nan20_ndp_end_indication_event_hdlr Sent Event instance_id:%d vdev_id:%d reason_code:%d 
-2649,I,NAN20_NDP : wlan_nan20_ndp_register_for_vdev_notif %d 
-2650,I,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc ndp_id : %d 
-2651,,NAN20_NDP - test bed mode Dual map, Not active 
-2652,I,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc NULL instance : %d 
-2653,,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc Invalid phy mode 
-2654,,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc Invalid vdev 
-2655,I,NAN20_NDP: Peer_Assoc wlan_nan20_set_fa_session_active => vdev_id : %d 
-2656,,NAN20_NDP: Peer_Assoc - wlan_vdev_up 
-2657,,NAN20_NDP: Peer_Assoc - res mgr link failed 
-2658,,NAN20_NDP: Peer_Assoc - Build data end 
-2659,,nan20_ndp_disabled: data_end_ind 
+2410,,wlan_nan20_build_nan_availability_attr_nmf: FA session already present, do save fa 
+2411,I,wlan_nan20_build_nan_availability_attr_nmf: pnan_fa_session_for_peer %u 
+2412,III,wlan_nan20_fa_time_bitmap_decode: Incorrect arguments 0x%x 0x%x or length %d 
+2413,II,wlan_nan20_fa_time_bitmap_decode: Time bitmap length(%d) out of bound(len:%d) 
+2414,III,wlan_nan20_fa_time_bitmap_decode: Incorrect timebitmap content tmbLen:%d tmbPeriod:%d tmbDuration:%d 
+2415,IIII,wlan_nan20_fa_time_bitmap_decode: FaTimebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
+2416,II,wlan_nan20_fa_time_bitmap_decode: TMB[%d]:0x%x 
+2417,I,wlan_nan20_received_nan_fa: Avail attribute(%d) minimum length not met 
+2418,I,wlan_nan20_received_nan_fa: Avail Entry(%d) minimum length not met 
+2419,II,wlan_nan20_received_nan_fa: Avail Entry(%d) length %d out of bound 
+2420,,wlan_nan20_received_nan_fa: TimeBitmap decode failed 
+2421,,wlan_nan20_received_nan_fa: Band/Chan Entry List not present 
+2422,,wlan_nan20_received_nan_fa: Band/Chan Entry List out of bound 
+2423,II,wlan_nan20_received_nan_fa: Skiping chan/band entries[%d] %d 
+2424,II,wlan_nan20_received_nan_fa: Received OperClass %d ChanBitMap:0x%x 
+2425,II,wlan_nan20_received_nan_fa: Unavailability_channels_2g:0x%x Unavailability_channels_5g:0x%x 
+2426,,wlan_get_nan_active_fa_channels: FA Error no FA session 
+2427,,wlan_get_nan_fa_channel_info: FA Error no FA session 
+2428,,wlan_nan_fa_get_phymode: FA Error no FA session 
+2429,I,NAN_20_FA: Schedule update for peer entry fa_session 0x%x 
+2430,,NAN_20_FA: Schedule update for peer failed 
+2431,I,wlan_nan_update_fa: p_fa_peer_availability->entry_list_cnt %d 
+2432,I,wlan_nan_update_fa: p_fa_peer_availability->entry_list..chan_band_entry_count %d 
+2433,II,wlan_nan_update_fa: self operating class%d time_bmap %x 
+2434,II,wlan_nan_update_fa: peer operating class%d time_bmap %x 
+2435,III,NAN_20_FA: Schedule updated for operating class%d entry%d updated bmap %x 
+2436,,wlan_nan20_set_fa_session_active: FA Error no FA session 
+2437,,wlan_nan20_set_fa_session_active: ULW Notify set to TRUE 
+2438,I,NAN20_FA: wlan_nan20_set_fa_session_active vdev_id:%d 
+2439,,wlan_nan20_set_fa_session_active: Res mgr link failure 
+2440,IIII,wlan_nan20_pick_best_peer_fa: chan Type(%d), AvailabilityType(%d), UsagePref(%d), TimeBitMapPresent(%d) 
+2441,IIII,wlan_nan20_pick_best_peer_fa: Timebitmap BD:%d Period:%d StartOffset:%d TMBLen:%d  
+2442,II,TMB[%d]:0x%x 
+2443,II,wlan_nan20_pick_best_peer_fa 1: pDeviceCap->band_config:%d peer_dev_cap->supported_band:%d 
+2444,,wlan_nan20_pick_best_peer_fa: skipping 5G entry as local or remote end is 2G only #1 
+2445,,wlan_nan20_pick_best_peer_fa: ERR More than one channel is marked as committed/conditional in an entry 
+2446,II,wlan_nan20_pick_best_peer_fa 2: pDeviceCap->band_config:%d peer_dev_cap->supported_band:%d 
+2447,,wlan_nan20_pick_best_peer_fa: skipping 5G entry as local or remote end is 2G only #2 
+2448,II,wlan_nan20_fa_session_index: Counter band %d stored FA %d 
+2449,II,wlan_nan20_fa_sessioni_index: Counter channel %d stored FA %d 
+2450,I,wlan_nan20_fa_session_index: FA Counter channel %d 
+2451,I,wlan_nan20_fa_session_index: FA session count %d 
+2452,III,wlan_nan20_get_sm_session_check_state_role(%d): token mismatch sm:%d dialog_token:%d 
+2453,III,wlan_nan20_get_sm_session_check_state_role(%d): role mismatch sm:%d role:%d 
+2454,III,wlan_nan20_get_sm_session_check_state_role(%d): state mismatch sm:%d state:%d 
+2455,II,wlan_nan20_create_sm_session(): mode:%d dialog_token:%d 
+2456,II,NAN20_SM: Current state %d  session_dw_count %d 
+2457,II,NAN20_SM: Current state:%d Event:%d 
+2458,I,wlan_nan20_sm_parse_buffer:  get dialog token 0, OUI sub type 0x%x 
+2459,II,NAN20_SM: wlan_nan20_delete_sm_session count: %d p_sm_session: %p 
+2460,IIII,NAN20_SM: wlan_nan20_delete_sm_session index:%d sm: %d flag:0x%x buf 0x%x 
+2461,IIII,i: %d, j: %d NAN20_SM: wlan_nan20_delete_sm_session found matching session=%d oui_sub_type: %d 
+2462,II,NAN20_SM: wlan_nan20_delete_sm_session ndp_id:%d dialog_token: %d 
+2463,I,NAN20_SM: wlan_nan20_delete_sm count: %d  
+2464,,NAN20_SM: wlan_nan20_delete_sm_session num active SM is 0 
+2465,,NAN20_SM: wlan_nan20_sm_free_need_again_buffer START 
+2466,III,NAN20_SM: wlan_nan20_sm_free_need_again_buffer index:%d flags:0x%x buf 0x%x 
+2467,II,NAN20_SM: wlan_nan20_age_sm_session session_dw_count:%d state:%d 
+2468,II,NAN20_SM: Age SM session timeout for mode:%d reason_code:%d 
+2469,II,NAN20_SM: wlan_nan20_age_sm_session session_dw_count:%d state:%d 
+2470,,NAN20_SM : wlan_nan20_sm_recvd_responder_req_from_service 
+2471,,NAN20_SM : wlan_nan20_sm_recvd_peer_create_event 
+2472,I,Ignore peer delete for sm session because of invalid state(%d) 
+2473,,NAN20_SM : wlan_nan20_sm_build_initiator_req 
+2474,,NAN20_SM : wlan_nan20_sm_build_initiator_req invalid sm_session 
+2475,,NAN20_SM : wlan_nan20_sm_send_initiator_req sm session not found 
+2476,I,NAN20_SM : wlan_nan20_sm_send_initiator_req state: %d 
+2477,,NAN20_SM : wlan_nan20_sm_send_initiator_req 
+2478,,NAN20_SM : wlan_nan20_sm_recv_frame_pre_validation Clean up 
+2479,,NAN20_SM : received response with reject 
+2480,,NAN20_SM : wlan_nan20_sm_send_responder_req sm session not found 
+2481,I,NAN20_SM : wlan_nan20_sm_send_responder_req state: %d 
+2482,II,NAN20_SM: wlan_nan20_sm_recvd_indication duplicated, token: %d, ndp_id: %d 
+2483,III,NAN20_SM: wlan_nan20_sm_recvd_indication pub_id:%d status:%d ndp_control:%d 
+2484,,NAN20_SM : wlan_nan20_sm_recvd_nmf_3rd_msg Invalid SM 
+2485,,wlan_nan20_sm_build_data_end: get pm_session_failed 
+2486,,NDP end is in progress return 
+2487,I,wlan_nan20_sm_build_data_end: state %d 
+2488,IIIIII,NAN20_SM: send_sched_update_notif can't find sm session for mac addr %x:%x:%x:%x:%x:%x 
+2489,,NAN20_SM: send_sched_update_notif invalid state 
+2490,,NAN20_SM: SCHED_UPDATE_NOTIF invalid NMF 
+2491,,NAN20_SM: =====Q'd SCHED NOTIFY====== 
+2492,,NAN20_SM: =====SENT SCHED NOTIFY====== 
+2493,I,p_sm_session: %p 
+2494,,nan20_sm_data_end_ack 
+2495,,NAN20_SM : wlan_nan20_sm_recvd_data_end Null sm session 
+2496,,NAN20_SM : wlan_nan20_sm_recvd_data_end Clear NDP end while security enabled will drop here 
+2497,II,nan20_sm_data_end_received_ota data_end_in_progress: %d state = %d 
+2498,II,nan20_sm_recvd_ranging_terminate received_ota data_end_in_progress: %d state = %d 
+2499,,NAN20_SM : Range report build event 
+2500,,NAN20_SM: build_send_sched_conf invalid sm session 
+2501,,NAN20_SM: build_send_sched_conf invalid NMF 
+2502,,NAN20_SM: build_send_sched_rsp invalid sm session 
+2503,,NAN20_SM: build_send_sched_rsp invalid NMF 
+2504,,NAN20_SM: build_send_sched_req invalid sm session 
+2505,,NAN20_SM: build_send_sched_req invalid NMF 
+2506,III,NAN20_SM: wlan_nan20_sm_recvd_ack oui_subtype: %d sent_flag:%d dialog_token:%d 
+2507,I,NAN20_SM: wlan_nan20_sm_recvd_ack received unknown OUI oui_subtype: %d 
+2508,,NAN20_SM: wlan_nan20_sm_recvd_ack Invalid SM Session 
+2509,II,NAN20_SM: wlan_nan20_sm_recvd_ack oui_subtype: %d event_type:%d 
+2510,II,NAN20_SM : wlan_nan20_sm_process_nmf TYPE : %d, dialog_token : %d 
+2511,,NAN20_SM: =====SENT MULTICAST NMF====== 
+2512,I,NAN20_SM: nan20_sm_process_nmf Unknown frame %d 
+2513,II,NAN20_SM : wlan_nan20_sm_process_nmf TYPE : %d, dialog_token : %d 
+2514,I,NAN20_SM: nan20_sm_process_nmf Unknown frame %d 
+2515,IIII,NAN20_SM : wlan_nan20_sm_process_nmf TYPE : %d, dialog_token : %d ndp:%d/rtt:%d 
+2516,,NAN20_SM : wlan_nan20_sm_state_idle_event BUILD_INITIATOR_REQ 
+2517,,NAN20_SM : wlan_nan20_sm_state_idle_event SEND_INITIATOR_REQ 
+2518,,NAN20_SM wlan_nan20_sm_state_idle_event STATE_SEND_RESPONDER_REQ 
+2519,II,NAN20_SM: Current state:%d Event:%d 
+2520,I,NAN20_SM: wlan_nan20_sm_state_active_entry mode : %d 
+2521,I,NAN20_SM: wlan_nan20_sm_state_active_entry ndp_id : %d 
+2522,,NAN20_SM: Found NDP instance turn off disc beacon 
+2523,,wlan_nan20_sm_state_active_event: Build Data End 
+2524,,wlan_nan20_sm_state_active_event: Transmit Data End 
+2525,,NAN20_SM: Range report frame build failed 
+2526,,NAN20_SM: Range report frame built 
+2527,,NAN20_SM : wlan_nan20_sm_state_terminating_event 
+2528,,NAN20_SM : wlan_nan20_sm_state_send_initiator_req_entry 
+2529,,wlan_nan20_sm_state_initiator_req_event: Build Data End 
+2530,,wlan_nan20_sm_state_initiator_req_event: Send Data End 
+2531,,wlan_nan20_sm_state_initiator_req_event: Recvd data end 
+2532,I,NAN20_SM : wlan_nan20_sm_state_wait_for_responder_req_from_service_event : %d 
+2533,,NAN20_SM : wlan_nan20_sm_state_wait_for_peer_create_event 
+2534,,Responder request NMF buffer is not prepared 
+2535,,NAN20_SM : wlan_nan20_sm_state_wait_for_peer_create_event terminating 
+2536,,wlan_nan20_sm_state_responder_req_event: Recvd data end 
+2537,,NAN20_SM: wlan_nan20_sm_state_send_security_install_entry 
+2538,I,NAN20_SM: event=%d not handled 
+2539,,NAN20_SM: wlan_nan20_sm_state_send_sched_rsp_entry 
+2540,I,NAN20_SM: event=%d not handled 
+2541,,NAN20_SM: wlan_nan20_sm_state_send_sched_conf_entry 
+2542,I,NAN20_SM: event=%d not handled 
+2543,I,nan_unit_test GET_NAN_DW_END_TSF: end_dwTsf: 0x%x  
+2544,III,nan_unit_test GET_2G_NDL_ACTIVE: ndp_channel_present: %d is_2Gndl_present: %d start_time: 0x%x 
+2545,I,NAN20_NDP - wlan_nan20_create_ndp_instance ndp_ctxt_ndp_id=%d 
+2546,I,NAN20_NDP - p_vdev for vdev_id %d is NULL 
+2547,I,NAN20_NDP - Register MAC address for NDI, vdev_id=%d 
+2548,IIIIII,NAN20_NDP - Create NDP instance Addr:0x%x 0x%x ndp_id:%d ndp_instance_id:%d role:%d dialog_token:%d 
+2549,I,NAN20_NDP -wlan_nan20_get_num_active_ndp_instance:%d 
+2550,IIIIIIIII,NAN20_NDP - Delete NDP instance Addr:%2x:%2x:%2x:%2x:%2x:%2x ndp_id:%d ndp_instance_id:%d vdev_id:%d 
+2551,IIIIII,NAN20_NDP - Delete NDP instance Self NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x 
+2552,IIIIIII,NAN20_NDP - Delete NDP instance Peer NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x dialog_token:%d 
+2553,I,NAN20_NDP - Unregister MAC address for NDI vdev_id=%d 
+2554,II,wlan_nan20_get_ndp_instance_by_ndp_id %d %d 
+2555,II,wlan_nan20_get_ndp_instance_by_ndp_id %x %x 
+2556,II,wlan_nan20_ndp_alloc_ndp: Alloc NDP attr 0x%x %d 
+2557,I,wlan_nan20_ndp_alloc_ndp: Alloc NDP attr Failed %d 
+2558,II,wlan_nan20_ndp_dealloc_ndp: Dealloc NDP attr 0x%x %d 
+2559,II,NAN20_NDP - wlan_nan20_ndp_initiator_rsp_event_hdlr - %d:%d 
+2560,II,NAN20_NDP - wlan_nan20_ndp_responder_rsp_event_hdlr %d:%d 
+2561,,wlan_nan20_get_ndl_attr: TimeBitmap decode failed 
+2562,I,wlan_nan20_get_ndc_schedule: %x 
+2563,I,wlan_nan20_update_tx_ndc_schedule: Invalid arguments. Can't build NDC for OuiSubType:%d 
+2564,I,wlan_nan20_update_tx_ndc_schedule: No Selected NDC in frame with OuiSubType:%d 
+2565,I,wlan_nan20_update_tx_ndc_schedule: No FA entries present. Can't build NDC for OuiSubType:%d 
+2566,I,wlan_nan20_update_tx_ndc_schedule: No FA found. Can't build NDC for OuiSubType:%d 
+2567,I,wlan_nan20_update_tx_ndc_schedule: Can't combine FA Attributes to build NDC for OuiSubType:%d 
+2568,I,wlan_nan20_update_tx_ndc_schedule: Can't combine FA and NDC for OuiSubType:%d 
+2569,I,wlan_nan20_update_tx_ndc_schedule: NDC overlap with FA failed for OuiSubType:%d 
+2570,I,wlan_nan20_build_ndc_attr: Couldn't build valid timebitmap for proposed NDC 0x%x 
+2571,,wlan_nan20_get_ndc_attr: TimeBitmap decode failed 
+2572,III,wlan_nan20 data attr %d %d %d 
+2573,,NAN20_NDP: wlan_nan20_disable_ndp_instance 
+2574,,NAN20_NDP: get_ndp_instance failed in wlan_nan20_disable_ndp_instance 
+2575,I,NAN20_NDP: wlan_nan20_disable_ndp_instance ndp_instance_id:%d  
+2576,,NAN20_NDP NDP NOT allowed because of Different configuration(Open/Security) 
+2577,,NAN20_NDP Passphrase Same 
+2578,,NAN20_NDP Passphrase different 
+2579,,NAN20_NDP PMK same 
+2580,,NAN20_NDP PMK different 
+2581,,NAN20_NDP NDP allowed on this NDI 
+2582,,Invalid channel or DFS channel 
+2583,II,NAN20_NDP This is first request towards the peer : Channel Validation Success peer_disc_mac : 0x%x 0x%x 
+2584,II,NAN20_NDP Channel not forced : Channel Validation Success peer_disc_mac : 0x%x 0x%x 
+2585,IIIII,NAN20_NDP Channel forced Channel Validation Failed peer_disc_mac : 0x%x 0x%x channel_mhz : %d Freq1 : %d Freq2 : %d 
+2586,IIIII,NAN20_NDP Channel forced Channel Validation Success peer_disc_mac : 0x%x 0x%x channel_mhz : %d Freq1 : %d Freq2 : %d 
+2587,II,NAN20_NDP This is first request towards the peer : Peer validation Success for peer_disc_mac : 0x%x 0x%x 
+2588,II,NAN20_NDP Peer validation Failed for peer_disc_mac : 0x%x 0x%x 
+2589,II,NAN20_NDP Peer validation Success for peer_disc_mac : 0x%x 0x%x 
+2590,,NAN20_NDP wlan_nan20_ndp_concurrency_validation Failed 
+2591,,NAN20_NDP wlan_nan20_ndp_concurrency_validation Success 
+2592,,NAN20_NDP INITIATOR Channel validation failed 
+2593,,NAN20_NDP INITIATOR Peer validation failed 
+2594,IIIII,NAN20_NDP ndp_initiator_validation status %dNDI: 0x%x 0x%x peer_disc_mac : 0x%x 0x%x 
+2595,,NAN20_NDP responder validation Failed 
+2596,,NAN20_NDP responder validation Success 
+2597,III,NAN20_NDP - NDP initiation Request Addr: 0x%x 0x%x dialog_token:%d 
+2598,I,wlan_nan20_create_ndp_instance returend fail indicating reason_code=%x 
+2599,,NAN20_NDP INITIATOR Concurrency validation failed 
+2600,,wlan_nan20_ndp_alloc_ndp call #1 
+2601,III,NAN20_NDP - ndp_initiator_req : rsp_status: %d reason_code: %d nan20_log_index: %d 
+2602,,nan20_ndp_responder_req_hdlr: wake 
+2603,II,NAN20_NDP : wlan_nan20_ndp_responder_req_hdlr rsp_code:%d vdev_id:%d 
+2604,II,NAN20_NDP : wlan_nan20_ndp_responder_req_hdlr: self_ndi_vdev_id:%dvdev_id :%d are differnt so replace 
+2605,I,NAN20_NDP - responder_req_hdlr Register MAC address for NDI, vdev_id=%d 
+2606,I,NAN20_NDP - responder_req_hdlr Unregister MAC address for NDI, vdev_id=%d 
+2607,I,wlan_nan20_sm_recvd_responder_req_from_service call failed status: %d 
+2608,III,NAN20_NDP - ndp_responder_req: rsp_status: %d reason_code: %d nan20_log_index: %d 
+2609,,NAN20_NDP select NDI:First instance 
+2610,I,NAN20_NDP: wlan_nan20_ndp_indication_event_hdlr security:%d 
+2611,I,NAN20_NDP select NDI:Configuration :%d 
+2612,I,NAN20_NDP: Auto responder NDI not available, PMK not present: %d 
+2613,,NAN20_NDP select NDI:Configuration matches Secure 
+2614,,NAN20_NDP select NDI:Configuration matches Open 
+2615,,NAN20_NDP : wlan_nan20_build_ndp_responder_req 
+2616,,NAN20_NDP RESPNDR Concurrency validation failed 
+2617,III,wlan_nan20_ndp_alloc_ndp call #2 %x %x %x 
+2618,,NAN20_NDP: wlan_nan20_build_ndp_responder_req Invalid vdev 
+2619,,Changing the committed DW to 5G 
+2620,,NAN20_NDP - ERROR_FA: is zero bytes #2 
+2621,,NAN20_NDP - SETTING COUNTER, NDL STATUS is CONTINUED 
+2622,,wlan_nan20_ndp_alloc_ndp call #3 
+2623,,NAN20_NDP - ERROR_FA: is zero bytes #3 
+2624,,wlan_nan20_ndp_alloc_ndp call #4 
+2625,,wlan_nan20 ndp alloc ndp failed #5 
+2626,,wlan_nan20 data end for initiator role 
+2627,,wlan_nan20 data end for responder role 
+2628,IIII,ndp_attr.dialog_token %d ndp_attr.type %d ndp_attr.ndp_id %d ndp_attr.ndp_control %d 
+2629,,wlan_nan20_ndp_end_req_hdlr: NAN Discovery disabled #3 
+2630,,wlan_nan20_ndp_instance not found 
+2631,,wlan_nan20_ndp NMF pool alloc failed 
+2632,,wlan_nan20_ndp Invalid Instance ID 
+2633,IIIIIIIII,NAN20_NDP : wlan_nan20_ndp_end_req_hdlr NDP id : %d NDP_INST id : %d vdev_id:%dSelf Peer NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x 
+2634,IIIIII,NAN20_NDP : Peer Peer NDI Addr:%2x:%2x:%2x:%2x:%2x:%2x 
+2635,I,wlan_nan20_sm_build_data_end() failed: status %d 
+2636,,NAN20_NDP: Non Auto responder NDI not available 
+2637,,NAN20_NDP: Auto responder NDI not available 
+2638,,NAN20_NDP: wlan_nan20_create_ndp_instance return failure 
+2639,,NAN20_NDP: Decided to reject so no need to Indicate 
+2640,I,NAN20_NDP : wlan_nan20_ndp_indication_event_hdlr vdev_id : %d 
+2641,I,NAN20_NDP : register wlan_nan20_ndp_register_for_vdev_notif ndp_id : %d  
+2642,I,NAN20_NDP: wlan_nan20_ndp_confirm_event_hdlr %x 
+2643,,NAN20_NDP: Suppressing NDP confirm event 
+2644,II,NO NDL SCHEDULE UPDATE %x %d 
+2645,,NO NDP SESSION WITH PEER 
+2646,,NAN20_NDP : wlan_nan20_ndp_end_indication_event_hdlr 
+2647,III,NAN20_NDP: wlan_nan20_ndp_end_indication_event_hdlr Sent Event instance_id:%d vdev_id:%d reason_code:%d 
+2648,I,NAN20_NDP : wlan_nan20_ndp_register_for_vdev_notif %d 
+2649,I,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc ndp_id : %d 
+2650,,NAN20_NDP - test bed mode Dual map, Not active 
+2651,I,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc NULL instance : %d 
+2652,,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc Invalid phy mode 
+2653,,NAN20_NDP: wlan_nan20_ndp_dispatch_peer_assoc Invalid vdev 
+2654,I,NAN20_NDP: Peer_Assoc wlan_nan20_set_fa_session_active => vdev_id : %d 
+2655,,NAN20_NDP: Peer_Assoc - wlan_vdev_up 
+2656,,NAN20_NDP: Peer_Assoc - res mgr link failed 
+2657,,NAN20_NDP: Peer_Assoc - Build data end 
+2658,,nan20_ndp_disabled: data_end_ind 
+2659,II,NAN20_NDP ndp_disabled: data_end_ind ndp_id = %d is_active = %d 
 2660,II,NAN20_NDP: wlan_nan20_ndp_get_frequency %x %x 
 2661,,NAN20_NDP: wlan_nan20_build_sched_conf 
 2662,,NAN20_NDP: get_ndp_instance failed in wlan_nan20_build_sched_conf 
@@ -2751,7 +2751,7 @@ VERSION:575963244
 2702,I,NAN20_NDP_Enabling 5G : %d 
 2703,I,NAN20_NDP_Disabling 5G %d 
 2704,,NAN20_NDP - Get NDP channel failed 
-2705,II,NAN20_NDP - Chosen channel_mhz:%d channel_freq1:%d 
+2705,III,NAN20_NDP - Chosen channel_mhz:%d channel_freq1:%d phy_mode=%d 
 2706,,NAN20_NDP : NULL Service id 
 2707,,NAN20_NDP : PMK Entry NULL  
 2708,,NAN20_NDP : PMK 

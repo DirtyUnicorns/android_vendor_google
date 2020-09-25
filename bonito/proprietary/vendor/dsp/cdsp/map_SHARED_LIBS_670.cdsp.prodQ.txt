@@ -26,5 +26,9 @@
 
 ../../vap/vma/fw/platform/qdsp6/hcp_rpc/build/shared_libs/qdsp6/670.cdsp.prod/libhcp_rpc_skel.so
 
+../bsp/fastrpc_shell_img/build/670.cdsp.prod/libc++.so.1
+
+../bsp/fastrpc_shell_img/build/670.cdsp.prod/libc++abi.so.1
+
 ../bsp/fastrpc_shell_img/build/670.cdsp.prod/fastrpc_shell_3
 
