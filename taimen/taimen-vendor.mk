@@ -96,8 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so \
     vendor/google/taimen/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
     vendor/google/taimen/proprietary/lib/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libeaselcomm.so \
-    vendor/google/taimen/proprietary/lib/libhidltransport.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhidltransport.so \
-    vendor/google/taimen/proprietary/lib/libhwbinder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwbinder.so \
     vendor/google/taimen/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so \
     vendor/google/taimen/proprietary/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvt.so \
     vendor/google/taimen/proprietary/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtextutils.so \
@@ -113,8 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/lib64/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libeaselcomm.so \
     vendor/google/taimen/proprietary/lib64/libfacenet.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfacenet.so \
     vendor/google/taimen/proprietary/lib64/libfrsdk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfrsdk.so \
-    vendor/google/taimen/proprietary/lib64/libhidltransport.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhidltransport.so \
-    vendor/google/taimen/proprietary/lib64/libhwbinder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhwbinder.so \
     vendor/google/taimen/proprietary/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so \
     vendor/google/taimen/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so \
     vendor/google/taimen/proprietary/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtextutils.so \
@@ -267,7 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/bin/WifiLogger_app:$(TARGET_COPY_OUT_VENDOR)/bin/WifiLogger_app \
     vendor/google/taimen/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/google/taimen/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
-    vendor/google/taimen/proprietary/vendor/bin/chre:$(TARGET_COPY_OUT_VENDOR)/bin/chre \
     vendor/google/taimen/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/google/taimen/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/google/taimen/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
@@ -342,7 +337,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/google/taimen/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
     vendor/google/taimen/proprietary/vendor/etc/init/android.hardware.oemlock@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.oemlock@1.0-service.rc \
-    vendor/google/taimen/proprietary/vendor/etc/init/chre_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chre_daemon.rc \
     vendor/google/taimen/proprietary/vendor/etc/init/init-ramoops.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-ramoops.rc \
     vendor/google/taimen/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/google/taimen/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
@@ -654,11 +648,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/lib/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpustats.so \
     vendor/google/taimen/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/google/taimen/proprietary/vendor/lib/libhalide_hexagon_host.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhalide_hexagon_host.so \
-    vendor/google/taimen/proprietary/vendor/lib/libhdrplusclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrplusclient.so \
     vendor/google/taimen/proprietary/vendor/lib/libhdrplusclientimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrplusclientimpl.so \
     vendor/google/taimen/proprietary/vendor/lib/libhdrplusmessenger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrplusmessenger.so \
-    vendor/google/taimen/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
-    vendor/google/taimen/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
     vendor/google/taimen/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/google/taimen/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
     vendor/google/taimen/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
@@ -900,8 +891,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/lib64/libhdrplusclientimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrplusclientimpl.so \
     vendor/google/taimen/proprietary/vendor/lib64/libhdrplusmessenger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrplusmessenger.so \
     vendor/google/taimen/proprietary/vendor/lib64/libhexagon_nn_controller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_controller.so \
-    vendor/google/taimen/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
-    vendor/google/taimen/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
     vendor/google/taimen/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/google/taimen/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/google/taimen/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
