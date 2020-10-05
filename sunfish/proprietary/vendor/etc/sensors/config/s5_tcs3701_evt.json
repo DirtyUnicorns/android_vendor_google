@@ -146,10 +146,10 @@
           "data": "0.0"
         },
         "fast_filter_size":{ "type": "int", "ver": "0",
-          "data": "10"
+          "data": "100"
         },
         "slow_filter_size":{ "type": "int", "ver": "0",
-          "data": "100"
+          "data": "255"
         },
         "darkening_threshold":{ "type": "flt", "ver": "0",
           "data": "0.1"
@@ -180,6 +180,9 @@
         },
         "itime_hbm":{ "type": "int", "ver": "0",
           "data": "300"
+        },
+        "alternating_delay_bl":{ "type": "int", "ver": "0",
+          "data": "4"
         }
       }
     },
