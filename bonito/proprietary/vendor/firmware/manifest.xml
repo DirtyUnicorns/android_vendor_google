@@ -10,11 +10,11 @@
 
 
 
-  <project groups="non-hlos,partner" name="platform/vendor/qcom/sdm670/non-hlos/adsp_proc" path="adsp_proc" revision="1a3599324841e20a9f10d9af211b42daa3b1ba62" />
+  <project groups="non-hlos,partner" name="platform/vendor/qcom/sdm670/non-hlos/adsp_proc" path="adsp_proc" revision="09542f6315cab126012c6062fee6dcc6086eb4b2" />
 
 
 
-  <project groups="non-hlos,partner" name="platform/vendor/google_devices/common/non-hlos/ssc/goog" path="nested/ssc/goog" revision="7b9dcc38b8e2c5c0f7e1d393783d6fdc5e999ff6" />
+  <project groups="non-hlos,partner" name="platform/vendor/google_devices/common/non-hlos/ssc/goog" path="nested/ssc/goog" revision="3cf4f86912433f824278fe552025b5213759d453" />
 
 
 
