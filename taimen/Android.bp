@@ -393,6 +393,48 @@ dex_import {
 }
 
 dex_import {
+	name: "cneapiclient",
+	owner: "google",
+	jars: ["proprietary/framework/cneapiclient.jar"],
+}
+
+dex_import {
+	name: "com.google.android.camera.experimental2017",
+	owner: "google",
+	jars: ["proprietary/framework/com.google.android.camera.experimental2017.jar"],
+}
+
+dex_import {
+	name: "com.quicinc.cne.api-V1.0-java",
+	owner: "google",
+	jars: ["proprietary/framework/com.quicinc.cne.api-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "com.quicinc.cne",
+	owner: "google",
+	jars: ["proprietary/framework/com.quicinc.cne.jar"],
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "google",
+	jars: ["proprietary/framework/qcrilhook.jar"],
+}
+
+dex_import {
+	name: "rcsimssettings",
+	owner: "google",
+	jars: ["proprietary/framework/rcsimssettings.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.qcril.am-V1.0-java",
+	owner: "google",
+	jars: ["proprietary/framework/vendor.qti.qcril.am-V1.0-java.jar"],
+}
+
+dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "google",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
