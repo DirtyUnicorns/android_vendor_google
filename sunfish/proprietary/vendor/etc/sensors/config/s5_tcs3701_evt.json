@@ -146,10 +146,16 @@
           "data": "0.0"
         },
         "fast_filter_size":{ "type": "int", "ver": "0",
-          "data": "100"
+          "data": "10"
         },
         "slow_filter_size":{ "type": "int", "ver": "0",
           "data": "255"
+        },
+        "aod_fast_filter_size":{ "type": "int", "ver": "0",
+          "data": "3"
+        },
+        "aod_slow_filter_size":{ "type": "int", "ver": "0",
+          "data": "3"
         },
         "darkening_threshold":{ "type": "flt", "ver": "0",
           "data": "0.1"
@@ -173,10 +179,10 @@
           "data": "2 5 8 20 25"
         },
         "itime_screen_off":{ "type": "int", "ver": "0",
-          "data": "50000"
+          "data": "10000"
         },
         "itime_aod":{ "type": "int", "ver": "0",
-          "data": "50000"
+          "data": "10000"
         },
         "itime_hbm":{ "type": "int", "ver": "0",
           "data": "300"
@@ -230,7 +236,7 @@
           "data": "5.0"
         },
         "ptime":{ "type": "int", "ver": "0",
-          "data": "200160"
+          "data": "33360"
         },
         "pplen_us":{ "type": "int", "ver": "0",
           "data": "128"
