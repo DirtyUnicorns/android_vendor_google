@@ -530,6 +530,10 @@ telekom_at
 
 telering_at
 23207
+$
+lycamobile_ch
+23208
+Lycamobile
 
 fi_us
 23210"0306
@@ -572,6 +576,10 @@ $
 
 o2prepaid_gb
 23410"99
+"
+travelfy_zz
+23410
+2341040991
  
 giffgaff_gb
 23410GIFFGAFF
@@ -984,6 +992,9 @@ telenor_no
 
 25020
 25020
+%
+sberbanktelecom_ru
+25050"FA3207
 
 
 tinkoff_ru
@@ -1513,6 +1524,9 @@ tmobile_us
 tmobile_us
 310230
 
+boosttmo_us
+310240"6230
+
 metropcs_us
 310240"6D38
 
@@ -1529,8 +1543,8 @@ tmobile_us
 !
 310260GID1=2801
 310260"2801
-%
-consumercellular_us
+(
+consumercellulartmo_us
 310260"2AC9
 !
 redpockettmo_us
@@ -1564,8 +1578,8 @@ tmobile_us
 
 tmobile_us
 310270
-
-attmvnos_us
+(
+consumercellularatt_us
 310280"2AC9
 
 attmvnos_us
@@ -1644,8 +1658,8 @@ tmobile_us
 
 310390
 310390
-
-attmvnos_us
+(
+consumercellularatt_us
 310410"2AC9
 
 attmvnos_us
@@ -2185,6 +2199,15 @@ OPENMOBILE
 
 334090
 334090
+
+altan_mx
+334140ALTAN
+ 
+altanientc_mx
+334140IENTC
+ 
+altannewww_mx
+334140NeWWW
 
 33805
 33805
@@ -3178,9 +3201,6 @@ OPENMOBILE
 
 41007
 41007
-!
-410310GID1=2AC9
-410310"2AC9
 
 41201
 41201
@@ -3461,14 +3481,11 @@ rakuten_jp
 
 kddi_jp
 44050
-
-kddimvno_jp
-440514405130
-
-kddimvno_jp
-440514405131
-
-kddi_jp
+
+kddi_jp
+44051"10
+
+kddimvno_jp
 44051
 
 44052
@@ -3483,16 +3500,20 @@ rakuten_jp
 45000
 45000
 
-45002
+kt_kr
 45002
+
+kt_kr
+45004
 
 45005
 45005
-
-45006
+
+
+lguplus_kr
 45006
 
-45008
+kt_kr
 45008
 
 45011
@@ -3740,19 +3761,18 @@ telstra_au
 50507
 50507
 
-50511
-50511
-
 50512
 50512
 
 truphone_zz
 50538
-
-50571
+
+
+telstra_au
 50571
-
-50572
+
+
+telstra_au
 50572
 
 50588
@@ -3852,6 +3872,10 @@ singtel_sg
 /
 52505IMSI=525053095XXXXXX
 52505	525053095
+"
+travelfy_zz
+52505
+5250530996
 
 giga_sg
 52505giga
@@ -4705,6 +4729,10 @@ $
 
 73212
 73212
+#
+travelfy_zz
+732123
+7321232010
 2
 732123SPN=VIRGIN MOBILE
 732123VIRGIN MOBILE
@@ -4788,4 +4816,4 @@ $
 74810
 
 bics_be
-90158°’ßÀJ
+90158¼ºµúQ

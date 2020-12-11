@@ -4,7 +4,7 @@
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 */
 
--- VERSION: 11
+-- VERSION: 12
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE qcril_emergency_source_mcc_table(MCC TEXT, NUMBER TEXT, IMS_ADDRESS TEXT, SERVICE TEXT, PRIMARY KEY(MCC,NUMBER));
@@ -91,6 +91,11 @@ INSERT INTO qcril_emergency_source_mcc_table VALUES('222','112','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('525','995','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('425','101','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('425','102','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('724','190','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('724','192','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('724','193','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('724','911','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('724','112','','');
 CREATE TABLE qcril_emergency_source_voice_table(MCC TEXT, NUMBER TEXT, IMS_ADDRESS TEXT, SERVICE TEXT, PRIMARY KEY(MCC,NUMBER));
 INSERT INTO qcril_emergency_source_voice_table VALUES('460','110','','full');
 INSERT INTO qcril_emergency_source_voice_table VALUES('460','119','','full');
@@ -319,21 +324,6 @@ INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('732','101','112','','')
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('732','101','911','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('716','10','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('716','10','911','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','05','190','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','05','192','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','05','193','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','05','911','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','05','112','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','12','190','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','12','192','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','12','193','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','12','911','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','12','112','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','38','190','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','38','192','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','38','193','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','38','911','','');
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('724','38','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('722','07','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('722','07','911','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('722','10','112','','');
@@ -383,7 +373,7 @@ INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('734','04','911','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('734','04','112','','');
 CREATE TABLE qcril_emergency_source_voice_mcc_mnc_table(MCC TEXT, MNC TEXT, NUMBER TEXT, IMS_ADDRESS TEXT, SERVICE TEXT, PRIMARY KEY(MCC,NUMBER,MNC));
 CREATE TABLE qcril_properties_table (property TEXT,value TEXT, PRIMARY KEY(property));
-INSERT INTO qcril_properties_table VALUES('qcrildb_version','11');
+INSERT INTO qcril_properties_table VALUES('qcrildb_version','12');
 CREATE TABLE qcril_operator_specific_config(MCC TEXT, MNC TEXT, WPS_OVER_CS INTEGER, PRIMARY KEY(MCC, MNC));
 INSERT INTO qcril_operator_specific_config VALUES('310','410',1);
 DELETE FROM qcril_operator_specific_config where MCC = '310' AND MNC = '410';
