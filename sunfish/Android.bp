@@ -187,18 +187,18 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleRT5514",
+	name: "HotwordEnrollmentOKGoogleRT5514P",
 	owner: "google",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRT5514/HotwordEnrollmentOKGoogleRT5514.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRT5514P/HotwordEnrollmentOKGoogleRT5514P.apk",
 	presigned: true,
 	privileged: true,
 	product_specific: true,
 }
 
 android_app_import {
-	name: "HotwordEnrollmentXGoogleRT5514",
+	name: "HotwordEnrollmentXGoogleRT5514P",
 	owner: "google",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRT5514/HotwordEnrollmentXGoogleRT5514.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRT5514P/HotwordEnrollmentXGoogleRT5514P.apk",
 	presigned: true,
 	privileged: true,
 	product_specific: true,
@@ -436,6 +436,17 @@ android_app_import {
 	name: "CneApp",
 	owner: "google",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "gpu_profiling_vulkan_layer",
+	owner: "google",
+	apk: "proprietary/vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

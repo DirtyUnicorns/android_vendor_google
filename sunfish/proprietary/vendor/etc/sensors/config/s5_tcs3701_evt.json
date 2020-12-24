@@ -152,10 +152,10 @@
           "data": "255"
         },
         "aod_fast_filter_size":{ "type": "int", "ver": "0",
-          "data": "3"
+          "data": "2"
         },
         "aod_slow_filter_size":{ "type": "int", "ver": "0",
-          "data": "3"
+          "data": "2"
         },
         "darkening_threshold":{ "type": "flt", "ver": "0",
           "data": "0.1"
@@ -215,7 +215,7 @@
       ".params":{
         "owner": "tcs3701",
         "near_threshold":{ "type": "int", "ver": "0",
-          "data": "700"
+          "data": "500"
         },
         "far_threshold":{ "type": "int", "ver": "0",
           "data": "150"
@@ -227,10 +227,10 @@
           "data": "350"
         },
         "near_threshold_3":{ "type": "int", "ver": "0",
-          "data": "150"
+          "data": "900"
         },
         "far_threshold_3":{ "type": "int", "ver": "0",
-          "data": "150"
+          "data": "300"
         },
         "ppulse2":{ "type": "int", "ver": "0",
           "data": "5.0"
@@ -244,11 +244,26 @@
         "pgain":{ "type": "int", "ver": "0",
           "data": "2"
         },
-        "trigger_enable":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
         "enable":{ "type": "int", "ver": "0",
           "data": "1"
+        },
+        "ppers":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "binsrch_target":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "lux_threshold_low":{ "type": "int", "ver": "0",
+          "data": "5"
+        },
+        "lux_threshold_high":{ "type": "int", "ver": "0",
+          "data": "20"
+        },
+        "lux_threshold_diff":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "ppers2":{ "type": "int", "ver": "0",
+          "data": "3"
         }
       }
     },

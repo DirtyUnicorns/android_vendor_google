@@ -32,8 +32,8 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixel \
     GCS \
     HardwareInfo \
-    HotwordEnrollmentOKGoogleRT5514 \
-    HotwordEnrollmentXGoogleRT5514 \
+    HotwordEnrollmentOKGoogleRT5514P \
+    HotwordEnrollmentXGoogleRT5514P \
     MyVerizonServices \
     OBDM_Permissions \
     obdm_stub \
@@ -69,6 +69,7 @@ PRODUCT_PACKAGES += \
     adreno_graphics_driver \
     CACertService \
     CneApp \
+    gpu_profiling_vulkan_layer \
     IWlanService \
     TimeService
 
@@ -189,6 +190,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.7.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.8.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.postproc@1.0.so \
+    vendor/google/sunfish/proprietary/system_ext/lib/vendor.google.google_battery@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.google.google_battery@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.google.wifi_ext@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.google.wireless_charger@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.google.wireless_charger@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.0.so \
@@ -224,6 +226,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
+    vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.seccam@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.hardware.secureprocessor.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.secureprocessor.common@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib/vendor.qti.hardware.secureprocessor.common@1.0-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.secureprocessor.common@1.0-helper.so \
@@ -292,6 +295,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.7.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.8.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.postproc@1.0.so \
+    vendor/google/sunfish/proprietary/system_ext/lib64/vendor.google.google_battery@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.google.google_battery@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.google.wifi_ext@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.google.wireless_charger@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.google.wireless_charger@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.0.so \
@@ -327,6 +331,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
+    vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.seccam@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so \
     vendor/google/sunfish/proprietary/system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so \
@@ -349,6 +354,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/product/etc/CarrierSettings/att_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att_us.pb \
     vendor/google/sunfish/proprietary/product/etc/CarrierSettings/bell_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bell_ca.pb \
     vendor/google/sunfish/proprietary/product/etc/CarrierSettings/bluegrass_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bluegrass_us.pb \
+    vendor/google/sunfish/proprietary/product/etc/CarrierSettings/boosttmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/boosttmo_us.pb \
     vendor/google/sunfish/proprietary/product/etc/CarrierSettings/boost_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/boost_us.pb \
     vendor/google/sunfish/proprietary/product/etc/CarrierSettings/bouygues_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bouygues_fr.pb \
     vendor/google/sunfish/proprietary/product/etc/CarrierSettings/btb_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/btb_gb.pb \
@@ -473,13 +479,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/product/etc/res/values/charger/animation.txt:$(TARGET_COPY_OUT_PRODUCT)/etc/res/values/charger/animation.txt \
     vendor/google/sunfish/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
     vendor/google/sunfish/proprietary/product/etc/sysconfig/nga.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nga.xml \
+    vendor/google/sunfish/proprietary/product/etc/sysconfig/allowlist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.android.omadm.service.xml \
     vendor/google/sunfish/proprietary/product/etc/sysconfig/pixel_experience_2017.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2017.xml \
     vendor/google/sunfish/proprietary/product/etc/sysconfig/pixel_experience_2018.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2018.xml \
     vendor/google/sunfish/proprietary/product/etc/sysconfig/pixel_experience_2019.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019.xml \
     vendor/google/sunfish/proprietary/product/etc/sysconfig/pixel_experience_2019_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019_midyear.xml \
     vendor/google/sunfish/proprietary/product/etc/sysconfig/pixel_experience_2020_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020_midyear.xml \
     vendor/google/sunfish/proprietary/product/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml \
-    vendor/google/sunfish/proprietary/product/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/google/sunfish/proprietary/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so \
     vendor/google/sunfish/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
     vendor/google/sunfish/proprietary/product/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libqmi_cci_system.so \
@@ -491,8 +497,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
     vendor/google/sunfish/proprietary/product/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/google/sunfish/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
-    vendor/google/sunfish/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so \
-    vendor/google/sunfish/proprietary/product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
+    vendor/google/sunfish/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 
 PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -501,7 +506,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
     vendor/google/sunfish/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/google/sunfish/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
-    vendor/google/sunfish/proprietary/vendor/bin/cnss_cli:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_cli \
     vendor/google/sunfish/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/google/sunfish/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
     vendor/google/sunfish/proprietary/vendor/bin/crus_sp_cal:$(TARGET_COPY_OUT_VENDOR)/bin/crus_sp_cal \
@@ -512,7 +516,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/bin/diag_socket_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_socket_log \
     vendor/google/sunfish/proprietary/vendor/bin/diag_uart_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_uart_log \
     vendor/google/sunfish/proprietary/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon \
-    vendor/google/sunfish/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
     vendor/google/sunfish/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
     vendor/google/sunfish/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/google/sunfish/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
@@ -525,9 +528,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/google/sunfish/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/google/sunfish/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
-    vendor/google/sunfish/proprietary/vendor/bin/mdm_helper:$(TARGET_COPY_OUT_VENDOR)/bin/mdm_helper \
-    vendor/google/sunfish/proprietary/vendor/bin/mdm_helper_proxy:$(TARGET_COPY_OUT_VENDOR)/bin/mdm_helper_proxy \
-    vendor/google/sunfish/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/google/sunfish/proprietary/vendor/bin/modem_svc:$(TARGET_COPY_OUT_VENDOR)/bin/modem_svc \
     vendor/google/sunfish/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/google/sunfish/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
@@ -539,19 +539,16 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/google/sunfish/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/google/sunfish/proprietary/vendor/bin/ptt_socket_app:$(TARGET_COPY_OUT_VENDOR)/bin/ptt_socket_app \
-    vendor/google/sunfish/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
     vendor/google/sunfish/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
     vendor/google/sunfish/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/google/sunfish/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     vendor/google/sunfish/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/google/sunfish/proprietary/vendor/bin/qseecom_sample_client:$(TARGET_COPY_OUT_VENDOR)/bin/qseecom_sample_client \
     vendor/google/sunfish/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
-    vendor/google/sunfish/proprietary/vendor/bin/ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/ramdump \
     vendor/google/sunfish/proprietary/vendor/bin/ramoops:$(TARGET_COPY_OUT_VENDOR)/bin/ramoops \
     vendor/google/sunfish/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/google/sunfish/proprietary/vendor/bin/secure_ui_sample_client:$(TARGET_COPY_OUT_VENDOR)/bin/secure_ui_sample_client \
     vendor/google/sunfish/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
-    vendor/google/sunfish/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
     vendor/google/sunfish/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
     vendor/google/sunfish/proprietary/vendor/bin/ssgqmigd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd \
     vendor/google/sunfish/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
@@ -567,11 +564,9 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
     vendor/google/sunfish/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
     vendor/google/sunfish/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
-    vendor/google/sunfish/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
-    vendor/google/sunfish/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/google/sunfish/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.2-service.fpc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.2-service.fpc \
     vendor/google/sunfish/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
-    vendor/google/sunfish/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service-google:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service-google \
+    vendor/google/sunfish/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.6-service-google:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.6-service-google \
     vendor/google/sunfish/proprietary/vendor/bin/hw/android.hardware.confirmationui@1.0-service-google:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.confirmationui@1.0-service-google \
     vendor/google/sunfish/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/google/sunfish/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
@@ -588,6 +583,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/bin/hw/citadel_updater:$(TARGET_COPY_OUT_VENDOR)/bin/hw/citadel_updater \
     vendor/google/sunfish/proprietary/vendor/bin/hw/init_citadel:$(TARGET_COPY_OUT_VENDOR)/bin/hw/init_citadel \
     vendor/google/sunfish/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
+    vendor/google/sunfish/proprietary/vendor/bin/hw/vendor.google.google_battery@1.0-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.google_battery@1.0-service-vendor \
     vendor/google/sunfish/proprietary/vendor/bin/hw/vendor.google.radioext@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.radioext@1.0-service \
     vendor/google/sunfish/proprietary/vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.wifi_ext@1.0-service-vendor \
     vendor/google/sunfish/proprietary/vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti \
@@ -738,8 +734,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/google/sunfish/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/google/sunfish/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/google/sunfish/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/google/sunfish/proprietary/vendor/etc/init/rebootescrow-citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rebootescrow-citadel.rc \
+    vendor/google/sunfish/proprietary/vendor/etc/init/vendor.google.google_battery@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.google_battery@1.0-service.rc \
     vendor/google/sunfish/proprietary/vendor/etc/init/vendor.google.radioext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.radioext@1.0-service.rc \
     vendor/google/sunfish/proprietary/vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wifi_ext@1.0-service.rc \
     vendor/google/sunfish/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
@@ -1285,6 +1281,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/lib/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreamparser.so \
     vendor/google/sunfish/proprietary/vendor/lib/libstreset.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreset.so \
     vendor/google/sunfish/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
+    vendor/google/sunfish/proprietary/vendor/lib/libsueznanoappclients.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsueznanoappclients.so \
     vendor/google/sunfish/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/google/sunfish/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/google/sunfish/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
@@ -1481,6 +1478,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.1.so \
     vendor/google/sunfish/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.2.so \
     vendor/google/sunfish/proprietary/vendor/lib64/g3a.data.manager.vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/g3a.data.manager.vendor.so \
+    vendor/google/sunfish/proprietary/vendor/lib64/google_wifi_firmware_config_info_cc_proto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/google_wifi_firmware_config_info_cc_proto.so \
     vendor/google/sunfish/proprietary/vendor/lib64/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2dpoffload.so \
     vendor/google/sunfish/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/google/sunfish/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
@@ -1745,6 +1743,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/lib64/libstpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstpreprocess.so \
     vendor/google/sunfish/proprietary/vendor/lib64/libstreset.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstreset.so \
     vendor/google/sunfish/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
+    vendor/google/sunfish/proprietary/vendor/lib64/libsueznanoappclients.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsueznanoappclients.so \
     vendor/google/sunfish/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/google/sunfish/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/google/sunfish/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
@@ -1775,6 +1774,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.10.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.11.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/google/sunfish/proprietary/vendor/lib64/vendor.google.google_battery@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.google_battery@1.0.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.google.radioext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.0.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.google.radioext@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.1.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.google.radioext@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.2.so \
@@ -1829,6 +1829,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
+    vendor/google/sunfish/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/google/sunfish/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
@@ -1868,6 +1869,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/radio/qcril_database/upgrade/11_remove_fr_orange.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/11_remove_fr_orange.sql \
     vendor/google/sunfish/proprietary/vendor/radio/qcril_database/upgrade/12_israel_normal_ecc.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/12_israel_normal_ecc.sql \
     vendor/google/sunfish/proprietary/vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/13_version_update_ecc_table.sql \
+    vendor/google/sunfish/proprietary/vendor/radio/qcril_database/upgrade/14_add_fr_normal_ecc.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/14_add_fr_normal_ecc.sql \
+    vendor/google/sunfish/proprietary/vendor/radio/qcril_database/upgrade/15_fr_normal_ecc_on_wifi.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/15_fr_normal_ecc_on_wifi.sql \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.dig:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.dig \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.txt:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.txt \
@@ -1904,6 +1907,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Telia/Commercial/Norway/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Telia/Commercial/Norway/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Telia/Commercial/Sweden/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Telia/Commercial/Sweden/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/TIM/Commercial/Italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/TIM/Commercial/Italy/mcfg_sw.mbn \
+    vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/Commercial/Ireland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/Commercial/Ireland/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/VoLTE/Germany/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/VoLTE/Germany/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/VoLTE/Italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/VoLTE/Italy/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/VoLTE/Netherlands/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Vodafone/VoLTE/Netherlands/mcfg_sw.mbn \
@@ -1923,9 +1927,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/APAC/Airtel/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/APAC/Airtel/Commercial/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/APAC/Idea/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/APAC/Idea/Commercial/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/APAC/Vodafone/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/APAC/Vodafone/Commercial/mcfg_sw.mbn \
+    vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/common/Ubigi/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/common/Ubigi/Commercial/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/ESN/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/ESN/Commercial/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Free/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Free/Commercial/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/ID/Commercial/UK/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/ID/Commercial/UK/mcfg_sw.mbn \
+    vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Smarty/Commercial/UK/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Smarty/Commercial/UK/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Vodafone/Lab/VoLTE/Germany/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Vodafone/Lab/VoLTE/Germany/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Chatr/NonVoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Chatr/NonVoLTE/mcfg_sw.mbn \
     vendor/google/sunfish/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/CSpire/VoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/CSpire/VoLTE/mcfg_sw.mbn \
