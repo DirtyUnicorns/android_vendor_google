@@ -129,6 +129,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/att_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att_us.pb \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/bell_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bell_ca.pb \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/bluegrass_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bluegrass_us.pb \
+    vendor/google/coral/proprietary/product/etc/CarrierSettings/boosttmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/boosttmo_us.pb \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/boost_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/boost_us.pb \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/bouygues_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/bouygues_fr.pb \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/btb_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/btb_gb.pb \
@@ -252,6 +253,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/product/etc/res/images/charger/main_font.png:$(TARGET_COPY_OUT_PRODUCT)/etc/res/images/charger/main_font.png \
     vendor/google/coral/proprietary/product/etc/res/values/charger/animation.txt:$(TARGET_COPY_OUT_PRODUCT)/etc/res/values/charger/animation.txt \
     vendor/google/coral/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
+    vendor/google/coral/proprietary/product/etc/sysconfig/allowlist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.android.omadm.service.xml \
     vendor/google/coral/proprietary/product/etc/sysconfig/dreamliner.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dreamliner.xml \
     vendor/google/coral/proprietary/product/etc/sysconfig/nga.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nga.xml \
     vendor/google/coral/proprietary/product/etc/sysconfig/pixel_2019_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2019_exclusive.xml \
@@ -260,7 +262,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/product/etc/sysconfig/pixel_experience_2019.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019.xml \
     vendor/google/coral/proprietary/product/etc/sysconfig/pixel_experience_2019_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019_midyear.xml \
     vendor/google/coral/proprietary/product/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml \
-    vendor/google/coral/proprietary/product/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/google/coral/proprietary/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so \
     vendor/google/coral/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
     vendor/google/coral/proprietary/product/lib/libhidltransport.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libhidltransport.so \
@@ -278,8 +279,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/product/priv-app/EuiccGoogle/esim-a2.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccGoogle/esim-a2.img \
     vendor/google/coral/proprietary/product/priv-app/EuiccSupportPixel/esim-full-v1.img:$(TARGET_COPY_OUT_PRODUCT)/priv-app/EuiccSupportPixel/esim-full-v1.img \
     vendor/google/coral/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
-    vendor/google/coral/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so \
-    vendor/google/coral/proprietary/product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
+    vendor/google/coral/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 
 PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -345,6 +345,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/system_ext/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.7.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.8.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.postproc@1.0.so \
+    vendor/google/coral/proprietary/system_ext/lib/vendor.google.google_battery@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.google.google_battery@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.google.wifi_ext@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.google.wireless_charger@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.google.wireless_charger@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.google.wireless_charger@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.google.wireless_charger@1.1.so \
@@ -440,6 +441,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.7.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.8.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.postproc@1.0.so \
+    vendor/google/coral/proprietary/system_ext/lib64/vendor.google.google_battery@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.google.google_battery@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.google.wifi_ext@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.google.wireless_charger@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.google.wireless_charger@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.google.wireless_charger@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.google.wireless_charger@1.1.so \
@@ -578,6 +580,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/bin/hw/init_citadel:$(TARGET_COPY_OUT_VENDOR)/bin/hw/init_citadel \
     vendor/google/coral/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/google/coral/proprietary/vendor/bin/hw/vendor.google.airbrush@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.airbrush@1.0-service \
+    vendor/google/coral/proprietary/vendor/bin/hw/vendor.google.google_battery@1.0-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.google_battery@1.0-service-vendor \
     vendor/google/coral/proprietary/vendor/bin/hw/vendor.google.radioext@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.radioext@1.0-service \
     vendor/google/coral/proprietary/vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.wifi_ext@1.0-service-vendor \
     vendor/google/coral/proprietary/vendor/bin/hw/vendor.google.wireless_charger@1.2-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.wireless_charger@1.2-service-vendor \
@@ -730,10 +733,10 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/google/coral/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/google/coral/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/google/coral/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/google/coral/proprietary/vendor/etc/init/rebootescrow-citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rebootescrow-citadel.rc \
     vendor/google/coral/proprietary/vendor/etc/init/rlsservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rlsservice.rc \
     vendor/google/coral/proprietary/vendor/etc/init/vendor.google.airbrush@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.airbrush@1.0-service.rc \
+    vendor/google/coral/proprietary/vendor/etc/init/vendor.google.google_battery@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.google_battery@1.0-service.rc \
     vendor/google/coral/proprietary/vendor/etc/init/vendor.google.radioext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.radioext@1.0-service.rc \
     vendor/google/coral/proprietary/vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wifi_ext@1.0-service.rc \
     vendor/google/coral/proprietary/vendor/etc/init/vendor.google.wireless_charger@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wireless_charger@1.2-service.rc \
@@ -1356,6 +1359,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreamparser.so \
     vendor/google/coral/proprietary/vendor/lib/libstreset.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreset.so \
     vendor/google/coral/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
+    vendor/google/coral/proprietary/vendor/lib/libsueznanoappclients.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsueznanoappclients.so \
     vendor/google/coral/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/google/coral/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/google/coral/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
@@ -1563,6 +1567,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/google/coral/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.1.so \
     vendor/google/coral/proprietary/vendor/lib64/g3a.data.manager.vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/g3a.data.manager.vendor.so \
+    vendor/google/coral/proprietary/vendor/lib64/google_wifi_firmware_config_info_cc_proto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/google_wifi_firmware_config_info_cc_proto.so \
     vendor/google/coral/proprietary/vendor/lib64/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2dpoffload.so \
     vendor/google/coral/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/google/coral/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
@@ -1846,6 +1851,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib64/libstpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstpreprocess.so \
     vendor/google/coral/proprietary/vendor/lib64/libstreset.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstreset.so \
     vendor/google/coral/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
+    vendor/google/coral/proprietary/vendor/lib64/libsueznanoappclients.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsueznanoappclients.so \
     vendor/google/coral/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/google/coral/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/google/coral/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
@@ -1880,6 +1886,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.google.airbrush.manager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.airbrush.manager@1.0.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.google.darwinn.service@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.darwinn.service@1.0.so \
+    vendor/google/coral/proprietary/vendor/lib64/vendor.google.google_battery@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.google_battery@1.0.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.google.radioext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.0.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.google.radioext@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.1.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.google.radioext@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.2.so \
@@ -1937,6 +1944,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
+    vendor/google/coral/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/google/coral/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
@@ -1978,6 +1986,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/radio/qcril_database/upgrade/11_remove_fr_orange.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/11_remove_fr_orange.sql \
     vendor/google/coral/proprietary/vendor/radio/qcril_database/upgrade/12_israel_normal_ecc.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/12_israel_normal_ecc.sql \
     vendor/google/coral/proprietary/vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/13_version_update_ecc_table.sql \
+    vendor/google/coral/proprietary/vendor/radio/qcril_database/upgrade/14_add_fr_normal_ecc.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/14_add_fr_normal_ecc.sql \
+    vendor/google/coral/proprietary/vendor/radio/qcril_database/upgrade/15_fr_normal_ecc_on_wifi.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/15_fr_normal_ecc_on_wifi.sql \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.dig:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.dig \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.txt:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/mbn_hw.txt \
@@ -1998,6 +2008,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/AUNZ/Optus/Commercial/pixel_AU/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/AUNZ/Optus/Commercial/pixel_AU/mcfg_sw.mbn \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/AUNZ/Telstra/pixel_Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/AUNZ/Telstra/pixel_Commercial/mcfg_sw.mbn \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/AUNZ/Vodafone/pixel_Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/AUNZ/Vodafone/pixel_Commercial/mcfg_sw.mbn \
+    vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/common/Ubigi/pixel_Ubigi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/common/Ubigi/pixel_Ubigi/mcfg_sw.mbn \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/common/WildCard/pixel_WildCard/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/common/WildCard/pixel_WildCard/mcfg_sw.mbn \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Bouygues/Commercial/pixel_France/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/Bouygues/Commercial/pixel_France/mcfg_sw.mbn \
     vendor/google/coral/proprietary/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/DT/Commercial/pixel_NL/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/EU/DT/Commercial/pixel_NL/mcfg_sw.mbn \

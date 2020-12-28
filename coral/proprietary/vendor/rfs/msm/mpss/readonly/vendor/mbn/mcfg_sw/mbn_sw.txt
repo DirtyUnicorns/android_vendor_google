@@ -70,5 +70,6 @@ mcfg_sw/generic/Pixel/SEA/Singtel/Commercial/pixel_Singapore/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/SEA/StarHub/Commercial/pixel_SG/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/SEA/TM/pixel_Commercial/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/TestSIM/pixel_TestSIM/mcfg_sw.mbn
+mcfg_sw/generic/Pixel/common/Ubigi/pixel_Ubigi/mcfg_sw.mbn
 mcfg_sw/generic/Pixel/common/WildCard/pixel_WildCard/mcfg_sw.mbn
 mcfg_sw/generic/common/Default/sm8150.genp.prod/Default/mcfg_sw.mbn
