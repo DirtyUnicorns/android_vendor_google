@@ -962,7 +962,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/lib64/libvoice-svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvoice-svc.so \
     vendor/google/taimen/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/google/taimen/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
-    vendor/google/taimen/proprietary/vendor/lib64/pixel-power-ext-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/pixel-power-ext-V1-ndk_platform.so \
     vendor/google/taimen/proprietary/vendor/lib64/sensors.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.msm8998.so \
     vendor/google/taimen/proprietary/vendor/lib64/vendor.qti.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.atcmdfwd@1.0.so \
     vendor/google/taimen/proprietary/vendor/lib64/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qcril.am@1.0.so \
