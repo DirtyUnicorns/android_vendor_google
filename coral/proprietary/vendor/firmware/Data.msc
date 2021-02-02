@@ -1,4 +1,4 @@
-VERSION:839319823
+VERSION:839385359
 
 1,IIIIIII,COEX_MWS_ANT_DIVERSITY: Chainmask Req Fail(%d):Rx:0x%x, Tx:0x%x, RxNSS:0x%x, SMPS_Diff:%d, ReqId:%d, Cal:%d 
 2,IIII,COEX_MWS_ANT_DIVERSITY: chnmsk completed Rx:0x%x, Tx:0x%x, Cal:%d, ReqId:%d 
@@ -3907,224 +3907,224 @@ VERSION:839319823
 3753,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
 3754,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
 3755,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3756,I,RTT_CALL_FLOW: WLAN_RTT_RESP_INIT ts = %u 
-3757,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3758,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3759,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3760,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3761,I,wlan_pdev_register_limit_offchan_notif_handler failed: %d 
-3762,IIII,RTT_ERROR_WMI_EVENT: ERROR: client_id: %d req_id:%d reason:%d init_ctxt: %p 
-3763,,Event buffer allocation for send_rtt_error_report failed 
-3764,I,RTT_CALL_FLOW: WLAN_RTT_MEASUEMENT_REPORT2 ts = %u 
-3765,IIIIIII,wlan_rtt_send_measurement_report_hdl: client_id: %d curr_init_ctxt: %p token_id:%d frag_idx:%d more_frag: %d buf:%p buf_len:%d 
-3766,III,wlan_rtt_resp_chan_switch_hdl()  ev_id = %d ftm_state:%d is_ftmr_pending:%d 
-3767,I,RTT_CALL_FLOW: WLAN_RTT_CHAN_SWITCH_HDL ts = %u 
-3768,IIII,RTT_CHANNEL_SWITCH_GRANT  ev_id = %d p_chnl_switch_ctxt = 0x%x p_owner = 0x%x p_rtt_ctxt = 0x%x 
-3769,I,RTT_CALL_FLOW: WLAN_RTT_CHAN_SWITCH ts = %u 
-3770,II,VOIP in progress voip_ctxt:%p Limit duration to duration_us:%d 
-3771,IIII,RTT_CHANNEL_SWITCH_REQ  module_id %d duration = %d channel = %d priority = %d 
-3772,I,RTT_CALL_FLOW: WLAN_RTT_LOCAL_SEND ts = %u 
+3756,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3757,I,wlan_pdev_register_limit_offchan_notif_handler failed: %d 
+3758,IIII,RTT_ERROR_WMI_EVENT: ERROR: client_id: %d req_id:%d reason:%d init_ctxt: %p 
+3759,,Event buffer allocation for send_rtt_error_report failed 
+3760,I,RTT_CALL_FLOW: WLAN_RTT_MEASUEMENT_REPORT2 ts = %u 
+3761,IIIIIII,wlan_rtt_send_measurement_report_hdl: client_id: %d curr_init_ctxt: %p token_id:%d frag_idx:%d more_frag: %d buf:%p buf_len:%d 
+3762,III,wlan_rtt_resp_chan_switch_hdl()  ev_id = %d ftm_state:%d is_ftmr_pending:%d 
+3763,I,RTT_CALL_FLOW: WLAN_RTT_CHAN_SWITCH_HDL ts = %u 
+3764,IIII,RTT_CHANNEL_SWITCH_GRANT  ev_id = %d p_chnl_switch_ctxt = 0x%x p_owner = 0x%x p_rtt_ctxt = 0x%x 
+3765,I,RTT_CALL_FLOW: WLAN_RTT_CHAN_SWITCH ts = %u 
+3766,II,VOIP in progress voip_ctxt:%p Limit duration to duration_us:%d 
+3767,IIII,RTT_CHANNEL_SWITCH_REQ  module_id %d duration = %d channel = %d priority = %d 
+3768,I,RTT_CALL_FLOW: WLAN_RTT_LOCAL_SEND ts = %u 
+3769,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3770,IIIII,wlan_rtt_local_send()status: %d pmac_mac_id: %d vdev_mac_id: %d selfgen_chm: 0x%x abf: %p 
+3771,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3772,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
 3773,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3774,IIIII,wlan_rtt_local_send()status: %d pmac_mac_id: %d vdev_mac_id: %d selfgen_chm: 0x%x abf: %p 
-3775,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3776,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3777,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3778,IIIII,WLAN_RTT_VOIP_NOTIFY voip_ctxt %p voip_state %d voip_ctxt.in_progress %d duration_ms %d duration_us %d 
-3779,III,nan_ranging_terminate_completion_handler: req_id: %d init_ctxt: %p wait_status: %x 
-3780,I,nan_ranging_terminate_completion_handler for req_id: %d is not processed !!! 
-3781,I,RTT_CALL_FLOW: WLAN_RTT_RANGING_NEG_STATUS_NOTIF ts = %u 
-3782,IIIII,wlan_rtt_ranging_negotiation_status_notif_handler: timeout_us:%u burst_start_time_h:%u burst_start_time_l:%u StartTsf:%u curr_time%u 
-3783,III,wlan_rtt_ranging_negotiation_status_notif_handler: ranging_ind_data->RangingParams.ReqId %d init_ctxt %p event_handled %d 
-3784,I,RTT_CALL_FLOW: WLAN_RTT_REGISTER_RANGING_NEG ts = %u 
-3785,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3786,,Event buffer allocation for send_responder_cfg_info response failed 
-3787,,RTT_ERROR_REPORT :0xFF 
-3788,I,RTT_CALL_FLOW: WLAN_RTT_GET_CHANNEL_INFO ts = %u 
-3789,I,RTT_CALL_FLOW: WLAN_RTT_SUCCESS_END_OF_FUNCTION ts = %u 
+3774,IIIII,WLAN_RTT_VOIP_NOTIFY voip_ctxt %p voip_state %d voip_ctxt.in_progress %d duration_ms %d duration_us %d 
+3775,III,nan_ranging_terminate_completion_handler: req_id: %d init_ctxt: %p wait_status: %x 
+3776,I,nan_ranging_terminate_completion_handler for req_id: %d is not processed !!! 
+3777,I,RTT_CALL_FLOW: WLAN_RTT_RANGING_NEG_STATUS_NOTIF ts = %u 
+3778,IIIII,wlan_rtt_ranging_negotiation_status_notif_handler: timeout_us:%u burst_start_time_h:%u burst_start_time_l:%u StartTsf:%u curr_time%u 
+3779,III,wlan_rtt_ranging_negotiation_status_notif_handler: ranging_ind_data->RangingParams.ReqId %d init_ctxt %p event_handled %d 
+3780,I,RTT_CALL_FLOW: WLAN_RTT_REGISTER_RANGING_NEG ts = %u 
+3781,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3782,,Event buffer allocation for send_responder_cfg_info response failed 
+3783,,RTT_ERROR_REPORT :0xFF 
+3784,I,RTT_CALL_FLOW: WLAN_RTT_GET_CHANNEL_INFO ts = %u 
+3785,I,RTT_CALL_FLOW: WLAN_RTT_SUCCESS_END_OF_FUNCTION ts = %u 
+3786,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3787,I,RTT_CALL_FLOW: WLAN_RTT_CFG_RESPONDER_MODE_ENABLE ts = %u 
+3788,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3789,I,RTT_CALL_FLOW: WLAN_RTT_CFG_RESPONDER_MODE_DISABLE ts = %u 
 3790,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3791,I,RTT_CALL_FLOW: WLAN_RTT_CFG_RESPONDER_MODE_ENABLE ts = %u 
+3791,I,RTT_CALL_FLOW: WLAN_RTT_SUCCESS_END_OF_FUNCTION ts = %u 
 3792,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3793,I,RTT_CALL_FLOW: WLAN_RTT_CFG_RESPONDER_MODE_DISABLE ts = %u 
-3794,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3795,I,RTT_CALL_FLOW: WLAN_RTT_SUCCESS_END_OF_FUNCTION ts = %u 
+3793,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3794,I,RTT_CALL_FLOW: WLAN_RTT_SUCCESS_END_OF_FUNCTION ts = %u 
+3795,I,RTT_CALL_FLOW: WLAN_RTT_STA_RESPONDER_TIMER_FIRED ts = %u 
 3796,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3797,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3798,I,RTT_CALL_FLOW: WLAN_RTT_SUCCESS_END_OF_FUNCTION ts = %u 
-3799,I,RTT_CALL_FLOW: WLAN_RTT_STA_RESPONDER_TIMER_FIRED ts = %u 
-3800,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3801,II,wlan_rtt_get_clear_stats ranging_dur: %x resp_dur: %x  
-3802,II,wlan_rtt_cancel_all_rtt_operation attached to vdev_id: %d p_pdev_rtt_ctxt: %p 
-3803,IIII,cancel_measurement_req: vdev_type: %d, req_id: %d, free_curr_init: %d, is_cancelled: %d 
-3804,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TMR_START ts = %u 
-3805,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TMR_END ts = %u 
-3806,,Selfgen chainmask granted is zero. return error 
-3807,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TMR_WITH_IE ts = %u 
-3808,II,Sending RTT Trigger frame resp_tsf_h = 0x%x resp_tsf_l = 0x%x 
-3809,,RTT_ERROR_REPORT :ALLOCATE_FRAME_BUFFER_ERROR 
-3810,III,wlan_rtt_send_tmr_frame: channel: %x pmac = %p spoofed_seqno = %d 
-3811,,RTT_TIMER_STOP 
-3812,I,RTT_CALL_FLOW: WLAN_RTT_TMR_START_ACK_HDL ts = %u 
-3813,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_OK 
-3814,,RTT_ERROR_REPORT :0xBABE 
-3815,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_FAIL_XRETRY 
-3816,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_DROP 
-3817,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3818,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3819,IIIII,RTT_FTM_PARAM_INFO  arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x arg5 = 0x%x 
-3820,I,RTT_CALL_FLOW: WLAN_RTT_SET_VENDOR_IE_HT_VHT_ACK ts = %u 
-3821,I,RTT_CALL_FLOW: WLAN_RTT_INIT_STOP_SCHEDULE_TIMER ts = %u 
-3822,I,wlan_rtt_free_init_ctxt() usage flags = 0x%x 
-3823,II,Unregistered wlan_rtt_vdev_notify_handler() for init context vdev = %p status = 0x%x 
-3824,I,RTT_CALL_FLOW: WLAN_RTT_PTSF_TIMER_STOP ts = %u 
-3825,I,RTT_CALL_FLOW: WLAN_RTT_BURST_PERIODIC_TIMER_STOP ts = %u 
-3826,III,wlan_rtt_vdev_notify_handler() vdev = %p vdev_id = %d notification type = %d 
-3827,,PRE migrate event 
-3828,,POST migrate event 
-3829,,wlan_rtt_cancel_all_rtt_operation 
-3830,II,wlan_rtt_pm_arb_req(): mac_id: %d state: %d  
-3831,I,RTT_CALL_FLOW: WLAN_RTT_INIT_HANDLER ts = %u 
-3832,IIIIIIII,wlan_rtt_init_handler: Starting initiator with mac_addr = %x%x  init_idx = %d init_ctxt_usage_flags = 0x%x pmac: %p mac_id: %d vdev: %p rate_info: 0x%x 
-3833,,RTT request on a different vdev than the one set during channel change 
-3834,III,Registered wlan_rtt_vdev_notify_handler() for init context : vdev = %p vdevid = %d status = 0x%x 
-3835,,NANRTT_Active:ongoing seesion 
-3836,I,RTT_CALL_FLOW: WLAN_RTT_NULL_HANDLER ts = %u 
-3837,I,RTT add_random_mac_addr failed. status: 0x%x 
-3838,I,RTT_CALL_FLOW: WLAN_RTT_SEND_NULL_FRAME ts = %u 
-3839,,RTT_ERROR_REPORT :ALLOCATE_FRAME_BUFFER_ERROR 
-3840,IIII,wlan_rtt_send_null_frame: abf: %p channel: %x pmac = %p spoofed_seqno = %d 
-3841,,RTT_ERROR_REPORT :RTT_FRAME_TX_FAIL 
-3842,I,RTT_CALL_FLOW: WLAN_RTT_NULL_ACK_HDL ts = %u 
-3843,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_OK 
-3844,II,Null frame Tx failed: completion_status: %d total tx_fail_count: %d 
-3845,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3846,I,RTT_CALL_FLOW: WLAN_RTT_MEASUREMENT_REPORT ts = %u 
-3847,III,wlan_rtt_measurement_report: client_id: %d curr_init_ctxt:%p size: %d 
-3848,I,RTT_CALL_FLOW: WLAN_RTT_TMR_HANDLER ts = %u 
-3849,I,RTT add_random_mac_addr failed. status: 0x%x 
-3850,,Event buffer allocation for cancel measurement response failed 
-3851,I,RTT_CALL_FLOW: WLAN_RTT_MEAS_REQ_INIT ts = %u 
-3852,IIII,RTT_MEAS_REQ_HEAD  req_id = %d num_chan = %d sps = %d client: %d 
-3853,IIIIIII,RTT_MEAS_REQ_HEAD ch_mhz = %d, center_freq1 = %d ch_mode = %d sta_num:%d, max_reg_power: %d antenna_max: %d, max_tx_power: %d 
+3797,II,wlan_rtt_get_clear_stats ranging_dur: %x resp_dur: %x  
+3798,II,wlan_rtt_cancel_all_rtt_operation attached to vdev_id: %d p_pdev_rtt_ctxt: %p 
+3799,IIII,cancel_measurement_req: vdev_type: %d, req_id: %d, free_curr_init: %d, is_cancelled: %d 
+3800,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TMR_START ts = %u 
+3801,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TMR_END ts = %u 
+3802,,Selfgen chainmask granted is zero. return error 
+3803,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TMR_WITH_IE ts = %u 
+3804,II,Sending RTT Trigger frame resp_tsf_h = 0x%x resp_tsf_l = 0x%x 
+3805,,RTT_ERROR_REPORT :ALLOCATE_FRAME_BUFFER_ERROR 
+3806,III,wlan_rtt_send_tmr_frame: channel: %x pmac = %p spoofed_seqno = %d 
+3807,,RTT_TIMER_STOP 
+3808,I,RTT_CALL_FLOW: WLAN_RTT_TMR_START_ACK_HDL ts = %u 
+3809,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_OK 
+3810,,RTT_ERROR_REPORT :0xBABE 
+3811,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_FAIL_XRETRY 
+3812,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_DROP 
+3813,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3814,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3815,IIIII,RTT_FTM_PARAM_INFO  arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x arg5 = 0x%x 
+3816,I,RTT_CALL_FLOW: WLAN_RTT_SET_VENDOR_IE_HT_VHT_ACK ts = %u 
+3817,I,RTT_CALL_FLOW: WLAN_RTT_INIT_STOP_SCHEDULE_TIMER ts = %u 
+3818,I,wlan_rtt_free_init_ctxt() usage flags = 0x%x 
+3819,II,Unregistered wlan_rtt_vdev_notify_handler() for init context vdev = %p status = 0x%x 
+3820,I,RTT_CALL_FLOW: WLAN_RTT_PTSF_TIMER_STOP ts = %u 
+3821,I,RTT_CALL_FLOW: WLAN_RTT_BURST_PERIODIC_TIMER_STOP ts = %u 
+3822,III,wlan_rtt_vdev_notify_handler() vdev = %p vdev_id = %d notification type = %d 
+3823,,PRE migrate event 
+3824,,POST migrate event 
+3825,,wlan_rtt_cancel_all_rtt_operation 
+3826,II,wlan_rtt_pm_arb_req(): mac_id: %d state: %d  
+3827,I,RTT_CALL_FLOW: WLAN_RTT_INIT_HANDLER ts = %u 
+3828,IIIIIIII,wlan_rtt_init_handler: Starting initiator with mac_addr = %x%x  init_idx = %d init_ctxt_usage_flags = 0x%x pmac: %p mac_id: %d vdev: %p rate_info: 0x%x 
+3829,,RTT request on a different vdev than the one set during channel change 
+3830,III,Registered wlan_rtt_vdev_notify_handler() for init context : vdev = %p vdevid = %d status = 0x%x 
+3831,,NANRTT_Active:ongoing seesion 
+3832,I,RTT_CALL_FLOW: WLAN_RTT_NULL_HANDLER ts = %u 
+3833,I,RTT add_random_mac_addr failed. status: 0x%x 
+3834,I,RTT_CALL_FLOW: WLAN_RTT_SEND_NULL_FRAME ts = %u 
+3835,,RTT_ERROR_REPORT :ALLOCATE_FRAME_BUFFER_ERROR 
+3836,IIII,wlan_rtt_send_null_frame: abf: %p channel: %x pmac = %p spoofed_seqno = %d 
+3837,,RTT_ERROR_REPORT :RTT_FRAME_TX_FAIL 
+3838,I,RTT_CALL_FLOW: WLAN_RTT_NULL_ACK_HDL ts = %u 
+3839,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_OK 
+3840,II,Null frame Tx failed: completion_status: %d total tx_fail_count: %d 
+3841,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3842,I,RTT_CALL_FLOW: WLAN_RTT_MEASUREMENT_REPORT ts = %u 
+3843,III,wlan_rtt_measurement_report: client_id: %d curr_init_ctxt:%p size: %d 
+3844,I,RTT_CALL_FLOW: WLAN_RTT_TMR_HANDLER ts = %u 
+3845,I,RTT add_random_mac_addr failed. status: 0x%x 
+3846,,Event buffer allocation for cancel measurement response failed 
+3847,I,RTT_CALL_FLOW: WLAN_RTT_MEAS_REQ_INIT ts = %u 
+3848,IIII,RTT_MEAS_REQ_HEAD  req_id = %d num_chan = %d sps = %d client: %d 
+3849,IIIIIII,RTT_MEAS_REQ_HEAD ch_mhz = %d, center_freq1 = %d ch_mode = %d sta_num:%d, max_reg_power: %d antenna_max: %d, max_tx_power: %d 
+3850,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3851,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3852,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3853,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
 3854,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3855,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3856,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3857,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3858,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3859,IIIII,RTT_MEAS_REQ_BODY idx = %d dest_mac_0to31 = 0x%x dest_mac_32to47 = 0x%x sppof_bssid_0to31 = 0x%x spoof_bssid_32to47 = 0x%x 
-3860,IIIII,RTT_MEAS_REQ_BODY  control_inf = 0x%x meas_inf = 0x%x meas_params1 = 0x%x meas_params2 = 0x%x is_dest_qca: %d 
-3861,I,DFS channel quiet %d 
-3862,IIII,wlan_rtt_meas_req_init: Unsupported vdev type %d for dest_mac %x%x with req_id %d 
-3863,II, wlan_rtt_get_ftm_chnl_code bw:%d preamble:%d 
-3864,,80p80 channel format 
-3865,,160 FTM channel format 
-3866,I,RTT_CALL_FLOW: WLAN_WMI_OEM_REQ ts = %u 
-3867,II,_wlan_wmi_oem_req: Non TLV format msg received; tlv_head: %d 
-3868,III,wlan_wmi_oem_req: INFO: OEM Req received with sub_type:%d, req_id:%d client: %d 
-3869,II,wlan_wmi_oem_req: ERROR: TLV processing failed for sub_type:%d, req_id:%d 
-3870,I,RTT_CALL_FLOW: WLAN_RTT_CAP_MSG_REQ_HDL ts = %u 
-3871,IIIIII,wlan_rtt_cap_msg_req_hdl: client_id: %d Req:%d Reqid:%d Major:%d Minor:%d Revision:%d 
-3872,,Event buffer allocation for wlan_rtt_cap_msg_req response failed 
-3873,,RTT_ERROR_REPORT :0xff 
-3874,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3875,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3876,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3877,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3878,I,RTT_CALL_FLOW: WLAN_RTT_START_FTM1_TIMER ts = %u 
-3879,I,RTT_CALL_FLOW: WLAN_RTT_START_BURST_TIMER ts = %u 
-3880,I,RTT_CALL_FLOW: WLAN_RTT_FTM_DELTA_TIMER_STOP ts = %u 
-3881,I,RTT_CALL_FLOW: WLAN_RTT_BURST_TIMER_STOP ts = %u 
-3882,I,RTT_CALL_FLOW: WLAN_RTT_START_BURST_TIMER ts = %u 
-3883,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_TIMER_STOP ts = %u 
-3884,I,RTT_CALL_FLOW: WLAN_RTT_TIMEOUT_HANDLER ts = %u 
-3885,I,RTT_CALL_FLOW: WLAN_RTT_SPS_TIMEOUT_HANDLER ts = %u 
-3886,I,RTT_CALL_FLOW: WLAN_RTT_TMR_RETRY_TIMER_FIRED ts = %u 
-3887,I,RTT_CALL_FLOW: WLAN_RTT_INIT_SCHEDULER_TIMEOUT_HANDLER ts = %u 
-3888,II,wlan_rtt_init_scheduler => curr_init:0x%x init_ctxt_usage_flags:0x%x 
-3889,II,wlan_rtt_init_scheduler => diff1:%d diff2:%d 
-3890,I,wlan_rtt_init_scheduler => next_mb_slot_index:%d  
-3891,I,wlan_rtt_init_scheduler: Skipping initiator with index %d as it may creep into next multiburst start time 
-3892,IIII,wlan_rtt_init_scheduler => index:%d curr_index:%d schedule_timeout:%d next_mb_slot_index: %d 
-3893,I,RTT_CALL_FLOW: WLAN_RTT_INIT_START_SCHEDULE_TIMER ts = %u 
-3894,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_INIT_TIMER_FIRED ts = %u 
-3895,I,RTT_CALL_FLOW: WLAN_RTT_PTSF_TIMER_FIRED ts = %u 
-3896,II,Init PTSF fired resp_tsf_h = 0x%x resp_tsf_l = 0x%x 
-3897,I,RTT_CALL_FLOW: WLAN_RTT_BURST_INIT_TIMER_FIRED ts = %u 
-3898,I,RTT_CALL_FLOW: WLAN_RTT_BURST_PERIODIC_INIT_TIMER_FIRED ts = %u 
-3899,IIII,wlan_rtt_ftm_init_burst_periodic_timeout: multiburst request for dest_mac:%x%x current_burst:%d total_bursts:%d  
-3900,II,wlan_rtt_ftm_init_burst_periodic_timeout: single shot repetitive request for dest_mac:%x%x  
-3901,IIII,wlan_rtt_ftm_init_burst_periodic_timeout: dest_mac:%x%x current_burst:%d total_bursts:%d 
-3902,IIII,wlan_rtt_ftm_init_burst_periodic_timeout: ERR: Burst periodic timeout when dest_mac:%x%x is not multiburst request(%d) or repetitive single shot request(%d)  
-3903,III,wlan_rtt_ftm_init_burst_periodic_timeout: Starting burst %d for dest_mac:%x%x 
-3904,IIIII,wlan_rtt_ftm_init_burst_periodic_timeout: Something is wrong with this request (buest %d) for dest_mac:%x%x curr_state:%d probe_rsp_pending:%d  
-3905,IIIII,wlan_rtt_ftm_init_burst_periodic_timeout: Previous burst %d is not successful for dest_mac:%x%x curr_state:%d probe_rsp_pending:%d  
-3906,III,wlan_rtt_ftm_init_burst_periodic_timeout: ERR: Some other request is in progress; skip current burst %d for dest_mac:%x%x 
-3907,I,RTT_CALL_FLOW: WLAN_RTT_DFS_TIMEOUT_HANDLER ts = %u 
-3908,I,RTT_CALL_FLOW: WLAN_RTT_DELTA_TIMER_FIRED ts = %u 
-3909,I,RTT_CALL_FLOW: WLAN_RTT_BURST_RESP_TIMER_FIRED ts = %u 
-3910,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3911,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_RESP_TIMER_FIRED ts = %u 
-3912,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3913,,Recieved a WMI event to sent to an invalid client 
-3914,IIII,Channel Granted(Responder): Responder operating freq = 0x%x pmac = %p Granted on freq: 0x%x phymode: %d 
-3915,III,vdev mac id(%d) not same as pmac mac id(%d): change PM lock & set mac address: %d 
-3916,III,Channel Granted(Initiator): RTT 160MHz requested freq: 0x%x Grant came on freq: 0x%x phymode: %d 
-3917,III,Downgraded the BW: New bw: %d chnl_format: %u rate_info: %u 
-3918,I,RTT_CALL_FLOW: WLAN_RTT_INIT_BURST_INSTANCE_DONE ts = %u 
-3919,IIIII,wlan_rtt_burst_instance_done: num_burst_done:%d total_bursts:%d curr_state:%d burst_duration:%d, index:%d 
-3920,III,wlan_rtt_burst_instance_done: ftm1_done:%d num_meas:%d ftm_per_burst:%d  
-3921,I,Computed distance: %d 
-3922,,Wait for NAN module to finish sending NAN ranging termination frame 
-3923,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TM_FRAME ts = %u 
-3924,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3925,IIIII,RTT_SEND_TM_FRAME resp_ctxt: %p tkn = %d follow_tkn = %d tx_bw = %d resp_ctxt ftm state = %d 
-3926,I,RTT_CALL_FLOW: WLAN_RTT_SEND_FTM1 ts = %u 
-3927,,RTT_ERROR_REPORT :ALLOCATE_FRAME_BUFFER_ERROR 
-3928,III,wlan_rtt_send_tm_frame: abf: %p channel: %x pmac = %p 
-3929,,RTT_ERROR_REPORT :RTT_FRAME_TX_FAIL 
-3930,I,RTT_CALL_FLOW: WLAN_RTT_TM_ACK_HDL ts = %u 
-3931,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_OK 
-3932,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_FAIL_XRETRY 
-3933,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_DROP 
-3934,I,RTT_CALL_FLOW: WLAN_RTT_SEND_FTM1_RETRY ts = %u 
-3935,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_EXCEED_MAX_RETRY ts = %u 
+3855,IIIII,RTT_MEAS_REQ_BODY idx = %d dest_mac_0to31 = 0x%x dest_mac_32to47 = 0x%x sppof_bssid_0to31 = 0x%x spoof_bssid_32to47 = 0x%x 
+3856,IIIII,RTT_MEAS_REQ_BODY  control_inf = 0x%x meas_inf = 0x%x meas_params1 = 0x%x meas_params2 = 0x%x is_dest_qca: %d 
+3857,I,DFS channel quiet %d 
+3858,IIII,wlan_rtt_meas_req_init: Unsupported vdev type %d for dest_mac %x%x with req_id %d 
+3859,II, wlan_rtt_get_ftm_chnl_code bw:%d preamble:%d 
+3860,,80p80 channel format 
+3861,,160 FTM channel format 
+3862,I,RTT_CALL_FLOW: WLAN_WMI_OEM_REQ ts = %u 
+3863,II,_wlan_wmi_oem_req: Non TLV format msg received; tlv_head: %d 
+3864,III,wlan_wmi_oem_req: INFO: OEM Req received with sub_type:%d, req_id:%d client: %d 
+3865,II,wlan_wmi_oem_req: ERROR: TLV processing failed for sub_type:%d, req_id:%d 
+3866,I,RTT_CALL_FLOW: WLAN_RTT_CAP_MSG_REQ_HDL ts = %u 
+3867,IIIIII,wlan_rtt_cap_msg_req_hdl: client_id: %d Req:%d Reqid:%d Major:%d Minor:%d Revision:%d 
+3868,,Event buffer allocation for wlan_rtt_cap_msg_req response failed 
+3869,,RTT_ERROR_REPORT :0xff 
+3870,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3871,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3872,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3873,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3874,I,RTT_CALL_FLOW: WLAN_RTT_START_FTM1_TIMER ts = %u 
+3875,I,RTT_CALL_FLOW: WLAN_RTT_START_BURST_TIMER ts = %u 
+3876,I,RTT_CALL_FLOW: WLAN_RTT_FTM_DELTA_TIMER_STOP ts = %u 
+3877,I,RTT_CALL_FLOW: WLAN_RTT_BURST_TIMER_STOP ts = %u 
+3878,I,RTT_CALL_FLOW: WLAN_RTT_START_BURST_TIMER ts = %u 
+3879,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_TIMER_STOP ts = %u 
+3880,I,RTT_CALL_FLOW: WLAN_RTT_TIMEOUT_HANDLER ts = %u 
+3881,I,RTT_CALL_FLOW: WLAN_RTT_SPS_TIMEOUT_HANDLER ts = %u 
+3882,I,RTT_CALL_FLOW: WLAN_RTT_TMR_RETRY_TIMER_FIRED ts = %u 
+3883,I,RTT_CALL_FLOW: WLAN_RTT_INIT_SCHEDULER_TIMEOUT_HANDLER ts = %u 
+3884,II,wlan_rtt_init_scheduler => curr_init:0x%x init_ctxt_usage_flags:0x%x 
+3885,II,wlan_rtt_init_scheduler => diff1:%d diff2:%d 
+3886,I,wlan_rtt_init_scheduler => next_mb_slot_index:%d  
+3887,I,wlan_rtt_init_scheduler: Skipping initiator with index %d as it may creep into next multiburst start time 
+3888,IIII,wlan_rtt_init_scheduler => index:%d curr_index:%d schedule_timeout:%d next_mb_slot_index: %d 
+3889,I,RTT_CALL_FLOW: WLAN_RTT_INIT_START_SCHEDULE_TIMER ts = %u 
+3890,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_INIT_TIMER_FIRED ts = %u 
+3891,I,RTT_CALL_FLOW: WLAN_RTT_PTSF_TIMER_FIRED ts = %u 
+3892,II,Init PTSF fired resp_tsf_h = 0x%x resp_tsf_l = 0x%x 
+3893,I,RTT_CALL_FLOW: WLAN_RTT_BURST_INIT_TIMER_FIRED ts = %u 
+3894,I,RTT_CALL_FLOW: WLAN_RTT_BURST_PERIODIC_INIT_TIMER_FIRED ts = %u 
+3895,IIII,wlan_rtt_ftm_init_burst_periodic_timeout: multiburst request for dest_mac:%x%x current_burst:%d total_bursts:%d  
+3896,II,wlan_rtt_ftm_init_burst_periodic_timeout: single shot repetitive request for dest_mac:%x%x  
+3897,IIII,wlan_rtt_ftm_init_burst_periodic_timeout: dest_mac:%x%x current_burst:%d total_bursts:%d 
+3898,IIII,wlan_rtt_ftm_init_burst_periodic_timeout: ERR: Burst periodic timeout when dest_mac:%x%x is not multiburst request(%d) or repetitive single shot request(%d)  
+3899,III,wlan_rtt_ftm_init_burst_periodic_timeout: Starting burst %d for dest_mac:%x%x 
+3900,IIIII,wlan_rtt_ftm_init_burst_periodic_timeout: Something is wrong with this request (buest %d) for dest_mac:%x%x curr_state:%d probe_rsp_pending:%d  
+3901,IIIII,wlan_rtt_ftm_init_burst_periodic_timeout: Previous burst %d is not successful for dest_mac:%x%x curr_state:%d probe_rsp_pending:%d  
+3902,III,wlan_rtt_ftm_init_burst_periodic_timeout: ERR: Some other request is in progress; skip current burst %d for dest_mac:%x%x 
+3903,I,RTT_CALL_FLOW: WLAN_RTT_DFS_TIMEOUT_HANDLER ts = %u 
+3904,I,RTT_CALL_FLOW: WLAN_RTT_DELTA_TIMER_FIRED ts = %u 
+3905,I,RTT_CALL_FLOW: WLAN_RTT_BURST_RESP_TIMER_FIRED ts = %u 
+3906,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3907,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_RESP_TIMER_FIRED ts = %u 
+3908,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3909,,Recieved a WMI event to sent to an invalid client 
+3910,IIII,Channel Granted(Responder): Responder operating freq = 0x%x pmac = %p Granted on freq: 0x%x phymode: %d 
+3911,III,vdev mac id(%d) not same as pmac mac id(%d): change PM lock & set mac address: %d 
+3912,III,Channel Granted(Initiator): RTT 160MHz requested freq: 0x%x Grant came on freq: 0x%x phymode: %d 
+3913,III,Downgraded the BW: New bw: %d chnl_format: %u rate_info: %u 
+3914,I,RTT_CALL_FLOW: WLAN_RTT_INIT_BURST_INSTANCE_DONE ts = %u 
+3915,IIIII,wlan_rtt_burst_instance_done: num_burst_done:%d total_bursts:%d curr_state:%d burst_duration:%d, index:%d 
+3916,III,wlan_rtt_burst_instance_done: ftm1_done:%d num_meas:%d ftm_per_burst:%d  
+3917,I,Computed distance: %d 
+3918,,Wait for NAN module to finish sending NAN ranging termination frame 
+3919,I,RTT_CALL_FLOW: WLAN_RTT_SEND_TM_FRAME ts = %u 
+3920,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3921,IIIII,RTT_SEND_TM_FRAME resp_ctxt: %p tkn = %d follow_tkn = %d tx_bw = %d resp_ctxt ftm state = %d 
+3922,I,RTT_CALL_FLOW: WLAN_RTT_SEND_FTM1 ts = %u 
+3923,,RTT_ERROR_REPORT :ALLOCATE_FRAME_BUFFER_ERROR 
+3924,III,wlan_rtt_send_tm_frame: abf: %p channel: %x pmac = %p 
+3925,,RTT_ERROR_REPORT :RTT_FRAME_TX_FAIL 
+3926,I,RTT_CALL_FLOW: WLAN_RTT_TM_ACK_HDL ts = %u 
+3927,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_OK 
+3928,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_FAIL_XRETRY 
+3929,,RTT_ERROR_REPORT :RTT_WAL_FRAME_TX_DROP 
+3930,I,RTT_CALL_FLOW: WLAN_RTT_SEND_FTM1_RETRY ts = %u 
+3931,I,RTT_CALL_FLOW: WLAN_RTT_FTM1_EXCEED_MAX_RETRY ts = %u 
+3932,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3933,I,RTT_CALL_FLOW: WLAN_RTT_START_FTM_DELTA_TIMER ts = %u 
+3934,I,RTT_CALL_FLOW: WLAN_RTT_SEND_FTM1_COMPLETE ts = %u 
+3935,I,RTT_TWOSIDED_RESP_CNT  number = %d 
 3936,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3937,I,RTT_CALL_FLOW: WLAN_RTT_START_FTM_DELTA_TIMER ts = %u 
-3938,I,RTT_CALL_FLOW: WLAN_RTT_SEND_FTM1_COMPLETE ts = %u 
-3939,I,RTT_TWOSIDED_RESP_CNT  number = %d 
-3940,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3941,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3942,I,RTT_CALL_FLOW: WLAN_RTT_TMR_BUSY_REPLY ts = %u 
-3943,,rtt_tmr_rx_hdl() vdev not found 
-3944,I,Can't support rtt responder mode on vdev type: %d 
-3945,I,RTT_CALL_FLOW: WLAN_RTT_TMR_START_RX_HDL ts = %u 
-3946,,RTT_ERROR_REPORT :RTT_GET_INVALID_TMR_STOP 
-3947,,RTT_ERROR_REPORT :RTT_GET_INVALID_TMR_STOP 
-3948,I,RTT_CALL_FLOW: WLAN_RTT_TMR_END_RX_HDL ts = %u 
-3949,III,wlan_rtt_terminate_resp_context() state: %d busrt_exp: %d burst_count: %d 
-3950,I,RTT_CALL_FLOW: WLAN_RTT_TM_RX_HDL ts = %u 
-3951,,RTT_ERROR_REPORT :RTT_GET_TM_NOTWAIT_TM 
-3952,,RTT_ERROR_REPORT :RTT_GET_TM_NOTWAIT_TM 
-3953,,RTT_TWOSIDED_RESP_FINISH 
-3954,I,RTT_TWOSIDED_RESP_CNT  number = %d 
-3955,I,RTT_TWOSIDED_RESP_CNT  number = %d 
-3956,I,RTT_CALL_FLOW: WLAN_RTT_RECV_FTM1 ts = %u 
-3957,IIII,state = %d tsf_sync_info = 0x%x resp_tsf = 0x%x Diff: %d 
-3958,IIII,RTT TM FTM tsf_sync_info = 0x%x ftm_req_start_time = 0x%x ftm_req_complete_time = 0x%x current_time = 0x%x 
-3959,II,RTT TM FTM curr_tsf_delta = 0x%x new_tsf_delta = 0x%x 
-3960,IIIII,RTT_FTM_PARAM_INFO  arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x arg5 = 0x%x 
-3961,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3962,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
-3963,I,RTT_CALL_FLOW: WLAN_RTT_START_PTSF_TIMER ts = %u 
-3964,,RTT_ERROR_REPORT :TM_TOKEN_MISMATCH 
-3965,,RTT_ERROR_REPORT :TM_CFR_CAPTURE_ERROR 
-3966,,RTT_ERROR_REPORT :TM_SEQUENCE_RESTART 
-3967,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3968,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3969,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3937,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3938,I,RTT_CALL_FLOW: WLAN_RTT_TMR_BUSY_REPLY ts = %u 
+3939,,rtt_tmr_rx_hdl() vdev not found 
+3940,I,Can't support rtt responder mode on vdev type: %d 
+3941,I,RTT_CALL_FLOW: WLAN_RTT_TMR_START_RX_HDL ts = %u 
+3942,,RTT_ERROR_REPORT :RTT_GET_INVALID_TMR_STOP 
+3943,,RTT_ERROR_REPORT :RTT_GET_INVALID_TMR_STOP 
+3944,I,RTT_CALL_FLOW: WLAN_RTT_TMR_END_RX_HDL ts = %u 
+3945,I,RTT_CALL_FLOW: WLAN_RTT_RESP_INIT ts = %u 
+3946,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3947,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3948,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3949,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3950,II,Received FTMR resp_tsf_h = 0x%x resp_tsf_l = 0x%x 
+3951,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
+3952,III,wlan_rtt_terminate_resp_context() state: %d busrt_exp: %d burst_count: %d 
+3953,I,RTT_CALL_FLOW: WLAN_RTT_TM_RX_HDL ts = %u 
+3954,,RTT_ERROR_REPORT :RTT_GET_TM_NOTWAIT_TM 
+3955,,RTT_ERROR_REPORT :RTT_GET_TM_NOTWAIT_TM 
+3956,,RTT_TWOSIDED_RESP_FINISH 
+3957,I,RTT_TWOSIDED_RESP_CNT  number = %d 
+3958,I,RTT_TWOSIDED_RESP_CNT  number = %d 
+3959,I,RTT_CALL_FLOW: WLAN_RTT_RECV_FTM1 ts = %u 
+3960,IIII,state = %d tsf_sync_info = 0x%x resp_tsf = 0x%x Diff: %d 
+3961,IIII,RTT TM FTM tsf_sync_info = 0x%x ftm_req_start_time = 0x%x ftm_req_complete_time = 0x%x current_time = 0x%x 
+3962,II,RTT TM FTM curr_tsf_delta = 0x%x new_tsf_delta = 0x%x 
+3963,IIIII,RTT_FTM_PARAM_INFO  arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x arg5 = 0x%x 
+3964,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3965,IIII,RTT_REPORT  arg1 = 0x%x arg2 = 0x%x arg3 = x%x arg4 = 0x%x 
+3966,I,RTT_CALL_FLOW: WLAN_RTT_START_PTSF_TIMER ts = %u 
+3967,,RTT_ERROR_REPORT :TM_TOKEN_MISMATCH 
+3968,,RTT_ERROR_REPORT :TM_CFR_CAPTURE_ERROR 
+3969,,RTT_ERROR_REPORT :TM_SEQUENCE_RESTART 
 3970,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
 3971,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
 3972,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
-3973,II,Received FTMR resp_tsf_h = 0x%x resp_tsf_l = 0x%x 
+3973,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
 3974,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
 3975,I,RTT_CALL_FLOW: WLAN_RTT_SCHEDULE ts = %u 
 3976,IIII,RTT_MAN_DEBUG arg1 = 0x%x arg2 = 0x%x arg3 = 0x%x arg4 = 0x%x 
