@@ -1,4 +1,4 @@
-service google_battery /vendor/bin/hw/vendor.google.google_battery@1.0-service-vendor
+service google_battery /vendor/bin/hw/vendor.google.google_battery@1.1-service-vendor
     class hal
     user system
     group system
