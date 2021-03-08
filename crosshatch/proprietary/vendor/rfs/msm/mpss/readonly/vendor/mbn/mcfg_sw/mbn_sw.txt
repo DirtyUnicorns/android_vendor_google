@@ -14,6 +14,7 @@ mcfg_sw/generic/EU/SFR/Commercial/FR/mcfg_sw.mbn
 mcfg_sw/generic/EU/Telefonica/Commercial/DE/mcfg_sw.mbn
 mcfg_sw/generic/EU/Telefonica/Commercial/UK/mcfg_sw.mbn
 mcfg_sw/generic/EU/Vodafone/VoLTE/Germany/mcfg_sw.mbn
+mcfg_sw/generic/EU/Vodafone/VoLTE/Italy/mcfg_sw.mbn
 mcfg_sw/generic/EU/Vodafone/VoLTE/Netherlands/mcfg_sw.mbn
 mcfg_sw/generic/EU/Vodafone/VoLTE/UK/mcfg_sw.mbn
 mcfg_sw/generic/NA/ATT/Cricket/mcfg_sw.mbn
